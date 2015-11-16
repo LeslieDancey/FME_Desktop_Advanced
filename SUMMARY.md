@@ -1,4 +1,4 @@
 # Summary
 
-* Welcome to Safe Software
+* [Welcome to Safe Software](welcome_to_safe_software.md)
 
