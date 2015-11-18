@@ -277,3 +277,25 @@ Click on the Runtime icon. Ensure that the Log File Defaults has “Log timestam
 Since the workspace doesn’t fail – it’s just a little slow – we aren’t debugging anything so you can turn off “Log debugging information” (assuming it was already turned on).
 
 **2)** Assess Readers
+
+Let’s first assess how well the Readers are doing their job. It might be that they aren’t really the bottleneck in our workspace.
+
+First check the original log file for the Emptying Factory Pipeline message.
+
+*2014-12-08 10:48:28| 60.2| 0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 872554 features from 3 readers*
+
+*2014-12-08 10:48:28| 60.2| 0.0|INFORM|Emptying factory pipeline*
+
+It occurs after 60.2 seconds, about 25% of the total translation time. But let’s see if that’s accurate.
+
+Select all of the objects after the feature types (i.e. transformers and Writer feature types).
+
+Press Ctrl+E to disable them (Ctrl+E is a toggle to Enable/Disable)
+
+The workspace now looks like this:
+
+Run the workspace. The data will be read, but not processed or written.
+
+Check the time taken to do this. On my machine the result is this:
+
+*INFORM|FME Session Duration: 45.3 seconds. (CPU: 37.9s user, 0.4s system)*
