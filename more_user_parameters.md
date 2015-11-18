@@ -243,3 +243,24 @@ Locate and put a checkmark in the box for the following coordinate systems:
 - CANBC-LCC
 
 Then click OK to close this dialog. You will be returned to the configuration dialog and find that names and values have been automatically entered for these coordinate systems.
+
+Click OK and then OK again to close the remaining dialogs and create the user parameter.
+
+**5)** Link Coordinate System Parameter
+
+Now we have the user's selection but we still have to apply it to the real parameter. So locate the Writer’s coordinate system parameter, right-click on it, and choose Link to User Parameter:
+
+When prompted, select the newly created CoordSysParam and click OK to accept the selection.
+
+**6)** Create Tables Parameter
+
+The final task for us here is to create a way to decide which tables are going to be read. If you remember, at the moment the way your colleagues do this is by disabling various Reader feature types. However, there has to be a better method.
+
+This is an interesting task because we want to control the source tables (Libraries, Parks, etc.) based on selection of output tables (CommunityFacilities, Environment, and Miscellaneous).
+For example, we want the user to select output feature types like "Environment", which needs both "Parks" and "DrinkingFountains" Reader feature types.
+
+Locate the Feature Types to Read parameter in the CommunityMap Reader "Features to Read" parameters (in the Navigator window).
+
+Right-click on it and choose Create User Parameter.
+
+A dialog will open that is already populated with a list of feature types.
