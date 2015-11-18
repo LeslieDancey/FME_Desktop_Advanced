@@ -203,3 +203,27 @@ Like attributes, geometry can be removed from a feature using the GeometryRemove
 Many FME users create translations that handle tabular – non-spatial – data. If you are reading a spatial dataset, then writing it to a tabular format, be sure to remove the geometry early in the workspace, just as you would an attribute.
 
 Additionally, you can reduce the size of individual features by removing vertices. The Generalizer transformer will help you to do so and has very many parameters to control the results.
+
+**General Optimizations**
+
+Here are a few general suggestions that can be used to improve the performance of a workspace. Some of these come straight from our developers.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“It’s said that the race driver Michael Schumacher would tilt his head
+slightly when racing, to allow more air into the engine intake.
+If, like him, you measure performance down to the millisecond, then these tips are for
+you!”
+</span>
+</td>
+</tr>
+</table>
