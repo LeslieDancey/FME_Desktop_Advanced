@@ -199,3 +199,13 @@ These are particularly useful for use on FME Server.”
 </td>
 </tr>
 </table>
+
+**7)** Use User Parameter – Method 3
+
+The final method to extract the value from a user parameter is with a schema attribute value.
+
+To achieve this, locate the metadata feature type on the canvas and right-click the AuthorCompany attribute.
+
+Then select the Edit Value option.
+
+In the dialog that opens, you can enter a fixed (constant) value, but in our case we’ll click on the drop-down arrow, select User Parameters, and then select UserCompanyParam:
