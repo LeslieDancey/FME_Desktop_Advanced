@@ -158,3 +158,28 @@ Basically, if you don’t need the data, and the feature type is not connected t
 Then the table will not be read and performance will improve.
 
 The second scenario – specifically for file datasets – is a "dangling" Reader. This is where you have deleted all of the feature types, but not the underlying Reader:
+
+Here the user set up a Reader to read an AutoCAD dataset. The feature type (layer) definitions were deleted from the workspace, but the Reader remains.
+
+When the workspace is run, all the data is still being read from this file, but then discarded as "unexpected input."
+
+Remember, any extra data that is read – of whatever amount – takes time and resources to read, and if it subsequently goes into the workspace, will slow it unnecessarily too.
+
+**Assessing Writer Performance**
+
+Assessing the speed of writing can be similarly difficult to assessing the speed of reading; again the reason is the same: FME starts writing data as soon as it becomes available, and doesn’t necessarily wait until processing is done.
+
+Take the previous workspace, which read a set of address points and found their nearest neighbor, but now has a Writer too:
+
+According to the log file, we find that the output dataset is open for writing before the source dataset has even finished being read!
+
+Opened Shape File C:\FMEData2015\Output\PostalAddress.shp for output
+
+Opened DBF File 'C:\FMEData2015\Output\PostalAddress.dbf' for output
+
+DBF Writer: Writing DBF File using character encoding 'ANSI'
+
+Reading source feature # 5000
+Reading source feature # 7500
+Reading source feature # 10000
+Reading source feature # 12500
