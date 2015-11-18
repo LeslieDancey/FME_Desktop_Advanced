@@ -14,4 +14,5 @@
    * [More User Parameters](more_user_parameters.md)
    * [Even More User Parameters](even_more_user_parameters.md)
    * [Module Review](module_review.md)
+* Performance Considerations
 
