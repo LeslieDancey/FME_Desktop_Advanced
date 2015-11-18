@@ -261,3 +261,13 @@ Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2c-Begin.fm
 The first aspect of the workspace to check is any extra transformers that aren’t needed and that will be slowing performance. The most obvious is the Logger transformer. It was presumably used for debugging the original workspace but is now doing nothing for us.
 
 So, delete the Logger transformer attached to the CSV Reader.
+
+**3)** Remove Attributes
+
+Another quick fix we can do is to remove any attributes we don’t need, right at the start of the workspace. Check the schemas of the Reader and Writer feature types:
+
+The Readers contain quite a lot of attributes, on both datasets. The Writers contain very few attributes, and the GoodLocations feature type has none at all. This suggests we can remove some attributes that are not going to be needed in the output.
+
+Put an AttributeKeeper transformer after the Neighborhood feature type, but before the Clipper.
+
+Use it to keep only the NeighborhoodName attribute.
