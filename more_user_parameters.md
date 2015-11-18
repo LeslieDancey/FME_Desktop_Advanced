@@ -102,3 +102,15 @@ It’s not just the case that a workspace author will want to apply user input t
 In some cases the author will actually want to give the end-user control over an FME parameter.
 
 In this scenario the author will create a user parameter, and then link it to the FME parameter.
+
+For example, here the author has a workspace that writes Shape data:
+
+They wish to give the end-user control over whether a spatial index is created or not
+
+They already have a user parameter defined called WriteSpatialIndex, with choices Yes and No, however the user parameter does not do anything yet. It must be linked to the FME parameter.
+
+The author can do this by either right-clicking the FME parameter and choosing Link to User Parameter, or they can right-click the User parameter and choose Apply To [FME Parameter].
+
+Now the FME parameter is linked to the User Parameter, so whatever the user chooses will be applied directly to Write Spatial Index
+
+If the author changes their mind, there is always an option to unlink the user parameter and return to direct author control:
