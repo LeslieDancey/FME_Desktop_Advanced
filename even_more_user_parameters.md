@@ -262,3 +262,8 @@ As you do so the existing user parameter – the one automatically created by FM
 Save and then run the workspace to test it. Enter some parameters when prompted:
 
 The data will be written to the file specified and FME will label features with the required attribute:
+
+**NB:** *If you get the error message: "Undefined macro 'xxxx' dereferenced in file" then it's
+probable that the private parameter is wrongly defined. For example it is
+C:\FMEData2015\Output\$(Filename).kml when it should be
+C:\FMEData2015\Output\$(FileName).kml (notice the different case of the N in "FileName").*
