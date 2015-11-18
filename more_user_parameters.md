@@ -286,3 +286,20 @@ Pick Unicode 8-bit (utf-8) as the encoding. Select a coordinate system, noting h
 The translation will be carried out. Inspect the data to ensure the results are correct. The CommunityFacilities – for example – should be made up of both libraries and community centres.
 
 ***NB:** *If you run the workspace multiple times you will get multiple sets of results in the same folder! So Best Practice suggests you empty the output folder each time you run the workspace, but you can also find the latest results by checking the file dates/times.**
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Advanced Exercise</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+Speaking of Best Practice, don't forget to tidy up the workspace
+</span>
+</td>
+</tr>
+</table>
