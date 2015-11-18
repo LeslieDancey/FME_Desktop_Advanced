@@ -216,3 +216,33 @@ Now look for the more important performance indicators:
 *INFORM|FME Configuration: Stop freeing memory when process usage is below 2.12 GB of memory and 2.56 GB of address space*
 
 *INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory*
+
+There is plenty of disk space and adequate memory. We’re on a 64-bit platform but only using 32-bit FME, which is a bit disappointing as there is 25 GB of memory, but we can perhaps let that go.
+
+Let’s skip to the foot of the log now and see how long it took to run and how much memory was consumed at the peak:
+
+*INFORM|FME Session Duration: 4 minutes 1.0 seconds. (CPU: 185.7s user, 50.4s system)*
+
+*INFORM|END - ProcessID: 96656, peak process memory usage: 3065096 kB, current process memory usage: 652096 kB*
+
+Two things are a worry there. The system time seems high (50.4 seconds) considering we’re reading/writing local files and not a database.
+
+The peak memory is also worrying. It’s close to – if not above – the amount required for FME to start releasing memory and reorganizing data. In fact if we scan the log content:
+
+*INFORM|Finished clipping 558250 / 872545 clippees against all clippers*
+
+*INFORM|ResourceManager: Optimizing Memory Usage. Please wait...*
+
+*INFORM|Finished clipping group 1 / 2*
+
+*INFORM|Finished clipping 569200 / 872545 clippees against all clippers*
+
+So we can see that FME had to start optimizing memory usage. It probably resulted in some disk caching, and that might be the cause of the high system time.
+
+**3)** Run Workspace
+
+It's important to note that, because of different machine specifications, you may get vastly different results to this log. That's fine; the important part is the techniques used, not the exact timings. When you run this workspace, if you think your computer may be slower than average, you can reduce the amount of data being processing by changing the source dataset to "CellSignals2015-Lite.csv". Memory Optimization, in particular, may work differently depending on what other applications you have running at the same time.
+
+Anyway, run the workspace. Obviously you can expect that it will take approximately 4 minutes to complete on a 32-bit machine. Do your results match what occurred in the above log file?
+
+If you have access to 64-bit FME, then why not try it to see if the performance improves. Notice that there’s no problem in opening the same workspace in 32-bit and 64-bit FME. Workbench is the same; it’s just how the workspace is run that is different.
