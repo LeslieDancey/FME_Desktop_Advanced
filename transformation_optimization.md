@@ -131,3 +131,23 @@ With Candidates First turned on it looks like this:
 *Translation was SUCCESSFUL with 0 warning(s) (13597 feature(s) output)*
 
 *FME Session Duration: 28.4 seconds. (CPU: 27.4s user, 0.8s system)*
+
+*END - ProcessID: 26429, peak process memory usage: 178412 kb*
+
+It’s about 5% faster than before, but more importantly it’s used nearly 25% less memory!
+
+But how do we ensure the Candidate features arrive first? Well, like Writers you can change the order of Readers in the Navigator, so that the Reader at the top of the list is read first.
+
+It doesn’t improve performance per se, but it does let you apply performance-improving parameters like this.
+
+**Transformer Selection**
+
+If you’ve used FME for any length of time, you’ll know that it’s possible to do almost any task in several different ways.
+
+For example, you could check for matching features in two different datasets using either the Matcher transformer, or the ChangeDetector, or even the FeatureMerger!
+
+Another example would be isolating all road features that pass through a park.
+
+One could use either the Clipper, like so:
+
+Or the LineOnAreaOverlayer, with a test for _overlaps => 1, like so:
