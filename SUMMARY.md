@@ -10,5 +10,5 @@
    * [Course Resources](course_resources.md)
    * [Introduction](introduction.md)
 * [Advanced Parameter Use](advanced_parameter_use.md)
-   * Parameters and FME
+   * [Parameters and FME](parameters_and_fme.md)
 
