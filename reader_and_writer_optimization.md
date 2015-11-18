@@ -239,3 +239,23 @@ Therefore, if the largest amount of data is written immediately, lesser amounts 
 This can improve performance tremendously, particularly when the translation is especially unbalanced; for example one million features go to one Writer, and only ten features go to another.
 
 For more information see the FME Evangelist article at: http://fme.ly/FirstWriter.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Think of it like an airport. It’s more
+efficient when you load the busiest flights
+first, because it empties the terminal waiting areas
+quicker.”
+</span>
+</td>
+</tr>
+</table>
