@@ -45,3 +45,25 @@ For example, if your processing was very complex and taking hours to complete th
 *2014-12-08 13:25:03| 13.1| 4.9| INFORM| Reading source feature #10000*
 
 ...when, in fact, data was simultaneously being processed.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Not to confuse matters, but the exact structure of the log will depend
+greatly on whether the transformers being used are feature-based or
+group-based.
+Remember, a group-based transformer will hoard features until it is ready to process
+them all, and this will look very different in the log to a feature-based transformer that
+processes features one at a time.”
+</span>
+</td>
+</tr>
+</table>
