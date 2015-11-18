@@ -323,3 +323,27 @@ The only feature type we need is Neighborhoods, and that’s already connected i
 All the other feature types are producing data we don’t need. They might not be slowing us much, but they certainly won’t be speeding up the translation.
 
 So, we should select all unconnected feature types on the canvas and delete them. The quickest way to do this is select Tools > Remove Unattached from the menubar and click OK.
+
+**5)** Check Other Reader Issues - 2
+
+Another oddity with our Readers is that there are three listed in the Navigator window, but only two used on the canvas.
+
+The Addresses [FILEGDB] Reader seems to be reading data that we don’t want and don’t use.
+It’s what I call a “dangling” Reader, one without feature types. Expand the Reader in the Navigator window to prove that there are no feature types.
+
+Having satisfied yourself of that fact, click on the Reader and press the delete key to remove it.
+Now run the workspace again to see if reading is any quicker.
+
+*INFORM|FME Session Duration: 38.2 seconds. (CPU: 37.0s user, 0.4s system)*
+
+*INFORM|END - ProcessID: 88220, peak process memory usage: 80740 kB, current process memory usage: 78560 kB*
+
+On my computer it shaves about 7 seconds (15%) of the time off reading, which is a good start.
+
+**6)** Check Writer Performance
+
+We won’t check the time being taken to write the data, just look for the only obvious improvement: the order of the Writers.
+
+As mentioned, the best way to improve Writer performance is to ensure the Writer receiving the largest amount of data appears first in the Navigator window.
+
+In this workspace there are two Writers. One writes the problem (ColdSpot) locations. The other writes the good locations:
