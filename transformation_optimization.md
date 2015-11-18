@@ -163,3 +163,21 @@ So the result is the same, but the performance vastly different.
 Obviously in the above example the Clipper is the fastest (and be sure to note how the Clippers First mode has reduced memory use by nearly 90%).
 
 But each transformer has different functionality, and if you wanted to output park features with a list of roads or a count of the roads passing through the park, then the LineOnAreaOverlayer would be the transformer of choice, because it has a specific list parameter.
+
+Basically, each transformer works in a different way, has subtle variances in functionality, and
+will have different performance for any given task. Therefore a translation will benefit in
+performance if the author is careful in their choice of transformers, and maybe carries out
+some testing first.
+
+**Attributes and Transformation**
+
+As mentioned (in Reader Performance) reducing data helps performance because it saves FME
+from either holding it in memory or caching it to a disk.
+
+However, this isn’t just helped by reducing the number of features; it is also helped by reducing the size of each individual feature.
+
+One aspect of this is attributes. Carrying attributes through a translation impacts performance, so if the attributes are not required in the output, it’s best to remove them as early as possible in the translation.
+
+For example, the incoming schema looks like this:
+
+But the outgoing schema looks like this:
