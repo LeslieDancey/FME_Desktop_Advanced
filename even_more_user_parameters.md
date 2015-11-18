@@ -214,6 +214,28 @@ lines! They’re driving me crazy!”
 
 The workspace will now look like this:
 
-A consequence of this renaming is that you'll now need to re-map the attributes to the Writer
-schema. While doing so, delete OBJECTID from all Writer feature types, as they are not needed
-in this output.
+A consequence of this renaming is that you'll now need to re-map the attributes to the Writer schema. While doing so, delete OBJECTID from all Writer feature types, as they are not needed in this output.
+
+Re-run the workspace and you’ll find that it’s possible to now select either Name, Address or URL as the name for the feature in the KML output. That's because all of these attributes exist at each location the "Name" user parameter is being used.
+
+**3)** Add User Parameter
+
+Two problems remain of which the first is that the KML name is an _OR_ATTR parameter. It can also be set as a plain text string, and this is not what your colleagues want. So let’s add a new user parameter to solve that.
+
+Create a new user parameter of type Attribute Name. Set the name and prompt according to what you think would be suitable; something like this:
+
+Preferably turn off the optional checkbox, so the user is forced to select a value for this field.
+
+**4)** Use User Parameter
+
+Now we’ve created a new user parameter, let’s make use of it.
+
+Open up each KMLPropertySetter transformer’s parameter dialog in turn. For each set the
+Name field to be: @Value($(LabelAttr)) – where LabelAttr is the name you gave to the new
+parameter.
+
+**NB:** *It’s easiest to set it in one transformer, and then copy/paste it to all the others.
+Notice that when you complete the last transformer, the previously used parameter – NAME –
+is automatically deleted from the Navigator window (you can use undo-redo to prove this is
+so). So we can tell that it must have been created by FME and linked automatically, not created
+by the author and then manually linked. If that was the case it wouldn’t be deleted.*
