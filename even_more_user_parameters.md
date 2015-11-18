@@ -250,3 +250,15 @@ You really need to turn off the optional checkbox here, as if there is no value,
 Now create a second Text type user parameter. This time turn off both Published and Optional checkboxes. It is a parameter we need to use, but the end-user doesn’t need to see.
 
 The value for the parameter will be: C:\FMEData2015\Output\$(FileName).kml
+
+**7)** Link Embedded Parameter
+
+As a final step, link this newly created parameter to the FME parameter for the output KML:
+
+As you do so the existing user parameter – the one automatically created by FME – will be deleted automatically; again, this is because it is no longer used anywhere.
+
+**8)** Save and Run Workspace
+
+Save and then run the workspace to test it. Enter some parameters when prompted:
+
+The data will be written to the file specified and FME will label features with the required attribute:
