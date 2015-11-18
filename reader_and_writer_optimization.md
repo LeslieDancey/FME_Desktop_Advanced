@@ -111,3 +111,12 @@ The first of these – search envelope – define the data to read as a geograph
 These parameters are available on every spatial data Reader, but have the most effect when the source data is spatially indexed. Then the query is being carried out at its most efficient.
 
 Similarly, there are a number of parameters designed to let the user define how many features to read. These appear in a section of parameters caled Features to Read:
+
+These parameters include the ability to define a maximum number of features to read, and what feature to start at. There is also a parameter that defines which feature types (layers or tables) should be read.
+
+By using these judiciously, the amount of data being read can be reduced and the translation sped up.
+
+Other formats – particularly databases – have additional clauses that can help reduce the data flow.
+
+Here, for example, this SQL Server Reader has a ‘WHERE Clause’ parameter that can be
+applied:
