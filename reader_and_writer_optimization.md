@@ -259,3 +259,21 @@ quicker.”
 </td>
 </tr>
 </table>
+
+Let’s continue to work on the workspace that processes a dataset of cell phone signals.
+Remember, because of different specifications, your experience may be greatly different to what is described here.
+
+Now we’ve deconstructed the log, let’s start to clean up any performance issues with the Readers and Writers.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2b-Begin.fmw
+(or stick with Exercise2a-Begin.fmw if you have it open – it’s the same workspace).
+
+The first thing we should do is ensure we’re logging all the required timestamps. So select Tools > FME Options from the menubar in Workbench.
+
+Click on the Runtime icon. Ensure that the Log File Defaults has “Log timestamp information” turned on.
+
+Since the workspace doesn’t fail – it’s just a little slow – we aren’t debugging anything so you can turn off “Log debugging information” (assuming it was already turned on).
+
+**2)** Assess Readers
