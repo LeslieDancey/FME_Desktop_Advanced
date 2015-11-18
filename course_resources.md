@@ -3,7 +3,8 @@
 A number of sample datasets and workspaces will be used in this course.
 
 
-On Your Training Computer
+**On Your Training Computer**
+
 The following applications may already be installed, licensed, and located on your training computer (real or virtual):
 
 - FME Desktop Version 2015
@@ -18,7 +19,9 @@ The data used in this training course is based on open data from the City of Van
 
 For more information refer to: C:\FMEData2015\readme.txt.
 
-Amenities
+
+**Amenities**
+
 For in-person training, your instructor will explain the facilities and amenities available to you during the course.
 
 For online courses, please consider other students and test your virtual machine connection before the course starts. The instructor cannot help debug connection problems during the course!
