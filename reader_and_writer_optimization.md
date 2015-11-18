@@ -103,3 +103,11 @@ the process. Not to mention putting stress on the CPU (Chef Processing Unit)”
 </td>
 </tr>
 </table>
+
+All formats have various sets of parameters that speed up feature reading by filtering the amount of data being read.
+
+The first of these – search envelope – define the data to read as a geographic area. Then only that area of data needs to be read. Envelope parameters are found under the Advanced Parameters section in the Navigator:
+
+These parameters are available on every spatial data Reader, but have the most effect when the source data is spatially indexed. Then the query is being carried out at its most efficient.
+
+Similarly, there are a number of parameters designed to let the user define how many features to read. These appear in a section of parameters caled Features to Read:
