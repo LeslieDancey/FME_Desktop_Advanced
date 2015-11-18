@@ -167,3 +167,23 @@ It is because - for a shared parameter - FME only lists attributes that are avai
 In other words, the end-user is only provided with the union of all available attributes. To get what the users want, their attributes will have to be renamed to a common name.
 
 So, add AttributeRenamer transformers in each stream of data. For the library features use it to rename:
+
+- LibraryName to Name
+- LibraryAddress to Address
+- LibraryURL to URL
+
+Then use it to delete OBJECTID. You do this by simply setting it as an old attribute, and leaving out a new attribute name:
+
+Now do the same for all other streams of data.
+
+For parks:
+- Rename ParkName to Name
+- Rename ParkAddress to Address
+- Rename ParkURL to URL
+- Delete OBJECTID
+
+For TransitStations:
+- Rename StationName to Name
+- Delete OBJECTID
+- Add Address
+- Add URL
