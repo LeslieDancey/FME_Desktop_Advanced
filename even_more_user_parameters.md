@@ -230,12 +230,23 @@ Preferably turn off the optional checkbox, so the user is forced to select a val
 
 Now we’ve created a new user parameter, let’s make use of it.
 
-Open up each KMLPropertySetter transformer’s parameter dialog in turn. For each set the
-Name field to be: @Value($(LabelAttr)) – where LabelAttr is the name you gave to the new
-parameter.
+Open up each KMLPropertySetter transformer’s parameter dialog in turn. For each set the Name field to be: @Value($(LabelAttr)) – where LabelAttr is the name you gave to the new parameter.
 
 **NB:** *It’s easiest to set it in one transformer, and then copy/paste it to all the others.
-Notice that when you complete the last transformer, the previously used parameter – NAME –
-is automatically deleted from the Navigator window (you can use undo-redo to prove this is
-so). So we can tell that it must have been created by FME and linked automatically, not created
-by the author and then manually linked. If that was the case it wouldn’t be deleted.*
+Notice that when you complete the last transformer, the previously used parameter – NAME – is automatically deleted from the Navigator window (you can use undo-redo to prove this is so). So we can tell that it must have been created by FME and linked automatically, not created by the author and then manually linked. If that was the case it wouldn’t be deleted.*
+
+Now when the workspace is run the user can select an attribute, but not enter a value:
+
+**5)** Create User Parameter
+
+The other thing we could perhaps do is fix it so the user can enter an output filename, but not specify where the output folder will be.
+
+So, create a user parameter of type text. Set the name and prompt according to what you think would be suitable; something like this:
+
+You really need to turn off the optional checkbox here, as if there is no value, the workspace will fail.
+
+**6)** Create Embedded Parameter
+
+Now create a second Text type user parameter. This time turn off both Published and Optional checkboxes. It is a parameter we need to use, but the end-user doesn’t need to see.
+
+The value for the parameter will be: C:\FMEData2015\Output\$(FileName).kml
