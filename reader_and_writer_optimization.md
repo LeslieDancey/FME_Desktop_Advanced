@@ -118,5 +118,28 @@ By using these judiciously, the amount of data being read can be reduced and the
 
 Other formats – particularly databases – have additional clauses that can help reduce the data flow.
 
-Here, for example, this SQL Server Reader has a ‘WHERE Clause’ parameter that can be
-applied:
+Here, for example, this SQL Server Reader has a ‘WHERE Clause’ parameter that can be applied:
+
+Using this parameter is way more efficient than reading the entire contents of a large table and using a Tester transformer in the workspace.
+
+In short, when you want to filter source data, and can use a specific Reader parameter to do so, it is more efficient than reading all of the source data and then filtering it with a transformer.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Quick reading tip for CSV data.
+Use the PointCloud XYZ format to read CSV data, then the
+PointCloudCoercer transformer to turn it into points. It works way faster than just using
+the CSV format!”
+</span>
+</td>
+</tr>
+</table>
