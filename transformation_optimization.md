@@ -247,3 +247,17 @@ from Workbench. It may operate slightly faster.
 - License Type
 
 It might only be a tiny amount, but an FME with a floating (concurrent) license has to query the license server and so is marginally slower than fixed licenses.
+
+Let’s continue to work on the workspace that processes a dataset of cell phone signals.
+
+We’ve already deconstructed the log and cleaned up the Readers and Writers. Now let’s use our new knowledge of transformation performance to try and speed up the workspace.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2c-Begin.fmw which follows on from exercise 2b.
+
+**2)** Check for Extra Transformers
+
+The first aspect of the workspace to check is any extra transformers that aren’t needed and that will be slowing performance. The most obvious is the Logger transformer. It was presumably used for debugging the original workspace but is now doing nothing for us.
+
+So, delete the Logger transformer attached to the CSV Reader.
