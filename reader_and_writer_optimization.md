@@ -302,25 +302,24 @@ Check the time taken to do this. On my machine the result is this:
 
 *INFORM|END - ProcessID: 97468, peak process memory usage: 85344 kB, current process memory usage: 83164 kB*
 
-So it’s actually a little quicker than the full translation suggests – not surprisingly FME is
-starting to process that data as it is being read. Still, we might improve on that somehow.
+So it’s actually a little quicker than the full translation suggests – not surprisingly FME is starting to process that data as it is being read. Still, we might improve on that somehow.
 
 **3) **Check Data Filtering
 
-The workspace is filtering data with a Tester. Is there any way that we could improve on our
-reading time by carrying out this test directly on the source data?
+The workspace is filtering data with a Tester. Is there any way that we could improve on our reading time by carrying out this test directly on the source data?
 
-Firstly, we want all the data spatially, so there’s no use in setting any Search Envelope
-parameters. In any case the CSV data is not – initially – spatial and has no such parameters.
+Firstly, we want all the data spatially, so there’s no use in setting any Search Envelope parameters. In any case the CSV data is not – initially – spatial and has no such parameters.
 
-Secondly, could we apply that test to the data as it is being read? Well, neither Reader has a
-WHERE clause field, as neither is a database. The CSV Reader does have filter parameters, but
-they are regular expressions for text fields, and it would be difficult to filter on a number:
+Secondly, could we apply that test to the data as it is being read? Well, neither Reader has a WHERE clause field, as neither is a database. The CSV Reader does have filter parameters, but they are regular expressions for text fields, and it would be difficult to filter on a number:
 
 **4)** Check Other Reader Issues - 1
 
-Are there any other issues with the Readers that might be slowing performance? Yes, there
-are!
+Are there any other issues with the Readers that might be slowing performance? Yes, there are!
 
-Firstly, notice that the KML Reader that is reading the neighborhood data also includes a whole
-number of feature types that we aren’t interested in.
+Firstly, notice that the KML Reader that is reading the neighborhood data also includes a whole number of feature types that we aren’t interested in.
+
+The only feature type we need is Neighborhoods, and that’s already connected into the Clipper transformer.
+
+All the other feature types are producing data we don’t need. They might not be slowing us much, but they certainly won’t be speeding up the translation.
+
+So, we should select all unconnected feature types on the canvas and delete them. The quickest way to do this is select Tools > Remove Unattached from the menubar and click OK.
