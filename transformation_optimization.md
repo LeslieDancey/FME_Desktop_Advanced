@@ -151,3 +151,15 @@ Another example would be isolating all road features that pass through a park.
 One could use either the Clipper, like so:
 
 Or the LineOnAreaOverlayer, with a test for _overlaps => 1, like so:
+
+The performance for the LineOnAreaOverlayer would be this:
+
+While the Clipper (in Multiple Clippers mode) would be this:
+
+And in Clippers First mode would be this:
+
+So the result is the same, but the performance vastly different.
+
+Obviously in the above example the Clipper is the fastest (and be sure to note how the Clippers First mode has reduced memory use by nearly 90%).
+
+But each transformer has different functionality, and if you wanted to output park features with a list of roads or a count of the roads passing through the park, then the LineOnAreaOverlayer would be the transformer of choice, because it has a specific list parameter.
