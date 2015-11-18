@@ -172,3 +172,11 @@ Thursday”
 </td>
 </tr>
 </table>
+
+**6)** Use User Parameter – Method 2
+
+A second way to extract the value from a user parameter is with a ParameterFetcher transformer.
+
+Place a ParameterFetcher transformer (after the DateFormatter is fine). Open the parameters dialog.
+
+Select UserEmailParam as the parameter to fetch. Enter AuthorEmail as the name of the target attribute:
