@@ -264,3 +264,9 @@ Locate the Feature Types to Read parameter in the CommunityMap Reader "Features 
 Right-click on it and choose Create User Parameter.
 
 A dialog will open that is already populated with a list of feature types.
+
+Check the box that is labelled Use Alternate Display Name. This provides the ability to give alternate names for each feature type. What we need to do is use this dialog to group together common Reader feature types under a single display name.
+
+Delete the entry for GarbageSchedule, as this data isn’t connected and is not needed.
+
+Then, match the contents of the workspace by editing the Display Names. They should match as follows:
