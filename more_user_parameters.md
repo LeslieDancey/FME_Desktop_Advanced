@@ -270,3 +270,13 @@ Check the box that is labelled Use Alternate Display Name. This provides the abi
 Delete the entry for GarbageSchedule, as this data isn’t connected and is not needed.
 
 Then, match the contents of the workspace by editing the Display Names. They should match as follows:
+
+Underneath that change the prompt to read “Tables to Write” and then click OK to close the dialog.
+
+**7)** Save and Run Workspace
+
+Save the workspace. Then start up the FME Quick Translator application, located on the Start menu under the FME Desktop Utilities folder.
+
+In there, select Run from the Getting Started menu:
+
+Browse to the newly saved workspace, select it, and click Open. You will be presented with a list of published parameters, just as the end-user would see it:
