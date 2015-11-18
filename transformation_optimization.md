@@ -111,3 +111,23 @@ order it's not as simple to handle them.
 </td>
 </tr>
 </table>
+
+Besides the "Input is Ordered by Group" parameter, some transformers have their own, unique, parameters for performance improvements.
+
+For example, the NeighborFinder expects two sets of data: Bases and Candidates. By default FME caches all incoming Bases and Candidates because it needs to be sure it has ALL of the candidates before it can process any bases.
+
+But, if it knows the candidate features will arrive first (i.e. the first Base feature signifies the end of the Candidates) then it doesn’t need to cache Base features. It can process them immediately because it knows there are no more candidates that it could match against.
+
+Look at this log file for a workspace that uses a NeighborFinder. By default it looks like this:
+
+*Translation was SUCCESSFUL with 0 warning(s) (13597 feature(s) output)*
+
+*FME Session Duration: 29.6 seconds. (CPU: 27.7s user, 1.5s system)*
+
+*END - ProcessID: 28540, peak process memory usage: 231756 kb*
+
+With Candidates First turned on it looks like this:
+
+*Translation was SUCCESSFUL with 0 warning(s) (13597 feature(s) output)*
+
+*FME Session Duration: 28.4 seconds. (CPU: 27.4s user, 0.8s system)*
