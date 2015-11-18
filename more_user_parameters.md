@@ -95,3 +95,10 @@ not cause an error.”
 </td>
 </tr>
 </table>
+
+**Linking User-FME Parameters**
+
+It’s not just the case that a workspace author will want to apply user input to an attribute value.
+In some cases the author will actually want to give the end-user control over an FME parameter.
+
+In this scenario the author will create a user parameter, and then link it to the FME parameter.
