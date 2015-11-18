@@ -215,3 +215,17 @@ create multiple Writers – and additionally I get a section of log for each out
 </td>
 </tr>
 </table>
+
+**Improving Writer Performance**
+
+Again, the most obvious way to improve writing performance is to upgrade the underlying system to minimize the amount of time FME spends waiting for a response.
+
+If you are writing to a file system then make sure the disk is fast and responsive – use solid state drives – and that the operating system is not busy writing other files at the same time, as the latter could cause a significant bottleneck. Also check if you are using RAID as some configurations need multiple writes and can definitely slow things down.
+
+If you are writing to a database, then existing indexes and joins can cause the process to be slower than expected. In many cases it will be quicker to drop an index, write the data, and then recreate the index. More information on database performance with FME comes in a later section.
+
+However, the main tip for improving Writer performance is for the scenario where a workspace has multiple Writers. In this case it’s important to get the writers into the optimum order.
+
+Each Writer is listed in the Navigator window in Workbench. The key is to ensure that the Writer that is to receive the largest amount of data is at the top of the list.
+
+Writers can be re-ordered by moving them up and down in the list in the Navigator window, using the context (right-click) menu, like so:
