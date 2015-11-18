@@ -159,3 +159,13 @@ Similarly, a format may have geometry limitations that cause the output dataset 
 For example, MicroStation DGN format has a limit on vertex numbers for each element (feature). If the MicroStation Writer receives a feature with too many vertices it will split that feature into multiple MicroStation features (elements in MicroStation speak) as many as necessary to avoid going over the vertex limit.
 
 Thus, the number of features that actually appear in the dataset can be different to the number of features logged as being sent to the Writer.
+
+Here we have a prototype workspace that processes a dataset of cell phone signals. The dataset contains a series of recordings that show how strong the cell signal is at different locations.
+
+The idea is to filter out locations that receive a really poor signal, tag them with the neighborhood they belong to – to show which neighborhoods have poor coverage – and write the rest of the data out as a series of attribute-less data points.
+
+However, the workspace runs perhaps a little slower than it could, which is bad news when this is just the prototype and we wish to eventually run it on the entire country’s cell data. First of all let’s check the workspace and deconstruct its log to find out what is happening.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2a-Begin.fmw.
