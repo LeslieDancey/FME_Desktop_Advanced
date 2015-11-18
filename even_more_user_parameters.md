@@ -99,3 +99,11 @@ from the script to the FME log file.”
 Sometimes an FME parameter is designed to accept either a fixed value or the value of an attribute. We call these parameters _OR_ATTR parameters, because they allow a value OR an attribute.
 
 For example, this LabelPointReplacer allows the label to come from a fixed value, or an attribute:
+
+When the end-user is required to set this FME parameter, then it’s simply a case of turning it into a linked user parameter. When the workspace is run, FME will scan the workspace to find what attributes are available to that transformer, and allow the user to select one or enter a fixed value.
+
+However! Perhaps the workspace author does not want the user to be able to enter a fixed value. They want the user to only be able to select an attribute.
+
+In this scenario we need to create a user parameter with a special type called Attribute Name:
+
+Now when the workspace is run, the user is permitted to select an attribute, and ONLY an attribute:
