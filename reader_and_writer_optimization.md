@@ -81,3 +81,25 @@ Here the delay is not particularly problematic; but with larger amounts of data,
 The second obvious way to improve reading performance is to minimize the amount of data that is being read. For example, this workspace reads nearly 14,000 features, but immediately discards all except 132 of them:
 
 In this scenario, and where possible, it would be much more efficient to simply just read those three features.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“How sensible is it, to go into a restaurant and order the entire menu,
+when you only intend to eat some of the dishes? Ordering is quicker, but
+way longer to be delivered, and it will certainly be more expensive!
+The same applies reading data with FME. If you read the entire contents of a dataset,
+when you only need a part of that data, then you’re wasting resources and slowing down
+the process. Not to mention putting stress on the CPU (Chef Processing Unit)”
+</span>
+</td>
+</tr>
+</table>
