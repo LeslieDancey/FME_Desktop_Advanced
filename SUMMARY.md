@@ -6,4 +6,5 @@
    * [Course Structure](course_structure.md)
    * [Training Philosophy](training_philosophy.md)
    * [Prerequisites](prerequisites.md)
+   * About the Manual
 
