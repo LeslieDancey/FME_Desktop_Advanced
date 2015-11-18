@@ -121,3 +121,21 @@ As a workspace author we need to change one of the Writer parameters. We don’t
 In the Navigator window locate the XML Writer. Expand the parameters list. Locate the parameter labelled Pretty Print and double-click on it.
 
 In the dialog that opens, change the value to Yes and then click OK to close the dialog. We have now changed an FME parameter.
+
+**3)** Create User Parameter
+
+We now need to create some user parameters for the end-user to enter information into the workspace.
+
+Firstly, locate the User Parameters section of the Navigator window, right-click on it, and choose the option to Add Parameter:
+
+In the new dialog, select Text as the type of parameter to create (there will be more on parameter types in the next section). Each parameter needs a name, so call this one UserNameParam. Now enter a prompt, such as "Enter your name."
+
+Click OK to close the dialog and create the parameter, which will now appear in the Navigator window.
+
+**4)** Create Remaining User Parameters
+
+Repeat the previous step twice more, this time creating parameters called UserEmailParam and UserCompanyParam.
+
+The prompts should be “Enter your email address” and "Enter your company name."
+
+When done the Navigator window looks like this:
