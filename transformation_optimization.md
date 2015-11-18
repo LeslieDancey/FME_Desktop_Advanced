@@ -301,3 +301,35 @@ The Clipper is a group-based transformer; it has to be since it is processing bo
 There’s no real indication this is the wrong transformer to use (although there are others) but we should check if there’s a way to turn the transformer into one that operates on a feature basis.
 
 Open the Clipper parameters. Notice that there is a parameter for Clipper Type. Change this to Clippers First:
+
+This will make this a feature-based transformer. Each clippee will not need to be cached because the full set of clippers is already known.
+
+However, we have to make sure the Clippers really do arrive first, and this we can do by making the Clippers the first Reader in the Navigator window.
+
+So, right-click the VancouverNeighborhoods Reader in the Navigator window and choose Move Up to bring it to the top of the list:
+
+**5)** Run Workspace
+
+Let’s run the workspace to see what we have so far.
+
+Remember, after Reader improvements we had this result:
+
+*FME Session Duration: 2 minutes 26.5 seconds. (CPU: 133.8s user, 12.4s system)*
+
+*END - ProcessID: 98972, peak process memory usage: 1734748 kB*
+
+The result now is:
+
+*FME Session Duration: 2 minutes 16.6 seconds. (CPU: 126.6s user, 6.9s system)*
+
+*END - ProcessID: 102032, peak process memory usage: 109780 kB*
+
+It’s improving (especially the memory use). But I think we can still do better!
+
+**6)** Rearrange Transformers
+
+Looking at the workspace, the Neighborhood attribute is only required by the bad (low power) features. It isn’t needed by the good locations.
+
+But, we’re still attaching the information onto all of the features, good or bad.
+
+We could prevent that by moving the Tester transformer to before the Clipper.
