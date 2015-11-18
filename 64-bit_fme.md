@@ -19,3 +19,21 @@ Firstly it requires a 64-bit operating system and the hardware to support it. On
 Secondly – and more importantly – not every format in FME is supported on 64-bit. Usually that’s because the format itself – or its proprietary software – isn’t available on 64-bit platforms. In that situation you would need to use 32-bit FME.
 
 Additionally, you need to take care to use the correct clients; for example when reading 64-bit Oracle you’ll need to install a special 64-bit client for FME to be able to connect.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“The Safe Software web site has a list of supported formats
+(safe.com/formats) with info on which are supported on 64-bit.”
+</span>
+</td>
+</tr>
+</table>
