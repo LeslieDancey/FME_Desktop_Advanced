@@ -98,7 +98,7 @@ Here we have a workspace that was created to translate a parks dataset from MapI
 
 At the moment, all of the XML metadata fields are hard-coded in an AttributeCreator transformer. We’ll need to create user parameters to take the place of these hard-coded values.
 
-1) Start Workbench
+**1) **Start Workbench
 
 Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise1a-Begin.fmw.
 
@@ -109,3 +109,15 @@ The Sampler ensures that only one record is written to the output metadata, by d
 The AttributeCreator creates a set of attributes and the DateFormatter formats the date attribute to an XML-compatible ISO format.
 
 Open the parameters dialog for each transformer in turn. These are FME parameters, set by the workspace author and not available to the end-user.
+
+Here are the parameters for the DateFormatter:
+
+You can also find the same parameters in the Navigator window:
+
+**2) **Change XML Writer Parameter
+
+As a workspace author we need to change one of the Writer parameters. We don’t want the end-user to be setting this, so we’ll set it ourselves and not create a user parameter.
+
+In the Navigator window locate the XML Writer. Expand the parameters list. Locate the parameter labelled Pretty Print and double-click on it.
+
+In the dialog that opens, change the value to Yes and then click OK to close the dialog. We have now changed an FME parameter.
