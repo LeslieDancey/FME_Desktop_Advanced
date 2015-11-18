@@ -60,5 +60,26 @@ quite often GB and TB, rather than MB.
 </tr>
 </table>
 
-Then comes important information about the system resources and FME’s memory
-management:
+Then comes important information about the system resources and FME’s memory management:
+
+In this case there is a limit of 4GB memory per process, indicative of 32-bit processing, out of 24GB of total memory for the machine. The following numbers indicate how FME will manage memory resources. It will use nearly 3GB of memory and then it will start to release memory by caching features to disk. This caching will stop once memory use is less than about 2GB.
+
+This way FME will perform to its potential automatically, while not taking so much memory that the system may fail or other processes on the system would suffer.
+
+Of course, when run on 64-bit FME, the numbers will be slightly different, illustrating the benefits of this platform:
+
+**Translation and Transformation Statements**
+
+The main body of the log file concerns the translation and transformation of data. This section often appears confusing to new users, until they understand how FME operates.
+
+Firstly, there can be several parallel streams of processing in a workspace, so it isn’t always apparent which transformers will be processed in which order.
+
+Secondly, FME works by pushing features through the workspace on an individual basis, not as a group. For example, if there are three transformers in a workspace, the first feature is read and then processed by each transformer in turn. Then the next feature is read and processed by each transformer, and so on.
+
+This makes for a log file that is harder to understand, because you don’t see one specific entry for each Reader or transformer in turn. Nor do you see a message for each feature. Instead, a cumulative time is calculated and output at regular time-based intervals.
+
+**Translation Summary**
+
+The final part of a log file includes a report of the number of features read and written but, more important from a performance point of view, it includes a brief report of the time taken by the translation and the amount of memory used:
+
+Peak memory usage is an important statistic, as it is this number we’ll want to reduce in order to improve FME performance.
