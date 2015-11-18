@@ -347,3 +347,43 @@ We won’t check the time being taken to write the data, just look for the only 
 As mentioned, the best way to improve Writer performance is to ensure the Writer receiving the largest amount of data appears first in the Navigator window.
 
 In this workspace there are two Writers. One writes the problem (ColdSpot) locations. The other writes the good locations:
+
+OK, the Writer with the most features is not currently top of the Writers list. Let’s fix that.
+
+Right-click on the GoodLocations Writer in the Navigator window and choose the option Move Up.
+
+Now that Writer should appear above the other in the Navigator:
+
+Re-enable any components of the workspace that were disabled, and run the full translation again. Remember, the original log reports the following results:
+
+*INFORM|FME Session Duration: 4 minutes 1.0 seconds. (CPU: 185.7s user, 50.4s system)*
+
+*INFORM|END - ProcessID: 96656, peak process memory usage: 3065096 kB*
+
+Now, on my computer, I get the following:
+
+*INFORM|FME Session Duration: 2 minutes 44.1 seconds. (CPU: 151.9s user, 8.9s system)*
+
+*INFORM|END - ProcessID: 98972, peak process memory usage: 1734748 kB*
+
+That’s way better. I’ve reduced the time taken by 40% from the original. Additionally, peak memory use has dropped by 50%!
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-bolt fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">NEW</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+In FME2015 there is a new workspace parameter called "Order Writers By" that will
+let you adjust the order in which Writers are initialized; either by the order of
+Writers in the Navigator (as described here) or by the order features arrive at the
+Writers.
+</span>
+</td>
+</tr>
+</table>
