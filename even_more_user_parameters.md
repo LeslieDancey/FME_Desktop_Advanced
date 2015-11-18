@@ -187,3 +187,29 @@ For TransitStations:
 - Delete OBJECTID
 - Add Address
 - Add URL
+
+For CommunityCentres:
+l Rename CentreName to Name
+l Rename CentreAddress to Address
+l Rename CentreURL to URL
+l Delete OBJECTID
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“While you’re doing that, please do something about all those crooked
+lines! They’re driving me crazy!”
+</span>
+</td>
+</tr>
+</table>
+
+The workspace will now look like this:
