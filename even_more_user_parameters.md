@@ -213,3 +213,7 @@ lines! They’re driving me crazy!”
 </table>
 
 The workspace will now look like this:
+
+A consequence of this renaming is that you'll now need to re-map the attributes to the Writer
+schema. While doing so, delete OBJECTID from all Writer feature types, as they are not needed
+in this output.
