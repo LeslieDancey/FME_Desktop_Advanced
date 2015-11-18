@@ -227,3 +227,23 @@ you!”
 </td>
 </tr>
 </table>
+
+- Avoid Run with Full Inspection
+
+If you aren’t debugging a translation, then avoid using the Run with Full Inspection option (new for FME2015). It stashes all data for every connection in the workspace, meaning performance is significantly reduced.
+- Remove (or Disable) Excess Loggers and Inspectors
+
+Similarly, if you aren’t debugging a translation there’s no need for Logger or Inspector
+transformers. Remove – or disable – them and your workspace will run more efficiently.
+- Use Inspectors, not Loggers
+If you are intending to inspect a large number of features, then use the Inspector and not
+the Logger transformer. Logging speeds have improved greatly in the last few versions of
+FME, but it is still a relatively slow process compared to sending features to the
+Inspector.
+- Use the Command Line
+
+Once you have constructed your workspace, run it from the command line instead of
+from Workbench. It may operate slightly faster.
+- License Type
+
+It might only be a tiny amount, but an FME with a floating (concurrent) license has to query the license server and so is marginally slower than fixed licenses.
