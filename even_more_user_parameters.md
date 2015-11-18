@@ -55,3 +55,15 @@ For example, here the user is allowed to enter a filename, but not the path the 
 A published user parameter is created to accept a filename from the user. A private user parameter constructs the full name from that input [as C:\FMEData2015\Output\$(UserFileName)].
 
 Finally, the private parameter is linked to the FME parameter for the destination dataset:
+
+The RealFileName parameter is obviously kept private because the user doesn’t need to know about it, much less set a value for it.
+
+In this example the private parameter was created using a text editor. All user parameter creation dialogs have the ability to open a text editor. This is where simple concatenation of other parameters with fixed values can take place:
+
+**Scripted Parameters**
+
+A scripted parameter is a special type of user parameter.
+
+Scripted parameters go one step further than an embedded parameter.
+
+Whereas an embedded parameter allows simple construction of a new value by concatenation, a scripted parameter allows a full Python or TCL script to be used to construct a value.
