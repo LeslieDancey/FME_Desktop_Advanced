@@ -207,3 +207,23 @@ However, you know that the source data will never change, so that parameter is o
 Keep the parameter for DestDataset_SHAPE, as that can still be used to set the output location.
 
 **3)** Create Encoding Paramete
+
+One facet of the output that the users would like to control is the encoding of the dataset. This is achieved through a Writer parameter. However, it would be better for the users to set this as a user parameter.
+
+Locate the Shape Writer in the Navigator window and expand the list of FME parameters.
+
+Identify the Character Encoding parameter, right-click on it and choose Create User Parameter:
+
+Simply click OK on the dialog that opens and a user parameter is created and linked to the FME one.
+
+**4)** Create Coordinate System Parameter
+
+Another requirement is an ability to set the output coordinate system.
+
+However, if you simply publish the Writer’s coordinate system parameter – try it and see – then there will be a problem. The parameter will allow the end-user to select ANY coordinate system supported by FME.
+
+It would be preferable if the parameter only allowed the end-user to select a coordinate system from a smaller list. For example, since the data is located in Vancouver, BC, it makes little sense for the user to be able to reproject it to NZMG (a New Zealand coordinate system).
+
+So, locate the User Parameters in the Navigator Window, right-click and choose Add Parameter.
+
+Set the Type to be Choice with Alias; set the Name to be CoordSysParam, and set the prompt to be Select Output Coordinate System:
