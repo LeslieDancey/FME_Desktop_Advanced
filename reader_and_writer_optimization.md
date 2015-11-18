@@ -152,3 +152,9 @@ Here the user has added a number of tables to their PostGIS database Reader:
 
  
 However, if you look at the workspace, many of these tables are not even connected to anything. The unconnected tables are still being read but the data is being ignored:
+
+Basically, if you don’t need the data, and the feature type is not connected to anything in the workspace, then delete that feature type.
+
+Then the table will not be read and performance will improve.
+
+The second scenario – specifically for file datasets – is a "dangling" Reader. This is where you have deleted all of the feature types, but not the underlying Reader:
