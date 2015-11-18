@@ -93,3 +93,19 @@ The workspace author creates a user parameter for the user to enter their name (
 In the FME parameters for the AttributeCreator, the author sets the value of the attribute to that provided by the user parameter:
 
 Now when the workspace is run, the end user can enter their name into a text field, and have it entered into an attribute in the output.
+
+Here we have a workspace that was created to translate a parks dataset from MapInfo to KML, plus also write an XML metadata file to show who translated the data and when.
+
+At the moment, all of the XML metadata fields are hard-coded in an AttributeCreator transformer. We’ll need to create user parameters to take the place of these hard-coded values.
+
+1) Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise1a-Begin.fmw.
+
+Notice the transformers in the workspace.
+
+The Sampler ensures that only one record is written to the output metadata, by discarding all but one feature.
+
+The AttributeCreator creates a set of attributes and the DateFormatter formats the date attribute to an XML-compatible ISO format.
+
+Open the parameters dialog for each transformer in turn. These are FME parameters, set by the workspace author and not available to the end-user.
