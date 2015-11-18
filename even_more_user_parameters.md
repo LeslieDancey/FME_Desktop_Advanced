@@ -137,3 +137,15 @@ and choosing Expose FME Server Parameters."
 </td>
 </tr>
 </table>
+
+The same colleagues from Exercise 1b are back with another request for help.
+
+This time they have tried to experiment with a shared user parameter, but it is not working properly. Again, your task is to simplify their workspace and fix the User Parameters.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise1c-Begin.fmw.
+
+This is the workspace created by your colleagues:
+
+There are four tables being read from Geodatabase, and four layers being written to KML.
