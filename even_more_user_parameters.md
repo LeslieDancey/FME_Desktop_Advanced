@@ -149,3 +149,21 @@ Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise1c-Begin.fm
 This is the workspace created by your colleagues:
 
 There are four tables being read from Geodatabase, and four layers being written to KML.
+
+Open the KMLPropertySetter transformer parameter dialogs in turn. Note that each is using the same user parameter to set the KML name of the features:
+
+The KML name parameter defines a value that will be used as a label when the data is viewed in Google Earth.
+
+**2) **Rename Attributes
+
+The problem reported by your colleagues is that when they run the workspace they cannot select the right attributes for the KML name. They can only enter a hard-coded value (which they don’t want to do) or select the attribute OBJECTID. No other attributes are available.
+
+Run the workspace (using Prompt and Run) to confirm that this is the case.
+
+Can you see why this problem exists?
+
+It is because - for a shared parameter - FME only lists attributes that are available on ALL instances of the user parameter. For example, LibraryName does not appear because it only exists on the library features. OBJECTID is the only attribute that exists at all four KMLPropertySetter transformers.
+
+In other words, the end-user is only provided with the union of all available attributes. To get what the users want, their attributes will have to be renamed to a common name.
+
+So, add AttributeRenamer transformers in each stream of data. For the library features use it to rename:
