@@ -94,7 +94,9 @@ A feature new to, or significantly changed in, the most recent version of FME.
 <tr>
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
-Questions about the course content and how it is applied.
+Questions about the course content and how it is applied. Also, people from the city of Interopolis will also appear
+from time-to-time to give you advice and dispense FME related
+wisdom.
 </span>
 </td>
 </tr>
