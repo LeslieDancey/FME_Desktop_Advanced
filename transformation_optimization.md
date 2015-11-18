@@ -181,3 +181,25 @@ One aspect of this is attributes. Carrying attributes through a translation impa
 For example, the incoming schema looks like this:
 
 But the outgoing schema looks like this:
+
+Since so many of the source attributes are not required in the output, it makes sense to remove them from the translation, and as early as possible by using an AttributeRemover (or Keeper) directly after the source feature type:
+
+One specific type of attribute to beware of is a List. A List is an attribute that can have multiple values. Because of this it can be a big drain on resources.
+
+For example, use a Joiner to join a feature to 1000 records and the list for that feature will have 1,000 sets of records. This is bad enough, but if the list is exploded and all of the original attributes kept, then there will be 1,000 features each with 1,000 sets of attributes!
+
+Another particular problem is carrying around spatial data as attributes. Spatial database formats - for example Oracle or GeoMedia - usually store geometry within a field in the database; for example GEOM. When FME reads the data it converts the GEOM field into FMEstyle geometry and drops the field from the data.
+
+However, if you read a geometry table with a non-geometry Reader, the translation could end up with the geometry stored as an FME attribute. A similar thing could happen when a workspace reads only one geometry column of a multiple geometry table.
+
+Geometry will create very large and complex attributes, which take up a great deal of resources. If you don’t need them, then it’s worth removing them.
+
+Basically, you should only carry through the translation any geometry and attributes you need for the output of your workspace. If the data is not required, then it can and should be removed as early in the workspace as possible.
+
+**Geometry and Transformation**
+
+Like attributes, geometry can be removed from a feature using the GeometryRemover transformer.
+
+Many FME users create translations that handle tabular – non-spatial – data. If you are reading a spatial dataset, then writing it to a tabular format, be sure to remove the geometry early in the workspace, just as you would an attribute.
+
+Additionally, you can reduce the size of individual features by removing vertices. The Generalizer transformer will help you to do so and has very many parameters to control the results.
