@@ -143,3 +143,12 @@ the CSV format!”
 </td>
 </tr>
 </table>
+
+There are two other Reader scenarios to avoid, as they can cause performance degradation.
+
+Firstly – specifically for formats with a table list – there is the case where you have more feature types than are necessary.
+
+Here the user has added a number of tables to their PostGIS database Reader:
+
+ 
+However, if you look at the workspace, many of these tables are not even connected to anything. The unconnected tables are still being read but the data is being ignored:
