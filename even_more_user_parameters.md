@@ -50,9 +50,8 @@ the above example – when the input is a required field.”
 **Embedded Parameters**
 
 An embedded parameter is when the value of one user parameter is used inside another.
-For example, here the user is allowed to enter a filename, but not the path the data is written
-to.
-A published user parameter is created to accept a filename from the user. A private user
-parameter constructs the full name from that input [as
-C:\FMEData2015\Output\$(UserFileName)].
+For example, here the user is allowed to enter a filename, but not the path the data is written to.
+
+A published user parameter is created to accept a filename from the user. A private user parameter constructs the full name from that input [as C:\FMEData2015\Output\$(UserFileName)].
+
 Finally, the private parameter is linked to the FME parameter for the destination dataset:
