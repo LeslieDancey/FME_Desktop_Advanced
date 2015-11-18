@@ -299,3 +299,28 @@ Run the workspace. The data will be read, but not processed or written.
 Check the time taken to do this. On my machine the result is this:
 
 *INFORM|FME Session Duration: 45.3 seconds. (CPU: 37.9s user, 0.4s system)*
+
+*INFORM|END - ProcessID: 97468, peak process memory usage: 85344 kB, current process memory usage: 83164 kB*
+
+So it’s actually a little quicker than the full translation suggests – not surprisingly FME is
+starting to process that data as it is being read. Still, we might improve on that somehow.
+
+**3) **Check Data Filtering
+
+The workspace is filtering data with a Tester. Is there any way that we could improve on our
+reading time by carrying out this test directly on the source data?
+
+Firstly, we want all the data spatially, so there’s no use in setting any Search Envelope
+parameters. In any case the CSV data is not – initially – spatial and has no such parameters.
+
+Secondly, could we apply that test to the data as it is being read? Well, neither Reader has a
+WHERE clause field, as neither is a database. The CSV Reader does have filter parameters, but
+they are regular expressions for text fields, and it would be difficult to filter on a number:
+
+**4)** Check Other Reader Issues - 1
+
+Are there any other issues with the Readers that might be slowing performance? Yes, there
+are!
+
+Firstly, notice that the KML Reader that is reading the neighborhood data also includes a whole
+number of feature types that we aren’t interested in.
