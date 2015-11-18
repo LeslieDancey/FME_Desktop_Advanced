@@ -9,5 +9,5 @@
    * [About the Manual](about_the_manual.md)
    * [Course Resources](course_resources.md)
    * [Introduction](introduction.md)
-* Advanced Parameter Use
+* [Advanced Parameter Use](advanced_parameter_use.md)
 
