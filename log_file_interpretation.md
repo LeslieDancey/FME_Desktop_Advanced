@@ -246,3 +246,31 @@ It's important to note that, because of different machine specifications, you ma
 Anyway, run the workspace. Obviously you can expect that it will take approximately 4 minutes to complete on a 32-bit machine. Do your results match what occurred in the above log file?
 
 If you have access to 64-bit FME, then why not try it to see if the performance improves. Notice that there’s no problem in opening the same workspace in 32-bit and 64-bit FME. Workbench is the same; it’s just how the workspace is run that is different.
+
+**NB:** **On my machine the use of 64-bit FME improves the performance considerably:*
+
+*INFORM|FME Session Duration: 2 minutes 59.3 seconds. (CPU: 161.8s user, 12.1s system)*
+
+*INFORM|END - ProcessID: 95448, peak process memory usage: 6202968 kB, current process memory usage: 5287992 kB*
+
+*Notice how the time used is about 1 minute less, and the amount of time used by the system (e.g. for reading and writing files) is reduced by about 90%*
+
+*The amount of memory usage has increased, indicating that the 32-bit FME was having problems with an excess of data and had to resort to disk caching.**
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“In case you’re interested, the cell phone power values appear to be in
+dBm units – which is Decibel-Milliwatts. So now you know!”
+</span>
+</td>
+</tr>
+</table>
