@@ -7,7 +7,8 @@ During training we suggest you pay close attention to your instructor; they may 
 You’ll find most of the instructor’s PowerPoint slides reproduced in your manuals, as above. This will help you relate the manual content to the topic the instructor is discussing.
 
 
-Icons
+
+**Icons**
 
 In the training manual you may see the following icons:
 
