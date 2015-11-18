@@ -54,3 +54,22 @@ Multiple values are returned space-delimited.”
 </td>
 </tr>
 </table>
+
+**Float and Integer Parameters**
+
+Float and Integer parameters – as their names suggest – are simply ways for a user to enter a
+floating point number or an integer number.
+
+These parameters are good examples of how FME will parse the input to ensure it matches the
+parameter type:
+
+This image shows how non-numeric characters in either type, or a decimal point in the integer
+type, will be detected and rejected with a red-colored field.
+
+**Text Parameters**
+
+Text parameters are a simple way to accept plain text values into a workspace.
+
+Text (Multiline) parameters allow the user to enter text broken over a number of lines.
+
+There is no limitation on the characters that can be entered.
