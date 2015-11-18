@@ -17,4 +17,5 @@
 * [Performance Considerations](performance_considerations.md)
    * [Performance and FME](performance_and_fme.md)
    * [64-Bit FME](64-bit_fme.md)
+   * Log File Interpretation
 
