@@ -48,3 +48,4 @@ Here are some helpful hints and tips on using 64-bit FME:
 Job Routing techniques will allow you to designate which jobs should be processed by which engine.
 - If you are running 32-bit FME on a 64-bit system then you would need the 32-bit client to connect to, for example, an Oracle database. There are similar requirements for reading Microsoft Office files. FME, with either client, can read and write to a 32-bit or 64-bit Oracle database, provided your license level is sufficient.
 - There are many helpful articles on 64-bit on the FME knowledgebase, FMEpedia.
+- 
