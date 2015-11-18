@@ -51,3 +51,40 @@ However, the time taken to carry out a translation is only one aspect of perform
 *INFORM| END - ProcessID: 28336, peak process memory usage: 178388 kb*
 
 For performance tuning, the idea is to reduce this number, as the more memory used the more chance there is of laborious disk caching taking place.
+
+**Improving Transformation Performance**
+
+In most cases, slow, memory-consuming translations are caused by group-based transformers.
+
+Remember that in feature-based transformation a transformer performs an operation on a feature-by-feature basis where a single feature at a time is processed. But in a group-based transformation a transformer performs an operation on a group or collection of features.
+
+It is this grouping of data that causes performance degradation. Group-based transformers must store the group of features together (cached either to memory or disk) to be processed, whereas feature-based transformers do not need to do so.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says….</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“You’ll get better performance when you put the least amount of data
+into a group-based transformer as possible.
+For example, put feature-based filter transformers BEFORE the group-based process,
+not after it (see following exercise)”
+</span>
+</td>
+</tr>
+</table>
+
+**Turning Group-based Transformers into Feature-based Transformers**
+
+Obviously, when a group-based transformer is needed, then it must be used. However, most group-based transformers have a parameter that, in effect, turns them into feature-based.
+
+The usual parameter is called "Input is Ordered by Group" and appears near the Group By parameter in most transformer dialogs.
+
+The condition for applying this is that the groups of features are pre-sorted into their groups.
+When this is the case, and I can set this parameter to Yes, then FME is able to process the data more efficiently.
