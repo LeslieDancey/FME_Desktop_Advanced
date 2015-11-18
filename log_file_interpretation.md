@@ -121,3 +121,31 @@ For example, take this section of  log timings:
 The difference between the start absolute time (14:43) and the finish absolute time (14:49) is over six minutes. However, FME is only reporting 25.8 seconds of processing time!
 
 The “lost” time is down to external processes that FME was waiting on.
+
+For example, when a query is issued to a database, the time taken to respond with the results is not included in the FME processing time. The more a query is not well-formed or a database is not well-structured, the longer this time difference will be.
+
+Similarly, the amount of time taken to read/write data from/to a disk is not included in this number.
+
+Look at the section on Database Efficiency for more information on performance tuning FME for databases.
+
+**Default Paths**
+
+One of the most important paths to examine is the one for temporary folder. When memory resources become low and FME starts to cache to disk, the temporary folder is where it will write data to:
+
+Firstly it’s important to ensure this folder does have enough temporary disk space and secondly it’s useful if the disk being written to is both fast and unused by any other process. It will not, for example, help performance to share the temporary disk with the operating system.
+
+**Resource Manager**
+
+One key message to look out for is this: ResourceManager: Optimizing Memory Usage. Please wait...
+
+This means that the memory management limits mentioned in the configuration part of the log have been reached, and that FME is having to work around the issue.
+
+If you see this message frequently, then it’s time to either redesign your translation or switch to a 64-bit setup.
+
+**Written Features**
+
+Maybe not quite performance-related, but one of the most misinterpreted statistics in an FME log is the number of features written.
+
+What this really means is “the number of features sent to the Writer”. It doesn’t always mean the same number of features actually gets written to the output dataset, or that the output dataset will contain only that number of features.
+
+For example, here 80 features are reported as sent to an (Esri Shape) Writer:
