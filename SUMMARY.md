@@ -5,4 +5,5 @@
    * [Course Details](course_details.md)
    * [Course Structure](course_structure.md)
    * [Training Philosophy](training_philosophy.md)
+   * Prerequisites
 
