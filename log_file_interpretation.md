@@ -177,3 +177,42 @@ There are also three transformers – two to attach the neighborhood and then fi
 The third transformer is a Logger that is recording features to the log.
 
 Don’t run the workspace yet – we don’t know how long it might take!!!
+
+**2)** Open Log File
+
+Now start up a text editor and open up the log file for inspection.
+
+You can find it at: C:\FMEData\Workspaces\DesktopAdvanced\Exercise2a-OriginalLog.log
+
+Let’s look for some of the indicators as to how this workspace is performing.
+
+Firstly the configuration section tells us that the user is working with FME2015 (beta) with a fixed license, Smallworld Edition.
+
+**INFORM|FME 2015 Beta (20141202 - Build 15223 - WIN32)*
+
+*INFORM|FME_HOME is 'C:\apps\FME2015\'*
+
+*INFORM|FME Desktop Smallworld Edition (floating)*
+
+*INFORM|Permanent License.**
+
+As a beta build there may be an advantage to upgrading to a newer FME version (although not
+as much as there might be if the user was using FME2011, perhaps).
+
+Now look for the more important performance indicators:
+
+*INFORM|System Status: 105.46 GB of disk space available in the FME temporary folder (C:\Users\imark\AppData\Local\Temp)*
+
+*INFORM|System Status: 4.00 GB of virtual memory available*
+
+*INFORM|Operating System: Microsoft Windows 7 64-bit Service Pack 1 (Build 7601)*
+
+*INFORM|FME Platform: WIN32 And the resource manager parameters:*
+
+*INFORM|FME Configuration: Process limit is 4.00 GB (out of 24.00 GB physical memory and 4.00 GB address space)*
+
+*INFORM|FME Configuration: Start freeing memory when process usage exceeds 2.83 GB of memory or 3.41 GB of address space*
+
+*INFORM|FME Configuration: Stop freeing memory when process usage is below 2.12 GB of memory and 2.56 GB of address space*
+
+*INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory*
