@@ -26,4 +26,31 @@ EmployeeID is provided by the end-user, but they can’t always remember their o
 
 The parameter is configured like so:
 
-Notice that there are two fields in this configuration dialog; the display name and the actual value
+Notice that there are two fields in this configuration dialog; the display name and the actual value.
+
+When a user selects their name from the list, then the value provided to the workspace is actually their employee ID. That way employee ID can be used as a match in the Joiner, without the end-user having to remember it!
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Choice (Multiple) and
+Choice with Alias (Multiple) are very
+similar parameters (to Choice and
+Choice-with-Alias), but let the enduser
+select multiple values. For
+example, if a manager wanted to run
+reports on several employees, this is
+what they could use.
+Multiple values are returned space-delimited.”
+</span>
+</td>
+</tr>
+</table>
