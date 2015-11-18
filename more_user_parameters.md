@@ -183,3 +183,13 @@ parameter, or just unlink it from the FME parameter.”
 </td>
 </tr>
 </table>
+
+Colleagues have purchased FME to do some data translations. However, not having taken the training course they are not confident users and would like to have their workspace made as simple as possible for them to run.
+
+So, your task is to simplify their workspace using User Parameters, so the workspace can be run with minimal user intervention.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise1b-Begin.fmw.
+
+This is the workspace created by your colleagues:
