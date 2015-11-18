@@ -8,5 +8,5 @@
    * [Prerequisites](prerequisites.md)
    * [About the Manual](about_the_manual.md)
    * [Course Resources](course_resources.md)
-   * Introduction
+   * [Introduction](introduction.md)
 
