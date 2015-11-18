@@ -139,3 +139,15 @@ Repeat the previous step twice more, this time creating parameters called UserEm
 The prompts should be “Enter your email address” and "Enter your company name."
 
 When done the Navigator window looks like this:
+
+**5) **Use User Parameter – Method 1
+
+There are a number of ways to extract the value from a user parameter into a workspace. We’ll use a different way for each parameter, just to illustrate the different methods.
+
+So, firstly open the parameters dialog for the AttributeCreator. This transformer is what currently creates the attributes for the output.
+
+Click in the Value field for the AuthorName attribute. Click on the drop-down arrow, then select User Parameter > UserNameParam.
+
+Once done the value field will change to a special icon and show the parameter that was chosen:
+
+While in this dialog, click on the AuthorEmail and AuthorCompany fields, and press the minus button to delete them. That's just so we can demonstrate dealing with these a different way:
