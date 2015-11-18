@@ -88,3 +88,26 @@ The usual parameter is called "Input is Ordered by Group" and appears near the G
 
 The condition for applying this is that the groups of features are pre-sorted into their groups.
 When this is the case, and I can set this parameter to Yes, then FME is able to process the data more efficiently.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says...</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+Let's think back to the airport departure gate boarding passengers. Most
+airlines first call passengers with a physical disability, then passengers
+with children, business-class passengers , and finally economy
+passengers (starting with passengers at the front).
+That's because it's easier to board passengers when they are sorted into similar groups,
+and the same applies to FME. When passengers (or spatial features) arrive in a random
+order it's not as simple to handle them.
+</span>
+</td>
+</tr>
+</table>
