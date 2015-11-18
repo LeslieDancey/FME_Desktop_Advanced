@@ -193,3 +193,25 @@ Now replace the Recorder with a Player transformer – to re-read the preserved 
 Now the data will be played back into the workspace, and is followed up by being written to the output.
 
 In this example the "Emptying Factory Pipeline" message appeared after 7.2 seconds and the translation took 8.9 seconds in total, indicating 1.7 seconds was spent writing data.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Be aware that fanouts will complicate your view of the log, not to
+mention slow the process somewhat.
+For example, if I do a Dataset Fanout on the above workspace, FME creates a separate
+Writer for each fanned-out dataset.
+Firstly this causes a performance hit – because FME has to cache all the output data and
+create multiple Writers – and additionally I get a section of log for each output dataset.”
+</span>
+</td>
+</tr>
+</table>
