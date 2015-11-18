@@ -114,3 +114,15 @@ The author can do this by either right-clicking the FME parameter and choosing L
 Now the FME parameter is linked to the User Parameter, so whatever the user chooses will be applied directly to Write Spatial Index
 
 If the author changes their mind, there is always an option to unlink the user parameter and return to direct author control:
+
+**Creating Direct Links**
+
+In the previous example, a user parameter was created separately and then linked to the FME parameter. However, it is possible to both create and link a parameter simultaneously.
+
+In the Navigator window, simply right-click an existing FME parameter and choose the option to “Create User Parameter”.
+
+This opens a dialog and automatically fills in a definition to create a new user parameter.
+
+Click OK and the user parameter is created and automatically linked to the FME parameter.
+
+The same can be done from within a transformer dialog, like so:
