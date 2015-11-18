@@ -169,3 +169,11 @@ However, the workspace runs perhaps a little slower than it could, which is bad 
 **1)** Start Workbench
 
 Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2a-Begin.fmw.
+
+Notice there are two key feature types: one for the cell signals in CSV format, the other for the Neighborhood boundaries in KML format. They each have their own set of attributes:
+
+There are also three transformers – two to attach the neighborhood and then filter the data – then two Writers, to write the data out to a final dataset. One has a few attributes, the other none.
+
+The third transformer is a Logger that is recording features to the log.
+
+Don’t run the workspace yet – we don’t know how long it might take!!!
