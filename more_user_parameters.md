@@ -280,3 +280,9 @@ Save the workspace. Then start up the FME Quick Translator application, located 
 In there, select Run from the Getting Started menu:
 
 Browse to the newly saved workspace, select it, and click Open. You will be presented with a list of published parameters, just as the end-user would see it:
+
+Pick Unicode 8-bit (utf-8) as the encoding. Select a coordinate system, noting how the user is restricted to those chosen by us. Select one or two of the tables to write and click OK to run the workspace.
+
+The translation will be carried out. Inspect the data to ensure the results are correct. The CommunityFacilities – for example – should be made up of both libraries and community centres.
+
+***NB:** *If you run the workspace multiple times you will get multiple sets of results in the same folder! So Best Practice suggests you empty the output folder each time you run the workspace, but you can also find the latest results by checking the file dates/times.**
