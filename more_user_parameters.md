@@ -298,7 +298,7 @@ The translation will be carried out. Inspect the data to ensure the results are 
 <tr>
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
-Speaking of Best Practice, don't forget to tidy up the workspace
+Speaking of Best Practice, don't forget to tidy up the workspace and give it a better style and structure.
 </span>
 </td>
 </tr>
