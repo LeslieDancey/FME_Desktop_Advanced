@@ -193,3 +193,17 @@ So, your task is to simplify their workspace using User Parameters, so the works
 Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise1b-Begin.fmw.
 
 This is the workspace created by your colleagues:
+
+Notice that source tables are being grouped together and written to a Shape feature type. Their current method is to choose which tables to process by disabling them in the workspace. Similarly, they are setting the destination coordinate system and data encoding using Navigator parameters.
+
+Also notice that the only annotations in the workspace are there to help the end user make edits to the workspace. Really there should be no need for that; published parameters should prompt the user instead, and that is what we will implement here.
+
+**2)** Clean Up Auto-Created User Parameters
+
+Open up the User Parameters section of the Navigator window. Notice how there are already user parameters for the source and destination datasets.
+
+However, you know that the source data will never change, so that parameter is of no use. So, delete the user parameter labelled “SourceDataset_FILEGDB.”
+
+Keep the parameter for DestDataset_SHAPE, as that can still be used to set the output location.
+
+**3)** Create Encoding Paramete
