@@ -71,4 +71,25 @@ we’ll see. It’s better to use the term User Parameters.”
 </tr>
 </table>
 
+A user parameter is created by a workspace author by – in most cases – right-clicking on the User Parameters label in the Navigator window and choosing Add Parameter:
 
+
+
+A dialog appears in which the author can define the parameter.
+In this case they are creating a parameter in which the user can enter their name:
+
+Now when the end-user runs the workspace, they will be prompted to enter their name.
+
+**Using a User Parameter**
+
+Getting input from a user is pointless if it is not used, so it’s also necessary to actually do something with that input.
+
+User parameters can be exploited in a number of places. Firstly they can be tied to an FME parameter (more information on that in the next section), but they can also be used to provide values to an attribute in a workspace.
+
+For example, in this workspace a source dataset undergoes transformation and the output is flagged up with the name of the person who carried out the transformation (i.e. who ran the workspace);
+
+The workspace author creates a user parameter for the user to enter their name (as in the previous screenshots) and then adds an AttributeCreator transformer to create the required output attribute.
+
+In the FME parameters for the AttributeCreator, the author sets the value of the attribute to that provided by the user parameter:
+
+Now when the workspace is run, the end user can enter their name into a text field, and have it entered into an attribute in the output.
