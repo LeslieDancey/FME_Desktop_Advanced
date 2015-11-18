@@ -151,3 +151,24 @@ Click in the Value field for the AuthorName attribute. Click on the drop-down ar
 Once done the value field will change to a special icon and show the parameter that was chosen:
 
 While in this dialog, click on the AuthorEmail and AuthorCompany fields, and press the minus button to delete them. That's just so we can demonstrate dealing with these a different way:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Did you notice the UpdateDate attribute is set to a value of “TODAY”?
+When processed by the DateFormatter it will be turned into whatever the
+current date is.
+Similar relative date values can also be used, such as “Yesterday,” “Tomorrow,” or “Last
+Thursday”
+</span>
+</td>
+</tr>
+</table>
