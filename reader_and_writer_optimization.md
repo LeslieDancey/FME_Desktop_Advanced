@@ -67,3 +67,17 @@ processes features one at a time.”
 </td>
 </tr>
 </table>
+
+**Improving Reader Performance**
+
+One obvious way to improve reading performance is to upgrade the underlying system to minimize the amount of time FME spends waiting for a response.
+
+For example, here approximately 12% of the translation (0.4 seconds) was spent waiting for the system to return the requested data:
+
+FME Session Duration: 3.1 seconds. (CPU: 2.6s user, 0.4s system)
+
+Here the delay is not particularly problematic; but with larger amounts of data, and perhaps reading from a remote database server, the time taken could be more important.
+
+The second obvious way to improve reading performance is to minimize the amount of data that is being read. For example, this workspace reads nearly 14,000 features, but immediately discards all except 132 of them:
+
+In this scenario, and where possible, it would be much more efficient to simply just read those three features.
