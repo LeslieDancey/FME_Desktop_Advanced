@@ -140,3 +140,23 @@ Additionally, the parameter typing is taken care of automatically. If the FME pa
 For example, the Snapper parameter in the previous screenshot, allows a floating point number, therefore it will create a user parameter of type float. No choice is provided; it will be a float automatically:
 
 However, this also becomes a limitation too. Say, for example, the author wanted to provide a list of permitted tolerances; 0.5, 1.0, 5.0, etc. In that scenario they would have to create the user parameter separately – as type Choice – and then link it to the FME parameter manually.
+
+Of course, the author would need to take care that the values provided by the user parameter were of a type that matched those expected by the FME parameter.
+
+The other issue is one of persistence of the user parameter.
+
+If a user parameter is created directly from an FME parameter on a transformer, then it is forever tied to that transformer. If the transformer is deleted, then the FME parameter will be deleted too.
+
+However, if a user parameter is created separately, and linked manually to a transformer’s FME parameter, then it will remain in the workspace, even if the transformer is deleted.
+
+This, of course, could be seen as a disadvantage, depending on whether you would like this behavior or not.
+
+Here a user parameter was created automatically from a Snapper transformer parameter. If the Snapper is deleted, then the user parameter is deleted too:
+
+**Pre-linked Parameters**
+
+In some scenarios, user parameters are automatically created and linked to an FME parameter, without any sort of manual action by the workspace author.
+
+For example, any time a Reader or Writer is added to a workspace, their source/destination dataset parameters are automatically turned into user parameters.
+
+Here, a Source MapInfo TAB parameter is automatically linked to a user parameter called SourceDataset_MITAB:
