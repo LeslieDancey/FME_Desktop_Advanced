@@ -15,5 +15,5 @@
    * [Even More User Parameters](even_more_user_parameters.md)
    * [Module Review](module_review.md)
 * [Performance Considerations](performance_considerations.md)
-   * Performance and FME
+   * [Performance and FME](performance_and_fme.md)
 
