@@ -37,3 +37,14 @@ Additionally, you need to take care to use the correct clients; for example when
 </td>
 </tr>
 </table>
+
+**FME and 64-Bit**
+
+Here are some helpful hints and tips on using 64-bit FME:
+
+- If you are using 32-bit Windows then you’ll need to use 32-bit FME. If you are using 64-bit Windows then you can use either 32-bit or 64-bit FME. Both will work, but only 64-bit FME will take advantage of any extra memory available to it.
+- It is possible to install both 32-bit and 64-bit FME on the same 64-bit computer. That way you can use the 32-bit version to access all of the formats you might require, and use the 64-bit version for more intensive processing.
+- It is also possible to install 32-bit and 64-bit FME engines on the same FME Server core.
+Job Routing techniques will allow you to designate which jobs should be processed by which engine.
+- If you are running 32-bit FME on a 64-bit system then you would need the 32-bit client to connect to, for example, an Oracle database. There are similar requirements for reading Microsoft Office files. FME, with either client, can read and write to a 32-bit or 64-bit Oracle database, provided your license level is sufficient.
+- There are many helpful articles on 64-bit on the FME knowledgebase, FMEpedia.
