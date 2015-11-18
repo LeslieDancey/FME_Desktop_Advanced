@@ -83,3 +83,41 @@ This makes for a log file that is harder to understand, because you don’t see 
 The final part of a log file includes a report of the number of features read and written but, more important from a performance point of view, it includes a brief report of the time taken by the translation and the amount of memory used:
 
 Peak memory usage is an important statistic, as it is this number we’ll want to reduce in order to improve FME performance.
+
+**Configuring the Log Window**
+
+There are a number of options you can use to adjust the log file and what is displayed.
+
+To do this, first Choose Tools > FME Options from the menubar.
+
+Then choose the Translation set of options.
+
+To assess times logged in the log window, you first need to turn them on! In the options menu, ensure that ‘Log timestamp information’ is turned on.
+
+**NB:** *The log file always contains timestamps, regardless of this setting.
+Now when a workspace is run, each message in the log gets stamped with the time and date it occurred.*
+
+The Log debugging information option turns on a series of extra log messages that are usually hidden from the user. Not only will a lot of the underlying mapping file be exposed, there will also be a number of ERROR messages labelled BADNEWS.
+
+These messages can help during debugging, but it’s very unlikely you’ll want to keep them turned on in general FME use. For instance, many of the BADNEWS messages are simple “errors” like an end-of-file message that FME has trapped and kept to itself. Unless you are looking for more information on an existing problem, these messages are likely to cause more confusion than clarity. Turn them off and de-clutter your log file.
+
+A final set of options allow the user to turn on or off each type of message in the log window. It can be particularly useful to turn off INFORM and STAT messages in order to make it easier to spot ERRORs and WARNs; however it does appear strange at first to run a translation and not see the usual stream of information!
+
+**Logs and Performance Indicators**
+
+Let’s look at a few of the specific performance indicators we can identify in a log file and how we can improve upon them.
+
+**Log Timings**
+
+One interesting thing is that the cumulative time reported by a translation is the amount of time the FME process was actually translating or transforming data. It doesn’t include the amount of time spent waiting for other processes to do their work.
+
+For example, take this section of  log timings:
+
+2014-07-10 14:43:06| 8.5| 0.0|
+2014-07-10 14:43:13| 8.8| 0.3|
+2014-07-10 14:46:29| 18.0| 9.1|
+2014-07-10 14:49:29| 25.8| 7.9|
+
+The difference between the start absolute time (14:43) and the finish absolute time (14:49) is over six minutes. However, FME is only reporting 25.8 seconds of processing time!
+
+The “lost” time is down to external processes that FME was waiting on.
