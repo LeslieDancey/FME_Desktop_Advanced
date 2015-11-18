@@ -271,3 +271,33 @@ The Readers contain quite a lot of attributes, on both datasets. The Writers con
 Put an AttributeKeeper transformer after the Neighborhood feature type, but before the Clipper.
 
 Use it to keep only the NeighborhoodName attribute.
+
+Now do the same to the CSV (signal) data, keeping only the attributes StationID, Power, and Quality.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Do we really need to remove attributes from only six neighborhood
+features?
+Yes! Because we’re copying them onto (depending on the source dataset used) 1.7
+million CSV features.”
+</span>
+</td>
+</tr>
+</table>
+
+**4)** Check Group-Based Processes
+
+The Clipper is a group-based transformer; it has to be since it is processing both the neighborhoods and the cell signal data.
+
+There’s no real indication this is the wrong transformer to use (although there are others) but we should check if there’s a way to turn the transformer into one that operates on a feature basis.
+
+Open the Clipper parameters. Notice that there is a parameter for Clipper Type. Change this to Clippers First:
