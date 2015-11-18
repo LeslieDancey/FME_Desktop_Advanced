@@ -183,3 +183,13 @@ Reading source feature # 5000
 Reading source feature # 7500
 Reading source feature # 10000
 Reading source feature # 12500
+
+Plainly it’s harder to isolate the Writers to check how fast they are operating; you can’t just disable everything else in the workspace without preventing anything from happening.
+
+However, it can be done with a two-step process. Firstly you would add a Recorder transformer – after all other transformation has taken place – to preserve the data in FFS format at the moment it is about to be written:
+
+Now replace the Recorder with a Player transformer – to re-read the preserved FFS data – and disable everything else up to that point.
+
+Now the data will be played back into the workspace, and is followed up by being written to the output.
+
+In this example the "Emptying Factory Pipeline" message appeared after 7.2 seconds and the translation took 8.9 seconds in total, indicating 1.7 seconds was spent writing data.
