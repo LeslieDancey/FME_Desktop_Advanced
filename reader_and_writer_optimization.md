@@ -229,3 +229,13 @@ However, the main tip for improving Writer performance is for the scenario where
 Each Writer is listed in the Navigator window in Workbench. The key is to ensure that the Writer that is to receive the largest amount of data is at the top of the list.
 
 Writers can be re-ordered by moving them up and down in the list in the Navigator window, using the context (right-click) menu, like so:
+
+Alternatively, they can be simply dragged up and down with the mouse cursor.
+
+The reasoning behind this is that the first Writer in a workspace starts to write data as soon as it is received. Other writers cache theirs until they are ready to start writing.
+
+Therefore, if the largest amount of data is written immediately, lesser amounts of data have to be written to, and stored in, a cache.
+
+This can improve performance tremendously, particularly when the translation is especially unbalanced; for example one million features go to one Writer, and only ten features go to another.
+
+For more information see the FME Evangelist article at: http://fme.ly/FirstWriter.
