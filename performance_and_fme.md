@@ -24,3 +24,22 @@ Performance can be impaired when an FME translation is not using all of the avai
 - Excessive Data Amounts
 
 If performance is described as the amount of “useful” work, then nothing is going to impair performance more than unnecessary processing. The more excess information that gets read, and the further it is carried into the workspace, the less useful the work is and the more performance will suffer.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“I recently read an article where the author suggested if RAM was a jet
+plane flying at Mach 1.5, then the equivalent disk access would be a
+banana slug, travelling at 0.007mph; the difference is that much!”
+</span>
+</td>
+</tr>
+</table>
