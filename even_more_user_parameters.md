@@ -107,3 +107,14 @@ However! Perhaps the workspace author does not want the user to be able to enter
 In this scenario we need to create a user parameter with a special type called Attribute Name:
 
 Now when the workspace is run, the user is permitted to select an attribute, and ONLY an attribute:
+
+
+However, there is a catch to this operation. The user parameter – as the type suggests – is simply returning an attribute name.
+
+If the workspace is run then the LabelPointReplacer is supplied with the attribute name, and uses it as the label, like so:
+
+What the author must do is open the dialog and change the label (either directly in the FME parameter, or via the Text Editor window) to be: @Value($(UserAttrSelection))
+
+The @Value() function replaces the name of the attribute with its actual value:
+
+Now when the workspace is run the output will be correct:
