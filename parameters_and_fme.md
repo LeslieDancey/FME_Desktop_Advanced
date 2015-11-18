@@ -4,16 +4,14 @@ Parameters control how FME operates, and can be set by either the workspace auth
 
 **What are Parameters?**
 
-Parameters, in basic terms, are controls that define how FME operates; for example, how a
-Reader reads data, how a transformer transforms it, and how a Writer writes it.
+Parameters, in basic terms, are controls that define how FME operates; for example, how a Reader reads data, how a transformer transforms it, and how a Writer writes it.
 Almost every component in FME has parameters; of one type or another.
 
 **Types of Parameter**
 
 When looking at the types of parameter, it’s helpful to consider the types of people who use FME and their role in the process.
 
-Workspace Authors are the people who design and create a workspace. They use FME
-Workbench and set parameters to control how the workspace runs.
+Workspace Authors are the people who design and create a workspace. They use FME Workbench and set parameters to control how the workspace runs.
 
 Workspace Users are the people who make use of a workspace, without necessarily having created it first. The user might have very little knowledge of FME, and may never have used
 
@@ -31,5 +29,4 @@ Parameters:
 - Character Encoding: SYSTEM
 - Write UTF Byte Order Mark: Yes
 
-Here, for example, are the FME Parameters for a text file Writer. They include options to overwrite or append to an existing text file, and the type of character encoding that should be
-used.
+Here, for example, are the FME Parameters for a text file Writer. They include options to overwrite or append to an existing text file, and the type of character encoding that should be used.
