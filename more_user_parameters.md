@@ -227,3 +227,19 @@ It would be preferable if the parameter only allowed the end-user to select a co
 So, locate the User Parameters in the Navigator Window, right-click and choose Add Parameter.
 
 Set the Type to be Choice with Alias; set the Name to be CoordSysParam, and set the prompt to be Select Output Coordinate System:
+
+Now click the […] button to the right of the Configuration setting. This opens a dialog in which to configure the parameter.
+
+Normally we would enter values manually. However, for coordinate systems (and Reader/Writer formats) we have the option to have FME define them for us.
+
+Click on the button labelled Import and choose Coordinate System(s):
+
+This opens a list of coordinate systems that we wish to import as values in our user parameter.
+
+Locate and put a checkmark in the box for the following coordinate systems:
+- UTM83-10
+- BCALB-83
+- LL83
+- CANBC-LCC
+
+Then click OK to close this dialog. You will be returned to the configuration dialog and find that names and values have been automatically entered for these coordinate systems.
