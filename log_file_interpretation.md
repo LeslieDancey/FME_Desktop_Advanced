@@ -149,3 +149,13 @@ Maybe not quite performance-related, but one of the most misinterpreted statisti
 What this really means is “the number of features sent to the Writer”. It doesn’t always mean the same number of features actually gets written to the output dataset, or that the output dataset will contain only that number of features.
 
 For example, here 80 features are reported as sent to an (Esri Shape) Writer:
+
+However, a warning earlier in the log tells us:
+
+So in reality, the Writer rejected all of these features, in this case because their geometry was invalid. The Writer was set up to write line features, yet these are polygons.
+
+Similarly, a format may have geometry limitations that cause the output dataset to be slightly different to the numbers logged.
+
+For example, MicroStation DGN format has a limit on vertex numbers for each element (feature). If the MicroStation Writer receives a feature with too many vertices it will split that feature into multiple MicroStation features (elements in MicroStation speak) as many as necessary to avoid going over the vertex limit.
+
+Thus, the number of features that actually appear in the dataset can be different to the number of features logged as being sent to the Writer.
