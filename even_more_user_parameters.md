@@ -118,3 +118,22 @@ What the author must do is open the dialog and change the label (either directly
 The @Value() function replaces the name of the attribute with its actual value:
 
 Now when the workspace is run the output will be correct:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+"A set of system parameters exist for use specifically by FME Server. These
+are accessed by right-clicking on User Parameters in the Navigator window
+and choosing Expose FME Server Parameters."
+</span>
+</td>
+</tr>
+</table>
