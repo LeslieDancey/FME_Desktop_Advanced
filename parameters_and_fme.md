@@ -209,3 +209,13 @@ To achieve this, locate the metadata feature type on the canvas and right-click 
 Then select the Edit Value option.
 
 In the dialog that opens, you can enter a fixed (constant) value, but in our case we’ll click on the drop-down arrow, select User Parameters, and then select UserCompanyParam:
+
+Click OK to close the dialog and the feature type should look like this. Notice how the attribute that has had its value set is now highlighted with a specific icon:
+
+**8)** Save and Run Workspace
+
+Save the workspace and then – as if you were the end-user – run it using Run > Prompt and Run.
+
+When prompted enter your details into the fields that have been newly created:
+
+Locate and open the XML file to ensure the contents have been inserted as expected:
