@@ -126,3 +126,17 @@ This opens a dialog and automatically fills in a definition to create a new user
 Click OK and the user parameter is created and automatically linked to the FME parameter.
 
 The same can be done from within a transformer dialog, like so:
+
+Here the workspace author is creating a user parameter linked to the Snapping Tolerance FME parameter in a Snapper transformer.
+
+**Advantages and Disadvantages of Direct Links**
+
+Creating a linked FME parameter directly like this has some obvious advantages, and perhaps some not-so-obvious disadvantages.
+
+The most obvious advantage is that this is a single step process. The creation and linking of the user parameter is done in a single action.
+
+Additionally, the parameter typing is taken care of automatically. If the FME parameter requires an integer value then a user parameter created directly from it will be automatically defined with an integer parameter. There’s no possibility of getting the wrong parameter type.
+
+For example, the Snapper parameter in the previous screenshot, allows a floating point number, therefore it will create a user parameter of type float. No choice is provided; it will be a float automatically:
+
+However, this also becomes a limitation too. Say, for example, the author wanted to provide a list of permitted tolerances; 0.5, 1.0, 5.0, etc. In that scenario they would have to create the user parameter separately – as type Choice – and then link it to the FME parameter manually.
