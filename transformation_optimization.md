@@ -385,3 +385,13 @@ Reader Dataset C:\FMEData2015\Data\CellSignals\CellSignals2015.csv
 What are going to be key here are the Reader parameters, so click the Parameters button.
 
 Firstly make sure the Separator Character is set to a comma (not “space”). Also check the option for "File Has Field Names."
+
+Then in the Point Cloud Component Map, set the following:
+
+You can type a component name, which is what you will have to do for all of them except the X and Y fields.
+
+This will cause each column in the CSV data to be stored as a point cloud component.
+
+It’s important to get this exactly right, as you will have to re-add the Reader to fix any problems.
+
+Click OK to close the dialog and OK again to add the Reader.
