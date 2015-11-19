@@ -347,3 +347,41 @@ Then drag that connection onto the Tester:Failed port.
 Re-run the workspace. The result will be something like this:
 
 *FME Session Duration: 1 minutes 41.6 seconds. (CPU: 88.7s user, 12.2s system)*
+
+*END - ProcessID: 220504, peak process memory usage: 110028 kB*
+
+Hurrah! Compared to the original log we’re over 50% faster with 95% less memory use!
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Advanced Exercise</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+There is, perhaps, one other way we can upgrade this workspace’s performance. It’s
+radical and unintuitive, but it might just work!
+</span>
+</td>
+</tr>
+</table>
+
+Do you remember the previous tip about using the PointCloud XYZ reader for CSV data? Let’s give that a try and see what we can do.
+
+Open the workspace C:\FMEData\Workspaces\DesktopAdvanced\Exercise2c-Begin-Advanced.fmw
+
+Firstly, delete the CSV Reader (and feature types), the AttributeRemover/Keeper for the CSV data, and the Tester transformer too.
+
+Now select Reader > Add New Reader and in the Add Reader dialog enter the following values:
+
+Reader Format Point Cloud XYZ
+
+Reader Dataset C:\FMEData2015\Data\CellSignals\CellSignals2015.csv
+
+What are going to be key here are the Reader parameters, so click the Parameters button.
+
+Firstly make sure the Separator Character is set to a comma (not “space”). Also check the option for "File Has Field Names."
