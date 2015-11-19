@@ -46,3 +46,20 @@ Sometimes it really is a case of working smart, not hard!”
 </td>
 </tr>
 </table>
+
+**Queries and Indexing**
+
+Of course, all queries will run faster if carried out on indexed fields – whether these are spatial or plain attribute indexes – and where the queries are well-formed.
+
+To assess how good performance is, remember the log interpretation method of checking timings:
+
+For example, take this section of log timings:
+
+2014-07-10 14:43:06| 8.5| 0.0|
+2014-07-10 14:43:13| 8.8| 0.3|
+2014-07-10 14:46:29| 18.0| 9.1|
+2014-07-10 14:49:29| 25.8| 7.9|
+
+The workspace took over six minutes to complete this part, but FME is only reporting 25.8 seconds of processing! If the query is to a database then the conclusion is that the fields are either not indexed or the query is badly formed.
+
+To confirm this you could open a SQL tool – for example the SQL Server Management Studio – and run the query there. If it takes as long to run there as in FME, then you know for sure FME is not the bottleneck in your performance.
