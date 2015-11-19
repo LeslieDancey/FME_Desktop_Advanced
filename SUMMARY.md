@@ -20,4 +20,5 @@
    * [Log File Interpretation](log_file_interpretation.md)
    * [Reader and Writer Optimization](reader_and_writer_optimization.md)
    * [Transformation Optimization](transformation_optimization.md)
+   * Database Optimization
 
