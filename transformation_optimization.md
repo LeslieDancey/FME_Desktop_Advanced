@@ -413,3 +413,16 @@ Click OK to close that dialog. Enter a new port name of Bad Signal. Click OK.
 The workspace now looks like this, with a new output port:
 
 Add two PointCloudCoercer transformers to the workspace, one attached to each output from the PointCloudFilter. One output should be directed to the Clipper:Clippee port, the other to the GoodLocations output feature type:
+
+The final step is to set the coercer parameters and expose some attributes.
+
+Open the parameters dialogs for each of the PointCloudCoercers in turn.
+
+In both cases, set Output Geometry to Individual Points.
+
+Again, in both cases, set Preserve Point Components As to Attributes.
+
+For the <Unfiltered> data, which doesn’t need attributes, leave the Point Components to Preserve section empty. For the Bad Signal data, enter the following component names to extract them as attributes:
+- StationID
+- Power
+- Quality
