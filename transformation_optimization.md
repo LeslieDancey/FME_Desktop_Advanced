@@ -426,3 +426,11 @@ For the <Unfiltered> data, which doesn’t need attributes, leave the Point Comp
 - StationID
 - Power
 - Quality
+
+Now save and run the workspace. This time the log will report the performance as:
+
+*FME Session Duration: 54.7 seconds. (CPU: 43.1s user, 10.9s system)*
+
+*END - ProcessID: 111126, peak process memory usage: 124744 kB*
+
+Well done! The memory use is up slightly, but the workspace is running faster than ever.
