@@ -395,3 +395,15 @@ This will cause each column in the CSV data to be stored as a point cloud compon
 It’s important to get this exactly right, as you will have to re-add the Reader to fix any problems.
 
 Click OK to close the dialog and OK again to add the Reader.
+
+A point cloud feature is not the same as a number of point features, so we will have to convert the data at some stage. However, let’s see if we can make use of some point cloud functionality first.
+
+Add a PointCloudFilter transformer.
+This is the point cloud equivalent to a Tester and may be quicker than testing each point individually.
+
+Open the parameters dialog for this transformer.
+
+Under Expression select the option to open an arithmetic editor. In the editor, look under the list of Point Cloud components to the left and double-click on <user component> at the bottom of that list. Enter Power as the component name.
+
+Now click on the end of the expression, enter a less than operator (<) and type the value -125.
+The dialog should look like so:
