@@ -407,3 +407,9 @@ Under Expression select the option to open an arithmetic editor. In the editor, 
 
 Now click on the end of the expression, enter a less than operator (<) and type the value -125.
 The dialog should look like so:
+
+Click OK to close that dialog. Enter a new port name of Bad Signal. Click OK.
+
+The workspace now looks like this, with a new output port:
+
+Add two PointCloudCoercer transformers to the workspace, one attached to each output from the PointCloudFilter. One output should be directed to the Clipper:Clippee port, the other to the GoodLocations output feature type:
