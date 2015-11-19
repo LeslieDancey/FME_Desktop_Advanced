@@ -333,3 +333,17 @@ Looking at the workspace, the Neighborhood attribute is only required by the bad
 But, we’re still attaching the information onto all of the features, good or bad.
 
 We could prevent that by moving the Tester transformer to before the Clipper.
+
+So, select the Tester transformer and press Ctrl+X to cut it from the workspace. Notice that the connections are healed automatically, though they aren’t quite right.
+
+Now press Ctrl+V to paste the Tester back into the workspace, but unconnected. Now drag it into the CSV data stream, but before it reaches the Clipper:
+
+Finally, let’s fix the feature mapping.
+
+Click on the connection from Clipper:Inside > GoodLocations, making sure to click closer to the Clipper than the feature type.
+
+Then drag that connection onto the Tester:Failed port.
+
+Re-run the workspace. The result will be something like this:
+
+*FME Session Duration: 1 minutes 41.6 seconds. (CPU: 88.7s user, 12.2s system)*
