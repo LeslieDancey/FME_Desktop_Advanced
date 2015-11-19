@@ -191,3 +191,17 @@ The Geodatabase Reader doesn’t have a WHERE clause, but the feature type does.
 So, open the properties dialog for the PostalAddress feature type and click the Format Parameters tab.
 
 In the WHERE Clause parameter enter: POSTALCODE = 'V6E1Y8.'
+
+**4)** Delete Tester
+
+Now we have the WHERE clause, the Tester transformer is no longer required, so delete it.
+
+**5)** Re-Run Workspace
+
+Re-run the workspace. This time only 4 features are read from the database (because 4 addresses match that postal code). The performance improves accordingly:
+
+*FME Session Duration: 0.6 seconds. (CPU: 0.4s user, 0.2s system)*
+
+*END - ProcessID: 99108, peak process memory usage: 84404 kB*
+
+Memory usage hasn’t improved, but the translation ran 80% faster.
