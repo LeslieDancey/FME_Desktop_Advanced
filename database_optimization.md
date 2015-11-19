@@ -83,3 +83,11 @@ put the one matching only 10 first.”
 </td>
 </tr>
 </table>
+
+Besides indexes, there are other inbuilt functions that can cause databases to return data slower than expected.
+
+For example, when reading from a Geodatabase geometric network, all of the connectivity information must be verified. Therefore, reading is faster if the network information is ignored.
+
+This can be achieved using the “Ignore Network Info” parameter for the Geodatabase reader. A similar parameter exists for the Reader to be able to ignore Relationships.
+
+Similarly, Excel formulas can be expensive to read, so turning them off when the schema is generated can speed up reading the data:
