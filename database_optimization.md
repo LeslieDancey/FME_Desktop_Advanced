@@ -125,3 +125,25 @@ Features per Bulk Write also needs to be considered against the value of Feature
 If Features per Transaction is less or equal to Features per Bulk Write, then FME basically caches a number of features and sends them to the database where they are immediately committed.
 
 If Features per Transaction is greater than Features per Bulk Write, then FME is sending features to the database where they will be cached until the transaction commit total is reached.
+
+ <table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“The Transaction and Chunk parameters can differ from format to
+format. For example, SQL Server has a single Bulk Option flag rather
+than a numeric setting.
+Therefore it’s very important that you check out the FME Readers and Writers Manual to
+confirm what parameters are available for your database, and how exactly they
+operate.”
+</span>
+</td>
+</tr>
+</table>
