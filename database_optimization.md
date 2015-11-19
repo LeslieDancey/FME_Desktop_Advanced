@@ -159,3 +159,5 @@ To remedy this it’s suggested that indexes are dropped (deleted) before carryi
 A Writer feature type also has options to truncate or drop tables when writing to them.
 
 For the above reason, dropping a table is more efficient than truncating it because the drop action also removes the indexes.
+
+For similar reasons, you may want to turn off networking connectivity when writing data to a Geodatabase geometric network.
