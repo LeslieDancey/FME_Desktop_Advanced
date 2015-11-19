@@ -91,3 +91,23 @@ For example, when reading from a Geodatabase geometric network, all of the conne
 This can be achieved using the “Ignore Network Info” parameter for the Geodatabase reader. A similar parameter exists for the Reader to be able to ignore Relationships.
 
 Similarly, Excel formulas can be expensive to read, so turning them off when the schema is generated can speed up reading the data:
+
+**Database Writing**
+
+Whereas the performance of reading from a database is largely dependent on the database setup itself, when writing to a database there are very many FME parameters that can help to fine tune the workspace performance.
+
+Remember that writing to a database incurs network overheads. There has to be a balance between the amount of data being sent (the network traffic), database performance, and the risk of losing uncommitted data.
+
+Each database Writer has a set of parameters for handling the number of features to write for any particular transaction.
+
+The Oracle Spatial Writer parameters look like this:
+
+The two common parameters for controlling database writes are  “Features per Transaction” and “Features per Bulk Write” (chunk).
+
+**Features per Transaction**
+
+Features per Transaction controls how many features are entered into a database before a commit command is issued. Each commit command adds delay to the writing process, so setting this parameter is a way to balance the speed of the translation (a higher number) against the risk that a translation may fail and features need to be rolled-back (a lower number).
+
+For example, if this parameter is set to a value of 1, then each and every feature is committed individually. If the process fails then only the last feature will be lost from the database, but the costs is much reduced performance.
+
+Alternatively, if the parameter is set to a very high value (more than the number of features being written) then only one commit takes place and performance improves. However, if the translation fails, then all features previously written will be rolled-back and lost to the database.
