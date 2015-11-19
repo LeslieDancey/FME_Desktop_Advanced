@@ -171,3 +171,23 @@ The system works, but is perhaps slower than it should be. Let’s run this shor
 Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2d-Begin.fmw
 
 The workspace used for the service looks something like this:
+
+This shows the workspace is reading 13,500+ addresses and filtering out ones that don’t match the required postal code. However, it makes sense to use a WHERE clause if possible, so we don’t have to read so much data to start with.
+
+**2)** Run Workspace
+
+To get a comparison, run the workspace. The statistics for features read will look like this:
+
+The performance will read like this:
+
+*FME Session Duration: 4.3 seconds. (CPU: 4.0s user, 0.2s system)*
+
+*END - ProcessID: 103496, peak process memory usage: 79428 kB*
+
+**3)** Open Feature Type Properties
+
+The Geodatabase Reader doesn’t have a WHERE clause, but the feature type does.
+
+So, open the properties dialog for the PostalAddress feature type and click the Format Parameters tab.
+
+In the WHERE Clause parameter enter: POSTALCODE = 'V6E1Y8.'
