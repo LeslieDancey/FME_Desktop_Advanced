@@ -23,3 +23,26 @@ The SQLExecutor is particularly worth being aware of, as it issues a query for e
 For example, here a query is issued to the database for every address feature that enters the SQLExecutor.
 
 Generally the output from the SQLExecutor is an entirely new feature. If you want to simply retrieve attributes to attach to the incoming feature, then the Joiner transformer is more appropriate:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Jake Speedie says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“FME is fast, but if you can filter or process data in its native
+environment, it’s likely to be faster still.
+For example, a materialized view (a database object containing the results of a query) is
+going to perform better than reading the data and filtering it in FME. Similarly, a SQL
+Join is going to perform better than reading two tables into FME and using the
+FeatureMerger transformer.
+Sometimes it really is a case of working smart, not hard!”
+</span>
+</td>
+</tr>
+</table>
