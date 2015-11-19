@@ -147,3 +147,15 @@ operate.”
 </td>
 </tr>
 </table>
+
+**Writing and Indexing**
+
+Whereas indexes can improve performance for reading data, for writing they can cause a great reduction in the speed of translation.
+
+That’s because the index will often get re-built with every feature (or every transaction) that is committed to the database.
+
+To remedy this it’s suggested that indexes are dropped (deleted) before carrying out bulk inserts of data into a database table.
+
+A Writer feature type also has options to truncate or drop tables when writing to them.
+
+For the above reason, dropping a table is more efficient than truncating it because the drop action also removes the indexes.
