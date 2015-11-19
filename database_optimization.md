@@ -161,3 +161,13 @@ A Writer feature type also has options to truncate or drop tables when writing t
 For the above reason, dropping a table is more efficient than truncating it because the drop action also removes the indexes.
 
 For similar reasons, you may want to turn off networking connectivity when writing data to a Geodatabase geometric network.
+
+The city has an online service powered by FME Server, where a resident can input their postal code and receive information about their garbage collection.
+
+The system works, but is perhaps slower than it should be. Let’s run this short exercise to discover why.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise2d-Begin.fmw
+
+The workspace used for the service looks something like this:
