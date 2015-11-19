@@ -111,3 +111,17 @@ Features per Transaction controls how many features are entered into a database 
 For example, if this parameter is set to a value of 1, then each and every feature is committed individually. If the process fails then only the last feature will be lost from the database, but the costs is much reduced performance.
 
 Alternatively, if the parameter is set to a very high value (more than the number of features being written) then only one commit takes place and performance improves. However, if the translation fails, then all features previously written will be rolled-back and lost to the database.
+
+**Features per Bulk Write**
+
+The Features per Bulk Write parameter tells FME how many features to send at a time to the database. Features sent to a database Writer will get cached in memory by FME until this number of features is reached, and only then will they be sent to the database. This is also known as chunk size.
+
+This parameter is a way to balance server performance and network traffic with FME performance. The higher the number the more features FME caches, but the fewer requests it needs to make to the database (and therefore less network traffic).
+
+A lower number means FME caches less data, but there are more requests made to the database.
+
+Features per Bulk Write also needs to be considered against the value of Features per Transaction.
+
+If Features per Transaction is less or equal to Features per Bulk Write, then FME basically caches a number of features and sends them to the database where they are immediately committed.
+
+If Features per Transaction is greater than Features per Bulk Write, then FME is sending features to the database where they will be cached until the transaction commit total is reached.
