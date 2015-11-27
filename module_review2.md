@@ -17,4 +17,8 @@ The following are key points to be learned from this session:
 - Upload larger tasks to multiple engines on FME Server. 
 
 **FME Skills**
-l The
+
+- The ability to analyze and deconstruct an FME log file
+- An understanding of potential methods for improving Reader, Writer, and transformer performance
+- The ability to use database parameters to improve performance
+- The ability to apply parallel processing in an FME workspace
