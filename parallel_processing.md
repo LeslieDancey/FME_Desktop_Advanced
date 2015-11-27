@@ -38,3 +38,15 @@ less than the time to stop/start FME!”
 **Transformers and Parallel Processing**
 
 There are a number of basic FME transformers that have built in options for parallel processing. Parallel processes work on groups of features, so the transformer must have a group-by parameter in order for the user to be able to define the parallel processing groups.
+
+For example, this Bufferer transformer is set up to buffer a set of street features.
+Each type of street (highways, roads, lanes, etc.) will be processed as a separate group.
+To speed up the translation, each group is being handled as a separate process (sadly the user cannot confirm the source data is already ordered by group, which would improve performance even more).
+When you run a translation in parallel mode, then you’ll see a number of “worker” processes appear in your process manager:
+
+**Parallel Processing Groups**
+
+Best performance gains are when you have a small number of groups with a large amount of data. When there are many groups with only a few features then any performance gain will not be great and, in fact, the whole process might even be slower. Disk access can be a big bottleneck there.
+Because each group gets processed independently, there can be no relationship between features in different groups. If features are related, and their results dependent on each other, then they must be in the same group.
+However, if all data is unrelated and the contents of the group are unimportant, then it’s possible to make artificial groups using a ModuloCounter or RandomNumberGenerator transformer.
+For example, here the user has millions of lines to buffer (separately) and uses a ModuloCounter to assign them to one of four groups for parallel processing. Note the "GroupBy" parameter in the Bufferer is set to the _modulo_count attribute:
