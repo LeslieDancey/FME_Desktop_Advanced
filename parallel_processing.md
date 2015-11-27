@@ -47,6 +47,9 @@ When you run a translation in parallel mode, then you’ll see a number of “wo
 **Parallel Processing Groups**
 
 Best performance gains are when you have a small number of groups with a large amount of data. When there are many groups with only a few features then any performance gain will not be great and, in fact, the whole process might even be slower. Disk access can be a big bottleneck there.
+
 Because each group gets processed independently, there can be no relationship between features in different groups. If features are related, and their results dependent on each other, then they must be in the same group.
+
 However, if all data is unrelated and the contents of the group are unimportant, then it’s possible to make artificial groups using a ModuloCounter or RandomNumberGenerator transformer.
+
 For example, here the user has millions of lines to buffer (separately) and uses a ModuloCounter to assign them to one of four groups for parallel processing. Note the "GroupBy" parameter in the Bufferer is set to the _modulo_count attribute:
