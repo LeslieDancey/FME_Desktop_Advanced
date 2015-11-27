@@ -43,3 +43,7 @@ Pushing to FME Cloud
 FME Cloud is an installation of FME Server hosted by Safe Software on Amazon Web Services technology and used on a pay-as-you-go basis. The benefit is that you don’t have to purchase FME Server, simply make use of it whenever you have a job that can take advantage of its power.
 
 The key to automating this for performance benefits are the FME Cloud custom transformers available on the FME Store:
+
+With the FMECloudInstanceLauncher transformer I can run my master workspace (as in the example above) and have it automatically start an FME Cloud instance and run the job on it.
+
+This way I can start a new instance for each job, or run several jobs on one instance, depending on the type of instance and how many engines it has running on it.
