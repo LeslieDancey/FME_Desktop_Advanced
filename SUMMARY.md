@@ -22,5 +22,5 @@
    * [Transformation Optimization](transformation_optimization.md)
    * [Database Optimization](database_optimization.md)
    * [Parallel Processing](parallel_processing.md)
-   * Performance, FME Server, and FME Cloud
+   * [Performance, FME Server, and FME Cloud](performance,_fme_server,_and_fme_cloud.md)
 
