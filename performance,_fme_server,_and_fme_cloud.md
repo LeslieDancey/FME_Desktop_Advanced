@@ -39,3 +39,7 @@ Pushing to FME Cloud
 </td>
 </tr>
 </table>
+
+FME Cloud is an installation of FME Server hosted by Safe Software on Amazon Web Services technology and used on a pay-as-you-go basis. The benefit is that you don’t have to purchase FME Server, simply make use of it whenever you have a job that can take advantage of its power.
+
+The key to automating this for performance benefits are the FME Cloud custom transformers available on the FME Store:
