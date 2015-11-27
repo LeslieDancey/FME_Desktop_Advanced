@@ -34,3 +34,7 @@ less than the time to stop/start FME!”
 </td>
 </tr>
 </table>
+
+**Transformers and Parallel Processing**
+
+There are a number of basic FME transformers that have built in options for parallel processing. Parallel processes work on groups of features, so the transformer must have a group-by parameter in order for the user to be able to define the parallel processing groups.
