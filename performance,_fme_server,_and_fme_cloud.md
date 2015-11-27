@@ -14,3 +14,28 @@ In this scenario, FME Server is used not for its web-based abilities, but rather
 By default, utilizing multiple engines is only possible when you have multiple workspaces that can be run. When you have only a single workspace, and wish to process it more efficiently on FME Server, then you need to divide that workspace into multiple jobs.
 
 For example, I have a very large set of vector data in a spatial database, and want to create a series of map tiles from it. Basically I need to clip the data to a map tile outline, rasterize it, and write it out to a raster format such as PNG:
+
+The problem is that the amount of data being processed is so great, the workspace takes days to run. I need to run the process on FME Server by dividing the work up into different jobs.
+
+So, I upload my workspace to FME Server and create a master workspace to control it. The master workspace calculates the bounds of each tile and runs the main workspace on FME Server using a ServerJobSubmitter transformer:
+
+The bounds of each tile are sent to the main workspace by using published parameters:
+
+So now I have a method by which I can pass the bounds of the tiles to be created to a workspace on FME Server, and share the load over multiple server engines by running the workspace once for each tile.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-bolt fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">NEW</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+Pushing to FME Cloud
+</span>
+</td>
+</tr>
+</table>
