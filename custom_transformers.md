@@ -84,3 +84,29 @@ All Custom Transformers require a name and (optionally) a category and descripti
 The category can be set to match any existing category of FME transformers, or a custom category of your own.
 
 Notice also the “Use Extended Description” parameter. This allows you to enter extra information about the custom transformer, such as requirements for use, development history, and legal terms and conditions; in fields that support the use of rich text.
+
+These fields are particularly important when you intend to share the custom transformer with work colleagues or clients.
+
+**The New Custom Transformer**
+
+A newly created custom transformer then looks like this:
+
+Notice that it appears under a new tab on the Workbench canvas and consists of the three original transformers with additional input and output objects.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+‘If the custom transformer had been created from scratch, without any
+original transformers, it would look like this:
+</span>
+</td>
+</tr>
+</table>
