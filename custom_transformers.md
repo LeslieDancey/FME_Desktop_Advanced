@@ -165,3 +165,7 @@ Flip back and forth between the DensityEvaluator tab and the Main tab to see how
 Back in the Main tab, click on the cog wheel icon on the custom transformer to open its parameters dialog.
 
 The main parameter is one created automatically by FME to accept the attribute to be processed. You'll see it is automatically preset to the TotalPopulation2001 attribute.
+
+**4)** Run Workspace
+
+Save the workspace and then run the workspace, to ensure the output has not changed.
