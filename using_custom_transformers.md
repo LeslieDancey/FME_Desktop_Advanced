@@ -27,3 +27,15 @@ This makes the editing of a sequence of transformers much easier, because the ed
 **Custom Transformer Input/Output Ports**
 
 The input and output ports on a custom transformer are defined by input/output objects in the custom transformer definition itself.
+
+Firstly, these input/output objects can be renamed, in order that the transformer ports get named appropriately. You can either double-click the object, choose Rename from the context menu, or press F2, in order to rename the object.
+
+For example, here the user is renaming an input port from FeatureReader_Initiator to simply Raster.
+
+Renaming the input and output ports is useful for making the custom transformer object more legible, and for helping the user to understand what data is supposed to connect to the port.
+
+For example, after editing the transformer might look like this:
+
+Besides renaming ports, it is also possible to add new ports to a custom transformer.
+
+To do so simply click the tab to display the custom transformer’s definition and select Transformer Input (or Output) from either the canvas context (right-click) menu or the menubar.
