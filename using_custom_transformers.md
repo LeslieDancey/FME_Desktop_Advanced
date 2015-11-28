@@ -23,3 +23,7 @@ Custom transformer definitions are edited by clicking the appropriate canvas tab
 For example, if the Interpolation parameter is changed for the RasterMosaicker inside this custom transformer, then the parameter automatically changes for all instances of the transformer that have been placed.
 
 This makes the editing of a sequence of transformers much easier, because the edit only needs to be made once; no matter how many times that sequence has been used.
+
+**Custom Transformer Input/Output Ports**
+
+The input and output ports on a custom transformer are defined by input/output objects in the custom transformer definition itself.
