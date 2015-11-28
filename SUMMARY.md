@@ -26,4 +26,5 @@
    * [Module Review](module_review2.md)
 * Custom Transformers
    * [Custom Transformers](custom_transformers.md)
+   * Using Custom Transformers
 
