@@ -62,3 +62,36 @@ appear first on the custom transformer itself!”
 </td>
 </tr>
 </table>
+
+Having created a custom transformer in exercise 3a, we can now go on to make use of it multiple times and maybe even apply some edits.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3b-Begin.fmw
+
+**2)** Duplicate Custom Transformer
+
+Notice that we have one instance of the custom transformer, that is calculating population density, but it could be used a second time in place of the ExpressionEvaluator.
+
+Click on the ExpressionEvaluator and press the delete key to delete it.
+
+Click on the DensityEvaluator custom transformer and press Ctrl+D (or right-click > duplicate) to create a duplicate copy of it. This is the same effect as placing a new instance, but quicker.
+You could do the same task through Quick Add or the Transformer Gallery if you desired.
+
+Connect the second DensityEvaluator into the workflow, in parallel and not in series:
+
+**3)** Set Custom Transformer Parameters
+
+Click the cog wheel icon to open the parameters dialog for the second DensityEvaluator. This time set the population parameter to TotalPopulation2011 (not 2001).
+
+**4)** Run Workspace
+
+Run the workspace and inspect the output to ensure the data is being processed correctly.
+
+**5)** Edit Custom Transformer
+
+One obvious problem with the output from the transformer is that the result is put into an attribute called PopulationDensity2001, regardless of what data is being processed. This is not useful; for example the 2011 results also get the same name.
+
+We can fix this by making the output name more generic. This is good practice for a custom transformer that might be used in multiple scenarios.
+
+Click on the tab labelled DensityEvaluator to switch the canvas to the custom transformer definition. Open the ExpressionEvaluator parameters and change the name of the Destination Attribute parameter to DensityResult.
