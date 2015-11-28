@@ -110,3 +110,11 @@ original transformers, it would look like this:
 </td>
 </tr>
 </table>
+
+In the Navigator window, where a workspace would have a section labelled Workspace Properties, a custom transformer has Transformer Properties.
+
+This is where the information – name, category, description, etc. – that was entered earlier can be edited.
+
+When you click on the Main tab, to return to the main canvas view, the three original transformers have now been replaced by a custom transformer object that is automatically connected into the existing workspace:
+
+This custom transformer looks and behaves in the same way as any standard FME transformer; with input and output ports (that match the input/output objects in the custom transformer tab), plus a parameters dialog.
