@@ -39,3 +39,7 @@ For example, after editing the transformer might look like this:
 Besides renaming ports, it is also possible to add new ports to a custom transformer.
 
 To do so simply click the tab to display the custom transformer’s definition and select Transformer Input (or Output) from either the canvas context (right-click) menu or the menubar.
+
+For example, here a user has added a new input port to handle vector data.
+
+This means that each instance of the custom transformer in the main canvas will now have an extra input port, like so:
