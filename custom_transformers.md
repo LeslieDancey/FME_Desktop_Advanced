@@ -76,3 +76,11 @@ replaces the RasterReader transformer.
 </td>
 </tr>
 </table>
+
+**Naming a Custom Transformer**
+
+All Custom Transformers require a name and (optionally) a category and description. A dialog in which to define these automatically appears when you create a new custom transformer.
+
+The category can be set to match any existing category of FME transformers, or a custom category of your own.
+
+Notice also the “Use Extended Description” parameter. This allows you to enter extra information about the custom transformer, such as requirements for use, development history, and legal terms and conditions; in fields that support the use of rich text.
