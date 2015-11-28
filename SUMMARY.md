@@ -27,4 +27,5 @@
 * Custom Transformers
    * [Custom Transformers](custom_transformers.md)
    * [Using Custom Transformers](using_custom_transformers.md)
+   * Custom Transformers and Schema
 
