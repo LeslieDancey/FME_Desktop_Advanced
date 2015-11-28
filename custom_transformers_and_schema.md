@@ -64,3 +64,11 @@ Clicking this button opens a dialog in which the incoming schema can be defined.
 For example, here our workspace author adds a new transformer to a custom transformer definition in order to create label features:
 
 They’ve also added a separate output port – and renamed them too – which is an excellent show of FME Best Practice!
+
+The author would like to use the Park Name attribute (ParkName) as the content for the label.
+
+However, they cannot do that since ParkName was not used by the custom transformer when it was created, therefore FME did not need to expose it automatically:
+
+That attribute is literally not available inside the custom transformer definition.
+
+The solution is to click the icon to open the Input port parameters, and expose ParkName there:
