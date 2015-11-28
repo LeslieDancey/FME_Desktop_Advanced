@@ -56,3 +56,11 @@ Now, when used, the custom transformer has prompts that are a lot more generic, 
 The ‘Handle with Published Parameters’ setting is available when a custom transformer is created, but there also needs to be a mechanism for handling edits to a custom transformer, or where the custom transformer is created from scratch.
 
 This is achieved using a schema-editing button on the custom transformer.
+
+In a custom transformer definition, notice that input ports have a cog-wheel parameters icon, just like most other canvas objects:
+
+Clicking this button opens a dialog in which the incoming schema can be defined.
+
+For example, here our workspace author adds a new transformer to a custom transformer definition in order to create label features:
+
+They’ve also added a separate output port – and renamed them too – which is an excellent show of FME Best Practice!
