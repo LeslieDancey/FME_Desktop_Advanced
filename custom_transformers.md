@@ -118,3 +118,21 @@ This is where the information – name, category, description, etc. – that was
 When you click on the Main tab, to return to the main canvas view, the three original transformers have now been replaced by a custom transformer object that is automatically connected into the existing workspace:
 
 This custom transformer looks and behaves in the same way as any standard FME transformer; with input and output ports (that match the input/output objects in the custom transformer tab), plus a parameters dialog.
+
+The scenario for this exercise is that an FME user has a workspace that calculates the population density for neighborhoods in the city of Vancouver. Having just found out about custom transformers, the user thinks this would be a good workspace to turn into a general solution: a custom transformer that calculates the average density of items in a known space.
+
+**1)** Start Workbench
+
+Open the workspace 
+
+C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3a-Begin.fmw.
+
+You may wish to run the workspace and examine the output to see what it does and how it works.
+
+**2)** Create Custom Transformer
+
+The key components for the custom transformer are the AreaCalculator and ExpressionEvaluator transformers. If you examine the workspace you’ll see two ExpressionEvaluators (one for the year 2001, one for 2011) but we don’t need to include both in the custom transformer.
+
+So select the AreaCalculator transformer and the first ExpressionEvaluator, right-click on them, and choose the context menu option 'Create Custom Transformer.'
+
+In the Create Custom Transformer dialog enter a name, category, and description for the new custom transformer. A good name for the transformer will be the DensityEvaluator.
