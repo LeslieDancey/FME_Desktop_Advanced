@@ -11,3 +11,5 @@ For example, in this workspace a custom transformer carries out processing on in
 However, if – in the same workspace – that transformer is duplicated and connected to a different Reader feature type, there is no guarantee that AddressID will exist.
 
 For example, here it is connected to a feature type where the field is in upper case, which will cause the workspace to fail when run:
+
+Therefore it’s vital that there is some form of mechanism for protecting against problems of a mismatched schema of this type. In fact there are two ways this can be handled: FME can automatically take care of the schema, or the workspace author can handle it manually.
