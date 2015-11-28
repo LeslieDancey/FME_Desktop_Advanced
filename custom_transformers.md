@@ -153,3 +153,15 @@ In the Create Custom Transformer dialog enter a name, category, and description 
 </td>
 </tr>
 </table>
+
+Be sure the Attribute References parameter is set to “Handle with Published Parameters” (more on that later) and click OK.
+
+The custom transformer will now be created.
+
+**3)** Inspect Custom Transformer
+
+Flip back and forth between the DensityEvaluator tab and the Main tab to see how the custom transformer is constructed, and how it is placed in the workspace itself.
+
+Back in the Main tab, click on the cog wheel icon on the custom transformer to open its parameters dialog.
+
+The main parameter is one created automatically by FME to accept the attribute to be processed. You'll see it is automatically preset to the TotalPopulation2001 attribute.
