@@ -101,3 +101,9 @@ If you run the workspace again you’ll notice that DensityResult is the attribu
 **6)** Rename Ports
 
 One other edit we ought to make is to the port names of the custom transformer. At the moment they are not very elegant.
+
+Click the input port object in the custom transformer definition (currently labeled AreaCalculator_Input) and press F2 to edit the name. Change the name to Input.
+
+Now repeat the process for the output port object, renaming it to Output.
+
+Click the Main tab to check back on the main canvas and confirm the changes have been made:
