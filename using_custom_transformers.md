@@ -95,3 +95,9 @@ One obvious problem with the output from the transformer is that the result is p
 We can fix this by making the output name more generic. This is good practice for a custom transformer that might be used in multiple scenarios.
 
 Click on the tab labelled DensityEvaluator to switch the canvas to the custom transformer definition. Open the ExpressionEvaluator parameters and change the name of the Destination Attribute parameter to DensityResult.
+
+If you run the workspace again you’ll notice that DensityResult is the attribute output by both instances of the custom transformer; i.e. one edit has fixed both of them!
+
+**6)** Rename Ports
+
+One other edit we ought to make is to the port names of the custom transformer. At the moment they are not very elegant.
