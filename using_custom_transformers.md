@@ -43,3 +43,22 @@ To do so simply click the tab to display the custom transformer’s definition a
 For example, here a user has added a new input port to handle vector data.
 
 This means that each instance of the custom transformer in the main canvas will now have an extra input port, like so:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+‘To arrange the ports in a set order, change their position in the custom
+transformer definition. The port that appears highest up in the canvas will
+appear first on the custom transformer itself!”
+</span>
+</td>
+</tr>
+</table>
