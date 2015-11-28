@@ -30,3 +30,5 @@ If this value is set to ‘Handle with Published Parameters’ then FME will aut
 These published parameters become exposed in the parameters dialog for the custom transformer meaning they can be set wherever the transformer is used.
 
 For example, here is a set of FME transformers for styling data as KML. In effect it is a cutdown version of the KMLDiagrammer transformer available on the FME Store.
+
+Incoming data is basically turned into a 3D column, where the width (x and y axes) and height of the column are set by attribute values, and the color through a published parameter:
