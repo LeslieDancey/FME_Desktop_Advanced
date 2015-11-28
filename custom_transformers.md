@@ -136,3 +136,20 @@ The key components for the custom transformer are the AreaCalculator and Express
 So select the AreaCalculator transformer and the first ExpressionEvaluator, right-click on them, and choose the context menu option 'Create Custom Transformer.'
 
 In the Create Custom Transformer dialog enter a name, category, and description for the new custom transformer. A good name for the transformer will be the DensityEvaluator.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+‘You can’t call it the DensityCalculator; FME already has one of those!’
+</span>
+</td>
+</tr>
+</table>
