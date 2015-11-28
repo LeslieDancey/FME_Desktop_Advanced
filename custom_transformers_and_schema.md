@@ -40,3 +40,19 @@ The workspace author decides to turn this into a custom transformer, so he can u
 The answer is to use the ‘Handle with Published Parameters’ setting when creating the transformer:
 
 Turn the above into a custom transformer and - with this new parameter set – the result is a transformer like this:
+
+The attributes being referenced by the custom transformer have been exposed as published parameters, so that wherever the custom transformer is used, the user has the option to select their own attributes.
+
+They don’t have to rename their attributes to TotalParkVisitors, for example, in order to use the transformer. Also notice that the existing published parameter – Output Color – has also been exposed in this dialog, solving the second part of the schema handling conundrum.
+
+If the user then opens the custom transformer definition and examines the Navigator Window, what they will see is as follows:
+
+This illustrates how FME has automatically solved the attribute reference problem using published parameters. To make the custom transformer more generic, the workspace author will probably want to change the prompts on these parameters – and maybe reorder them – so they don’t refer only to the current parks scenario:
+
+Now, when used, the custom transformer has prompts that are a lot more generic, and will make sense when it is used elsewhere:
+
+**Post-Creation Schema Handling**
+
+The ‘Handle with Published Parameters’ setting is available when a custom transformer is created, but there also needs to be a mechanism for handling edits to a custom transformer, or where the custom transformer is created from scratch.
+
+This is achieved using a schema-editing button on the custom transformer.
