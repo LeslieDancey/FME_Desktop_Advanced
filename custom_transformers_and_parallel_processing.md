@@ -106,3 +106,4 @@ In moderate mode, you’ll see up to one fmeworker process for each core. This t
 **6)** Experiment with Parallel Processing Level
 
 If you have time, re-run the workspace with a different processing level, say Aggressive. Does it run any quicker than the Moderate processing level? If not, why might that be?
+
