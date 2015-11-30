@@ -152,3 +152,27 @@ Now click the save button to save the custom transformer. You’ll be prompted w
 **10)** Update Workspace
 
 Go back to the instance of FME Workbench where the original workspace is open. Click on the refresh button on the Transformer Gallery in order for FME to scan all custom transformers and discover the new version we’ve just created.
+
+Now right-click on the AverageLengthCalculator custom transformer and there should be an option to upgrade to the latest version. Choose this option:
+
+The transformer will be refreshed and updated, which you can tell by the presence of a Rejected port:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If you have an fmx file by itself, you can have FME install it into the
+correct folder by double-clicking on the file in a file browser.
+Similarly, if you download a custom transformer from the FME Store, it will be stored in
+a specific location where it will be recognized by FME Workbench.”
+</span>
+</td>
+</tr>
+</table>
