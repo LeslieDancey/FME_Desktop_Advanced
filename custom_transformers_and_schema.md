@@ -114,3 +114,12 @@ If you check back to exercise 3a, you’ll see that the transformer was created 
 One issue outstanding is that the prompt used by the transformer is not very generic. Let’s fix that. Click on the tab labelled DensityEvaluator to switch the canvas to the custom transformer definition. Browse the Navigator window to find the published parameter that FME created.
 
 Right-click on the parameter and choose Edit Definition. In the dialog that opens set the parameter prompt to: Density Attribute
+
+**3)** Implement Units Selection
+
+At the moment this workspace is calculating the number of residents per square kilometer of land. However, other uses of this transformer might find different units to be more useful.
+Therefore we’ll implement a method for users to be able to select units.
+
+A user parameter will be the best way to achieve this, as the user can select the units manually and not need to supply it as an attribute.
+So, in the custom transformer definition, browse the Navigator window and right-click on the entry labelled User Parameters.
+Select the Add Parameter option:
