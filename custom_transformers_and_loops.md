@@ -47,3 +47,55 @@ reached (the condition).”
 </td>
 </tr>
 </table>
+
+**Setting up a Custom Transformer Loop**
+
+A loop in a custom transformer requires two components: the start and end point of the loop.
+
+The start of the loop is identified by an Input port object. Although it can be the same input port as used for features to enter by, this does not have to be the case. For example here there is an input port for features to arrive into, and another one for the start of the loop:
+
+If you don’t want the Loop port to appear on the transformer itself, like this:
+
+Then you simply have to open the Input port’s parameters and ‘unpublish’ it:
+
+The end of a loop is identified by a Loop object. You can insert one by selecting it from the canvas context menu in a custom transformer:
+
+When you place a loop object you are asked which Input object is to be looped to:
+
+And then the loop is complete:
+
+Of course, in most cases the loop needs a condition to stop processing. For example you might use a Tester to test for a particular case and then continue looping on a failure but exit when the test is successful:
+
+If you do create an infinite loop, FME won’t run forever, and will eventually stop the process.
+
+**Loops and Custom Transformer Type**
+
+Loops can be implemented in both embedded and linked custom transformers. However, for technical reasons, blocking – or group-based – transformers can only be used in a linked transformer.
+
+If you attempt to create a loop inside an embedded custom transformer that includes a groupbased FME transformer, then you will receive an error message and be prompted to export the custom transformer.
+
+A linked custom transformer has a particular parameter (in the Navigator window) called Enable Blocked Looping:
+
+When set to Yes then other parameters are exposed to set the number of iterations and an attribute that will hold that value:
+
+Notice how parallel processing is turned off (the parameters are removed) for custom transformers that are being looped.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Generally you only use a loop to repeat an action inside it. One-off actions
+should take place outside of a loop. For example, I wouldn’t put my wheels
+up and down every time I circled an airport. That would be very inefficient.
+I'd do it once, either before I start, or after I finish, looping”
+</span>
+</td>
+</tr>
+</table>
