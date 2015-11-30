@@ -75,3 +75,18 @@ As you’ll see, this workspace processes some incoming point cloud data. Inspec
 Open a task manager (process manager) tool for your operating system. Run the workspace. You’ll see a single FME engine process running (fme.exe)
 
 Of course, you’ll also see an fmeworkbench.exe process, which is the process running the Workbench interface. This isn’t responsible for running a workspace; this is a separate process.
+
+**2)** Create Custom Transformer
+
+Now select the PointCloudThinner and PointCloudCoercer transformers and turn them into a custom transformer. Note; don’t include the Tiler transformer as this is creating the tiles that we’ll be using as a way to parallel process.
+
+You can call the transformer something like PointCloudProcessing. It doesn’t matter what attribute reference handling you choose.
+The transformer definition should look something like this:
+
+**3)** Set Parallel Processing
+
+In the Navigator window (of the custom transformer definition) locate and expand the section of custom transformer advanced parameters.
+
+Double-click the Parallel Processing Level parameter to set it. Set the processing level to Moderate.
+
+Click OK to close the dialog and you’ll notice the Parallel Process By parameter is now published.
