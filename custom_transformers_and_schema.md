@@ -197,3 +197,11 @@ ExpressionEvaluator and the Failed port goes to the other:
 Open up the Tester parameters dialog. Make a test for where WeightingAttribute > 0
 
 **10)** Adjust Equation
+
+Now that the attribute is exposed in the custom transformer, we can use it in the equation for calculating density. Open the parameters dialog for the ExpressionEvaluator transformer connected to the Tester Passed port.
+
+Change the equation to:
+
+@Value(TotalPopulation2001)/(@Value(NeighborhoodArea)*@Value(WeightingAttribute))
+
+i.e. multiply the existing NeighborhoodArea attribute by the WeightingAttribute and place parentheses around that part of the expression.
