@@ -34,3 +34,29 @@ In short, you can’t select an attribute in this dialog, only user parameters.�
 The published parameter means that the end user is able to set the attribute to group-by for parallel processing. For example, here the custom transformer is creating a separate process for each different park feature:
 
 If, as an author, I don’t want the end user to be setting the group-by, then what I can do is locate that published parameter, edit its definition, and unset the Published parameter:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Are you using raster data?
+Raster is an oddity in FME as most of the transformers do very little to the
+data. For example, the RasterResampler doesn’t actually resample the data; it just tags
+it as being resampled. The actual resampling is carried out when the data is written.
+On the one hand this is great. It means – for example – if you resample then clip some
+raster data, FME knows to resample only data that falls inside the clip boundary as the
+rest is ultimately going to be discarded.
+On the other hand, it does mean that parallel processing doesn’t help performance that
+much, as most work occurs in the Writers. That’s why few raster transformers have
+parallel processing options, and why it’s not worth doing in a custom transformer.”
+</span>
+</td>
+</tr>
+</table>
