@@ -78,3 +78,27 @@ Select the two newly placed transformers and turn them into a Custom Transformer
 Now we have a new custom transformer, let’s tidy it up and make it functional.
 
 Firstly rename the input port object to Lines (thus identifying what geometry is expected), then add an output port object (if you don’t have one already) and rename it to Output. It should be connected to the StatisticsCalculator:Complete port:
+
+Now open the LengthCalculator parameters. Rename the Length Attribute to _temp_length.
+
+Then open the StatisticsCalculator parameters. Set Attributes to Analyze to _temp_length
+
+Clean up the output attributes by removing all of them except Mean Attribute – and that one should be renamed to AverageLength
+
+Finally, open the parameters for the Output port object. Change Attributes to Output to ‘Specified Attributes Only’ and ensure that AverageLength is output, but _temp_length is not.
+
+If you see other attributes (such as _max) then you obviously didn’t clear them out of the StatisticsCalculator. That’s OK. Just make sure they are unchecked in this dialog.
+
+5) Run Workspace
+
+Run the workspace (unless you need to reattach an Inspector transformer, you don’t even have to return to the Main tab to do this). Inspect the output to ensure everything is working as expected.
+
+6) Export Custom Transformer
+
+Select File > Export as Custom Transformer from the menubar. In the Export as Custom Transformer dialog make sure the Insert Mode option is set to Linked by Default. Make sure the 
+
+Save Location is the default for storing custom transformers (<user>\FME\Transformers).
+
+Click OK to close the dialog. The custom transformer is saved (as AverageLengthCalculator.fmx) and this file opened up in a new instance of FME Workbench.
+
+**7)** Examine Workspace
