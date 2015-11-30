@@ -44,3 +44,20 @@ clean up.”
 </td>
 </tr>
 </table>
+
+Let’s go back to the workspace – before creating the custom transformer – and this time createall our references manually.
+
+**1)** Open Workspace
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3d-Begin.fmw.
+As you’ll see, this is the same as Exercise3a-Begin.fmw – we have a workspace ready to create a custom transformer.
+
+**2)** Create Custom Transformer
+
+As in Exercise 3a, select the AreaCalculator transformer and the first ExpressionEvaluator, right-click on them, and choose the context menu option ‘Create Custom Transformer’.
+
+In the Create Custom Transformer dialog enter a name, category, and description for the new custom transformer. A good name for the transformer will be the DensityEvaluator.
+
+This time, set the Attribute References parameter to “Advanced – Fix Manually” and click OK.
+
+The custom transformer will now be created.
