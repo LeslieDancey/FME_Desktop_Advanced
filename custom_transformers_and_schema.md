@@ -141,3 +141,11 @@ Make two entries into this dialog. The first is a value of 1 with a display name
 The second is a value of 0.000001 with a display name of ‘Sq Km.’ Click OK to close that dialog.
 
 Back in the Add/Edit User Parameter dialog set Sq Km as the Default Value.
+
+Then click OK to close this dialog and add to the published parameter.
+
+**4)** Implement Parameter
+
+Now we’ve defined a published parameter, we have to use it in the custom transformer.
+
+Open the parameters dialog for the AreaCalculator transformer. For the Multiplier field, click the drop-down arrow and select the newly defined user parameter, DensityUnits.
