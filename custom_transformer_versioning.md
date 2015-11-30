@@ -15,3 +15,7 @@ For example, a custom transformer shared by many users could be updated to use n
 **Creating a Versioned Custom Transformer**
 
 Versioning can occur whenever you edit a linked custom transformer and then attempt to save it. In that situation a dialog will open to ask what you wish to do:
+
+The two options are to overwrite the existing version or to create a new version. Creating a new version does not create a separate fmx file; instead it creates a separate version of the transformer in the same fmx file.
+
+The title bar in Workbench also changes to illustrate that this is now a new version.
