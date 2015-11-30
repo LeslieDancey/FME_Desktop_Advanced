@@ -117,3 +117,15 @@ It’s one reason why automated schema handling is easier to use.”
 </td>
 </tr>
 </table>
+
+**5)** Check Parameter
+
+Return to the main canvas window. The DensityEvaluator parameter button is marked red, but that’s OK because we haven’t yet picked an attribute to process.
+
+Click the parameter button and select TotalPopulation2001 as the attribute to process.
+
+**6)** Add Second Custom Transformer
+
+Now delete the remaining ExpressionEvaluator from the main canvas as we no longer need it.
+
+Use Quick Add to add a second DensityEvaluator instance. Connect it as a second connection from the CsmapReprojector and select TotalPopulation2011 as the attribute to process.
