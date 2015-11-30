@@ -72,3 +72,15 @@ If an “Always” option is used, then any instance of this transformer is fixe
 **Which Mode to Use**
 
 When an author creates a custom transformer for a customer or user who is inexperienced in FME, then Embedded Always is a good choice, since it is easier to manage (no external files) and the user cannot accidentally change it.
+
+When the custom transformer is intended to be shared among users, then Linked Always is a good choice, as any changes to the transformer definition are automatically applied to the end workspaces.
+
+Only when the end-user is experienced in FME and can understand the consequences, is it advisable to use a “by Default” setting and allow type switching.
+
+**Switching Custom Transformer Types**
+
+When a custom transformer is designed to allow type switching, to switch a custom transformer instance from embedded to linked mode is very straightforward. Simply right-click on the instance and choose Link.
+
+Similarly, to switch from Linked to Embedded simply right-click and choose the option Embed.
+
+Of course, to be able to switch types requires that you have already exported the custom transformer!
