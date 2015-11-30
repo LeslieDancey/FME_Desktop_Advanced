@@ -99,3 +99,15 @@ I'd do it once, either before I start, or after I finish, looping”
 </td>
 </tr>
 </table>
+
+A colleague is trying to calculate the top ten tree species per neighborhood in the city of Vancouver. They’ve got to the point where they can merge the neighborhood and tree datasets together – and even create an FME list of the most-populous trees – but they are having problems extracting information from that list and turning it into attributes.
+
+Having taken FME training(!) you realize this can be done using a custom transformer loop.
+
+**1)** Open Workspace
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3g-Begin.fmw.
+
+This is as far as your colleague got. Run the workspace to see what the output is. It will take about 90 seconds to complete (if your system is slower, or you just want it to go faster, put a Sampler transformer before the StringCaseChanger, to cut down the amount of trees beingprocessed).
+
+The output looks like this. It’s the result of the ListHistogrammer that produces a nice, sorted list of the number of tree types per neighborhood.
