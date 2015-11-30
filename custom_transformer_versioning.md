@@ -38,3 +38,13 @@ after it is newly opened in Workbench.”
 </td>
 </tr>
 </table>
+
+**Editing a Specific Transformer Version**
+
+Whenever a versioned custom transformer is initially opened in Workbench, you are prompted as to which version you wish to edit, or whether you want to just start with a new version:
+
+This way you are able to make edits on older versions, which is particularly useful when that version is tied to a particular FME release.
+
+**Updating a Transformer Version**
+
+Whenever a workspace contains a linked custom transformer, and FME detects that a new version is available, then an option appears on the context menu to allow an update to the new version:
