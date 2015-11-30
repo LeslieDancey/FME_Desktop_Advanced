@@ -181,3 +181,19 @@ Return to the DensityEvaluator tab where the transformer is defined. Click on th
 Put a checkmark against the WeightingAttribute attribute and then click OK to close the dialog.
 
 This will cause the attribute to be exposed in the custom transformer definition:
+
+It will also cause a user parameter to be created. Locate the parameter in the Navigator window (it should be called WEIGHTINGATTRIBUTE) right-click on it and choose Edit Definition.
+
+Put a checkmark in the Optional field, as this should not be compulsory (the user might not have an attribute to weight the results by).
+
+8) Duplicate ExpressionEvaluator
+
+Make a duplicate copy of the existing ExpressionEvaluator and connect it in parallel to the current one. Then put a Tester in beforehand where the Passed port goes to one
+
+ExpressionEvaluator and the Failed port goes to the other:
+
+**9)** Set up Tester
+
+Open up the Tester parameters dialog. Make a test for where WeightingAttribute > 0
+
+**10)** Adjust Equation
