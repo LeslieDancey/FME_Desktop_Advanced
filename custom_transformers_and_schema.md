@@ -205,3 +205,7 @@ Change the equation to:
 @Value(TotalPopulation2001)/(@Value(NeighborhoodArea)*@Value(WeightingAttribute))
 
 i.e. multiply the existing NeighborhoodArea attribute by the WeightingAttribute and place parentheses around that part of the expression.
+
+Click OK to close the dialog and run the workspace to check the result. Remember – the results will be different every time because we’re generating the weighting attribute randomly at run time!
+
+Experiment selecting the weighting attribute in the main canvas, and not selecting it. When no attribute is selected then the features should pass through the Failed port and no weighting is used in the calculation:
