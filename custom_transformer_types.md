@@ -41,3 +41,22 @@ Clicking OK creates the custom transformer and opens it in a new instance of Wor
 FME has a specific installation folder in which custom transformer files can be saved. If a custom transformer is saved in this folder then it becomes available in Workbench and can be used the same as any other transformer.
 
 When a linked transformer shows up in the transformer gallery – or Quick Add dialog – then it has a special icon to signify that you are about to use a linked version, rather than the embedded.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Note the refresh button on the transformer gallery. If a custom
+transformer doesn’t show up when you expect, refreshing the gallery
+contents may help to locate it.”
+</span>
+</td>
+</tr>
+</table>
