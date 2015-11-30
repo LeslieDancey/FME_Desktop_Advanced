@@ -131,8 +131,6 @@ remains by looking in the Embedded Transformers section of the transformer galle
 </tr>
 </table>
 
-8) Examine Custom Transformer
-Go back to the instance of Workbench where the fmx file is open. Move one of the objects about
-to activate the save button. Then save the file. Notice that you aren’t prompted to save a new
-version. That’s because you’re still in the same session. Any edits you make here will go
-towards the same version, until you close and reopen the file.
+**8)** Examine Custom Transformer
+
+Go back to the instance of Workbench where the fmx file is open. Move one of the objects about to activate the save button. Then save the file. Notice that you aren’t prompted to save a new version. That’s because you’re still in the same session. Any edits you make here will go towards the same version, until you close and reopen the file.
