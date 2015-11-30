@@ -61,3 +61,34 @@ In the Create Custom Transformer dialog enter a name, category, and description 
 This time, set the Attribute References parameter to “Advanced – Fix Manually” and click OK.
 
 The custom transformer will now be created.
+
+**3)** Create Published Parameter
+
+Examine the custom transformer and this time you’ll see there are no published parameters.
+
+In fact, the ExpressionEvaluator will have a red parameters button, because it has no access to the required attributes:
+
+So, in the custom transformer definition, locate the User Parameters section in the Navigator window. Right-click on the part labelled User Parameters and select Add Parameter.
+
+In the dialog that opens, define a new published parameter as follows:
+
+Type:Attribute Name
+
+Name:DensityAttr
+
+Prompt:Density Attribute
+
+The Published checkmark should be turned on, but turn off the Optional checkmark, as this is a compulsory parameter for this transformer:
+
+Click OK to create the parameter.
+
+**4)** Apply Published Parameter
+
+The parameter we need is now created, but not yet being applied. To do so open the parameters dialog for the ExpressionEvaluator.
+You’ll see the problem in the expression; TotalPopulation2001 is highlighted in red because it is not available to the transformer:
+
+So, strip out the TotalPopulation2001 part of the expression:
+
+Now add a reference to the newly created user parameter.
+
+This can be done by locating the parameter in the operators panel and double-clicking it:
