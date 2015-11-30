@@ -90,3 +90,7 @@ In the Navigator window (of the custom transformer definition) locate and expand
 Double-click the Parallel Processing Level parameter to set it. Set the processing level to Moderate.
 
 Click OK to close the dialog and you’ll notice the Parallel Process By parameter is now published.
+
+**4)** Set Process By
+
+Return to the main canvas and click on the parameters button for the custom transformer instance. Select both _column and _row as the attributes to process by.
