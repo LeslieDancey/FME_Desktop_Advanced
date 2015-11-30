@@ -137,3 +137,28 @@ transformers, only embedded.”
 </td>
 </tr>
 </table>
+
+For more information on obtaining licenses for a custom transformer, contact the Safe Software support team at www.safe.com/support.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Did you know that it is possible to nest one custom transformer inside
+another?
+For example, download the PolylineAnalyzer custom transformer from the FME store and
+you’ll find inside its definition it uses other custom transformers such as the
+VertexCounter and AzimuthCalculator. Look at the VertexCounter definition and you’ll
+find it uses a custom transformer called the LoopFilter!
+So nesting transformers – whether linked or embedded – is a perfectly valid technique.”
+</span>
+</td>
+</tr>
+</table>
