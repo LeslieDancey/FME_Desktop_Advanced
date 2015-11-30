@@ -30,5 +30,5 @@
    * [Custom Transformers and Schema](custom_transformers_and_schema.md)
    * [Manual Schema Handling](manual_schema_handling.md)
    * [Custom Transformer Types](custom_transformer_types.md)
-   * Custom Transformer Versioning
+   * [Custom Transformer Versioning](custom_transformer_versioning.md)
 
