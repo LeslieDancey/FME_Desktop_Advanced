@@ -60,3 +60,18 @@ parallel processing options, and why it’s not worth doing in a custom transfor
 </td>
 </tr>
 </table>
+
+For this exercise we have been asked to convert point clouds to a vector point format that another department can use. We already have a workspace to do this, which nicely tiles and thins the data too so the destination datasets aren’t overwhelmed.
+
+However, the workspace takes time to run and it might be better to use parallel processing.
+Since none of the transformers used has a parallel processing parameter, we’ll have to create a custom transformer.
+
+**1)** Open Workspace
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3f-Begin.fmw
+
+As you’ll see, this workspace processes some incoming point cloud data. Inspect the data to see what we’re dealing with. If you run the workspace as-is it will take approximately three minutes. To make it run a little faster you can increase the Thinning Interval parameter in the PointCloudThinner (say to 25).
+
+Open a task manager (process manager) tool for your operating system. Run the workspace. You’ll see a single FME engine process running (fme.exe)
+
+Of course, you’ll also see an fmeworkbench.exe process, which is the process running the Workbench interface. This isn’t responsible for running a workspace; this is a separate process.
