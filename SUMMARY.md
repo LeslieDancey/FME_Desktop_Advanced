@@ -29,4 +29,5 @@
    * [Using Custom Transformers](using_custom_transformers.md)
    * [Custom Transformers and Schema](custom_transformers_and_schema.md)
    * [Manual Schema Handling](manual_schema_handling.md)
+   * Custom Transformer Types
 
