@@ -32,5 +32,5 @@
    * [Custom Transformer Types](custom_transformer_types.md)
    * [Custom Transformer Versioning](custom_transformer_versioning.md)
    * [Custom Transformers and Parallel Processing](custom_transformers_and_parallel_processing.md)
-   * Custom Transformers and Loops
+   * [Custom Transformers and Loops](custom_transformers_and_loops.md)
 
