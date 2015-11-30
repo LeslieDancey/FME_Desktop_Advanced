@@ -60,3 +60,15 @@ contents may help to locate it.”
 </td>
 </tr>
 </table>
+
+**Insertion Mode**
+
+When exporting a custom transformer, the Insert Mode parameter specifies how the custom transformer can be used. There are four different modes.
+
+If a “by Default” option is used, then any instance of this transformer that is placed can be switched back and forth from embedded to linked.
+
+If an “Always” option is used, then any instance of this transformer is fixed in either embedded or linked mode, and cannot be switched.
+
+**Which Mode to Use**
+
+When an author creates a custom transformer for a customer or user who is inexperienced in FME, then Embedded Always is a good choice, since it is easier to manage (no external files) and the user cannot accidentally change it.
