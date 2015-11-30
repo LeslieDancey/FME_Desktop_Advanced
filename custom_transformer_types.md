@@ -84,3 +84,29 @@ When a custom transformer is designed to allow type switching, to switch a custo
 Similarly, to switch from Linked to Embedded simply right-click and choose the option Embed.
 
 Of course, to be able to switch types requires that you have already exported the custom transformer!
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Switching from Embedded to Linked only works as long as the two
+versions are the same.
+In other words, if you embed a linked transformer and then make changes to the
+embedded definition, you won’t be able to revert to the linked version.”
+</span>
+</td>
+</tr>
+</table>
+
+**Password**
+
+The password field (in the Export Custom Transformer dialog) allows you to password-protect the custom transformer. This will make it impervious to edits from unauthorized persons.
+
+Additionally, the file contents are (very mildly) encrypted so that they cannot be copied by opening the source file in a text editor.
