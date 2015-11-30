@@ -48,3 +48,7 @@ This way you are able to make edits on older versions, which is particularly use
 **Updating a Transformer Version**
 
 Whenever a workspace contains a linked custom transformer, and FME detects that a new version is available, then an option appears on the context menu to allow an update to the new version:
+
+If you have the ‘Show Transformer Version’ option turned on under Tools > FME Options > Transformers, then the tooltip will now show the transformer version:
+
+Note that if I was using a version of FME that is incompatible with the updates in version 2, then I would not be given the option to update.
