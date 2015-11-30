@@ -30,3 +30,7 @@ In short, you can’t select an attribute in this dialog, only user parameters.�
 </td>
 </tr>
 </table>
+
+The published parameter means that the end user is able to set the attribute to group-by for parallel processing. For example, here the custom transformer is creating a separate process for each different park feature:
+
+If, as an author, I don’t want the end user to be setting the group-by, then what I can do is locate that published parameter, edit its definition, and unset the Published parameter:
