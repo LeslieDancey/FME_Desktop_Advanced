@@ -100,3 +100,17 @@ I like to call it George!”
 </td>
 </tr>
 </table>
+
+Having created a custom transformer in exercises 3a and 3b, we should check that the schema is going to be handled correctly.
+
+**1)** Start Workbench
+
+Open the workspace C:\FMEData\Workspaces\DesktopAdvanced\Exercise3c-Begin.fmw
+
+If you check back to exercise 3a, you’ll see that the transformer was created using the automatic schema handling parameter and the workspace will already be handling schema properly. That’s how we were able to duplicate the transformer in exercise 3b and select one of the two attributes.
+
+**2)** Set Parameter Prompts
+
+One issue outstanding is that the prompt used by the transformer is not very generic. Let’s fix that. Click on the tab labelled DensityEvaluator to switch the canvas to the custom transformer definition. Browse the Navigator window to find the published parameter that FME created.
+
+Right-click on the parameter and choose Edit Definition. In the dialog that opens set the parameter prompt to: Density Attribute
