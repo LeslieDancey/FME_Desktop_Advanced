@@ -209,3 +209,24 @@ i.e. multiply the existing NeighborhoodArea attribute by the WeightingAttribute 
 Click OK to close the dialog and run the workspace to check the result. Remember – the results will be different every time because we’re generating the weighting attribute randomly at run time!
 
 Experiment selecting the weighting attribute in the main canvas, and not selecting it. When no attribute is selected then the features should pass through the Failed port and no weighting is used in the calculation:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“It may seem odd – especially to experienced users – that we would use
+the attribute in the expression, and not the published parameter.
+But this is all part of how FME handles this behavior automatically. It avoids the author
+needing to know about published parameters and how to use them, and uses hidden
+functionality to replace the attribute with the published parameter wherever necessary.”
+</span>
+</td>
+</tr>
+</table>
