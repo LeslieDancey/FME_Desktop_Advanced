@@ -94,3 +94,15 @@ Click OK to close the dialog and you’ll notice the Parallel Process By paramet
 **4)** Set Process By
 
 Return to the main canvas and click on the parameters button for the custom transformer instance. Select both _column and _row as the attributes to process by.
+
+This means that each unique combination of _column and _row (i.e. each tile) will be run under a separate process, up to a maximum of one process per core processor.
+
+**5)** Run Workspace
+
+Run the workspace, again with a task manager window open. Once the tiling is complete and the rest of the workspace is being processed, you’ll notice a number of FME worker processes (fmeworker.exe).
+
+In moderate mode, you’ll see up to one fmeworker process for each core. This time the translation should be complete is nearly half the time, approximately one minute and thirty seconds.
+
+**6)** Experiment with Parallel Processing Level
+
+If you have time, re-run the workspace with a different processing level, say Aggressive. Does it run any quicker than the Moderate processing level? If not, why might that be?
