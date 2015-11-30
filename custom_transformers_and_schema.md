@@ -149,3 +149,35 @@ Then click OK to close this dialog and add to the published parameter.
 Now we’ve defined a published parameter, we have to use it in the custom transformer.
 
 Open the parameters dialog for the AreaCalculator transformer. For the Multiplier field, click the drop-down arrow and select the newly defined user parameter, DensityUnits.
+
+Click OK to close the dialog.
+
+Back in the main canvas the custom transformer now has a parameter for the end user to select the output density units. Experiment by running the workspace using different units, to prove that the changes were implemented properly.
+
+**5)** Implement Weighting
+
+Although it’s not needed for this population density calculation, another useful function for this transformer would be the ability to apply a weighting to the density calculations.
+
+The weighting will come from an incoming attribute, which means we need to be able to handle this in the custom transformer’s schema.
+
+Because we don’t have a weighting attribute here, return to the Main canvas tab and add a RandomNumberGenerator transformer in order to generate a test attribute:
+
+**6)** Set RandomNumberGenerator Parameters
+
+Open the parameters dialog for the RandomNumberGenerator. For the purposes of this exercise set:
+
+Minimum Value: 0.1
+
+Maximum Value:1
+
+Decimal Places: 1
+
+Result Attribute: Weighting Attribute
+
+**7)** Expose Attribute in Custom Transformer
+
+Return to the DensityEvaluator tab where the transformer is defined. Click on the parameters button on the Input port object to open up a dialog named Edit Transformer Input.
+
+Put a checkmark against the WeightingAttribute attribute and then click OK to close the dialog.
+
+This will cause the attribute to be exposed in the custom transformer definition:
