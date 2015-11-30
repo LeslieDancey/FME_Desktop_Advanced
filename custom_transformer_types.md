@@ -17,3 +17,10 @@ On a workspace canvas, embedded transformers are identified by their green color
 Both type of transformer can be used in an FME workspace, and there are various advantages and disadvantages to each type.
 
 **Embedded Transformers**
+
+Embedded transformers are perhaps easier to understand and have the advantage of needing no external files, as their definition is embedded into the workspace. However, an embedded transformer cannot easily be shared with other users, unless they are given a copy of the same workspace, and it is not easy to maintain a consistent definition among several users.
+
+**Linked Transformers**
+
+As a separate file, linked transformers are perhaps a little harder to understand and manage.
+However, a linked custom transformer is much easier to share among users: any number of users can use the same custom transformer definition. Additionally, maintenance is easier too because any changes made to the definition are automatically propagated to any workspace that uses it.
