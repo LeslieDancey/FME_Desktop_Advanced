@@ -98,3 +98,22 @@ This will create an expression like so:
 You should also change the Destination Attribute from PopulationDensity2001 to DensityResult.
 
 Click OK to accept the new expression and close the dialog. Notice that the ExpressionEvaluator parameters button turns from red to blue, meaning all is now correct.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“In step 4 the @Value() part of the expression needs to remain, because
+the parameter only returns an attribute name, not a value.
+It’s one reason why automated schema handling is easier to use.”
+</span>
+</td>
+</tr>
+</table>
