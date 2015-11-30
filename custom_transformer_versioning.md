@@ -134,3 +134,11 @@ remains by looking in the Embedded Transformers section of the transformer galle
 **8)** Examine Custom Transformer
 
 Go back to the instance of Workbench where the fmx file is open. Move one of the objects about to activate the save button. Then save the file. Notice that you aren’t prompted to save a new version. That’s because you’re still in the same session. Any edits you make here will go towards the same version, until you close and reopen the file.
+
+So, leaving Workbench open, close the fmx file. Then go to the start tab and select it from the recent Files list. Now it is reopened, any changes we make will go towards a new version.
+
+**9)** Update Custom Transformer
+
+Rather than just jiggling objects about to prove a point, let’s make a real update to this transformer. One thing we could do is filter data by geometry, so we aren’t trying to measure the length of a point feature, or similar.
+
+So, add a GeometryFilter transformer, in front of the LengthCalculator.
