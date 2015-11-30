@@ -92,3 +92,9 @@ So, strip out the TotalPopulation2001 part of the expression:
 Now add a reference to the newly created user parameter.
 
 This can be done by locating the parameter in the operators panel and double-clicking it:
+
+This will create an expression like so:
+
+You should also change the Destination Attribute from PopulationDensity2001 to DensityResult.
+
+Click OK to accept the new expression and close the dialog. Notice that the ExpressionEvaluator parameters button turns from red to blue, meaning all is now correct.
