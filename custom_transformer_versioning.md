@@ -102,3 +102,37 @@ Save Location is the default for storing custom transformers (<user>\FME\Transfo
 Click OK to close the dialog. The custom transformer is saved (as AverageLengthCalculator.fmx) and this file opened up in a new instance of FME Workbench.
 
 **7)** Examine Workspace
+
+Go back to the instance of FME Workbench where the original workspace is open. The custom transformer is now a cyan color to denote that it is now a linked transformer.
+
+Notice that you can right-click and choose to embed the transformer, and then switch back to the linked version. In a real-life scenario, which you choose would usually depend on whether you are planning to share the transformer.
+
+In embed mode, right-click the transformer and choose Edit. Then in the definition make a small change (like moving one of the objects). Back in the Main tab you’ll find that you can no longer change back to Linked mode, because the two definitions are now different!
+
+Delete the embedded transformer. You’ll be prompted whether you wish to delete the definition too. Click Yes, but then add a new linked version back again.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“It’s important to realize that the definition of an embedded custom
+transformer can remain in the workspace, even if it’s not used. Sometimes
+this is useful, sometimes not. You’ll be able to tell if such a definition
+remains by looking in the Embedded Transformers section of the transformer gallery.”
+</span>
+</td>
+</tr>
+</table>
+
+8) Examine Custom Transformer
+Go back to the instance of Workbench where the fmx file is open. Move one of the objects about
+to activate the save button. Then save the file. Notice that you aren’t prompted to save a new
+version. That’s because you’re still in the same session. Any edits you make here will go
+towards the same version, until you close and reopen the file.
