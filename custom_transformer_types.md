@@ -30,8 +30,14 @@ However, a linked custom transformer is much easier to share among users: any nu
 All custom transformers start out as an embedded version. To create a linked version the custom transformer is exported from the workspace.
 
 This is easily done by clicking on the canvas tab for the embedded definition and choosing File
-> Export as Custom Transformer from the menubar:
+- Export as Custom Transformer from the menubar:
 
 At this point a dialog opens in which you can confirm the transformer name and category, plus some other parameters including the save location:
 
 Clicking OK creates the custom transformer and opens it in a new instance of Workbench.
+
+**Save Location**
+
+FME has a specific installation folder in which custom transformer files can be saved. If a custom transformer is saved in this folder then it becomes available in Workbench and can be used the same as any other transformer.
+
+When a linked transformer shows up in the transformer gallery – or Quick Add dialog – then it has a special icon to signify that you are about to use a linked version, rather than the embedded.
