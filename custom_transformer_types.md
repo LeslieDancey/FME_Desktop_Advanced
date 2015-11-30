@@ -110,3 +110,30 @@ embedded definition, you won’t be able to revert to the linked version.”
 The password field (in the Export Custom Transformer dialog) allows you to password-protect the custom transformer. This will make it impervious to edits from unauthorized persons.
 
 Additionally, the file contents are (very mildly) encrypted so that they cannot be copied by opening the source file in a text editor.
+
+This allows authors to make transformers available for purchase without any fear that their work will be copied or edited.
+Of course, it’s important not to forget or lose the password, in case you wish to make edits!
+Licensing
+
+On the same topic, custom transformers can be licensed so that they cannot be used without the proper registration code. A special transformer – the LicenseChecker – and a license generator tool are provided for authors to implement such a setup.
+
+Here, for example, the LicenseChecker is being used to protect a custom transformer. If the transformer is licensed then it will work as expected. If it is not licensed then it will terminate.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“It’s best to debug your custom transformers before exporting them,
+because the Run with Breakpoints tool does not work inside exported
+transformers, only embedded.”
+</span>
+</td>
+</tr>
+</table>
