@@ -129,3 +129,7 @@ Click the parameter button and select TotalPopulation2001 as the attribute to pr
 Now delete the remaining ExpressionEvaluator from the main canvas as we no longer need it.
 
 Use Quick Add to add a second DensityEvaluator instance. Connect it as a second connection from the CsmapReprojector and select TotalPopulation2011 as the attribute to process.
+
+**7)** Run Workspace
+
+Add an Inspector transformer to each of the custom transformers and run the workspace. Check the output to ensure the results are correct.
