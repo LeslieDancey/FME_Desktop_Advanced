@@ -142,3 +142,13 @@ So, leaving Workbench open, close the fmx file. Then go to the start tab and sel
 Rather than just jiggling objects about to prove a point, let’s make a real update to this transformer. One thing we could do is filter data by geometry, so we aren’t trying to measure the length of a point feature, or similar.
 
 So, add a GeometryFilter transformer, in front of the LengthCalculator.
+
+Open the parameters and select Line and Arc as the geometries to filter by. Then click OK to close the dialog.
+
+Adjust the feature mapping so that the Line and Arc ports are directed into the LengthCalculator. Add a second output port object by right-clicking on the canvas and selecting Insert Transformer Output. Call the newly placed port Rejected and connect the <Unfiltered> data to it, like so:
+
+Now click the save button to save the custom transformer. You’ll be prompted whether you want to create a new version. Click the button labelled New Version to do so.
+
+**10)** Update Workspace
+
+Go back to the instance of FME Workbench where the original workspace is open. Click on the refresh button on the Transformer Gallery in order for FME to scan all custom transformers and discover the new version we’ve just created.
