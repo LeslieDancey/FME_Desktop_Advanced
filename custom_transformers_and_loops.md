@@ -111,3 +111,21 @@ Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3g-Begin.fm
 This is as far as your colleague got. Run the workspace to see what the output is. It will take about 90 seconds to complete (if your system is slower, or you just want it to go faster, put a Sampler transformer before the StringCaseChanger, to cut down the amount of trees beingprocessed).
 
 The output looks like this. It’s the result of the ListHistogrammer that produces a nice, sorted list of the number of tree types per neighborhood.
+
+**NB:** To see this you must query a feature and inspect the Information Window, not the Table View.
+
+A looping transformer is useful here because it can scan through the list, extract all of the data we need, and process it simultaneously. It's also useful because it can handle a variable number of list items; for example, if there are only 5 species of tree in a neighborhood, we only process 5 species (not 10).
+
+**2)** Create Custom Transformer
+
+Click anywhere on the canvas and press Ctrl+T to start creating a custom transformer. This time, because we’re using loop functionality only available in a custom transformer, we’ll create it from scratch and not define it first in the main canvas.
+
+Call the transformer a TreeCounter or TreeIndexer and set up automatic attribute reference handling (i.e. Handle with Published Parameters).
+
+**3)** Connect Custom Transformer
+
+At the moment the transformer will be empty apart from an Input and Output port. However, if you open the Input port’s parameters you’ll notice there are no attributes available.
+
+That’s because the custom transformer is not connected to anything in the main canvas.
+
+So the first task is to temporarily switch to the main tab and connect the custom transformer, like so:
