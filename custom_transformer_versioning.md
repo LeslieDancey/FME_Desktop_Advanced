@@ -52,3 +52,19 @@ Whenever a workspace contains a linked custom transformer, and FME detects that 
 If you have the ‘Show Transformer Version’ option turned on under Tools > FME Options > Transformers, then the tooltip will now show the transformer version:
 
 Note that if I was using a version of FME that is incompatible with the updates in version 2, then I would not be given the option to update.
+
+I notice that there’s a custom transformer to calculate the average area of a number of polygon features. But there’s no such transformer to calculate the average length of linear features.
+
+Let’s fix that situation by creating such a transformer.
+
+**1)** Open Workspace
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise3e-Begin.fmw.
+
+You’ll see that the workspace is reading a set of bicycle path data, and then doing some minor processing to get it into a reasonable state for use in the workspace.
+
+You may want to run the workspace to examine the output and see what data we are dealing with; but remember the custom transformer we will create is to be designed to work on any linear data.
+
+**2)** Add Length Calculator
+
+The contents of the transformer will be fairly straightforward and we’ll start out with just two transformers. So, simply add a LengthCalculator and a StatisticsCalculator transformer to the workspace.
