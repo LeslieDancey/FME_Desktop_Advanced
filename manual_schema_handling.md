@@ -25,3 +25,22 @@ The required output is an attribute called AverageArea.
 However, no effort is being made to clear up other attributes that are being used or generated, such as _area, _min, and _max.
 
 The workspace author should clean up this output. They can do this by visiting the custom transformer definition, clicking on the parameters (cog wheel) button for the output port object, and opening a dialog in which the attributes to be output can be defined:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“One suggestion is to prefix all temporary attributes inside a custom
+transformer with _temp. Then you’ll know which to keep and which to
+clean up.”
+</span>
+</td>
+</tr>
+</table>
