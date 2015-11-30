@@ -123,3 +123,21 @@ Therefore we’ll implement a method for users to be able to select units.
 A user parameter will be the best way to achieve this, as the user can select the units manually and not need to supply it as an attribute.
 So, in the custom transformer definition, browse the Navigator window and right-click on the entry labelled User Parameters.
 Select the Add Parameter option:
+
+In the Add/Edit User Parameter dialog, set the following parameters:
+
+Type    Choice with Alias
+
+Name    DensityUnits
+
+Prompt  Density Units
+
+Uncheck the check box parameter labelled ‘Optional.’
+
+Now click the […] button to the right of the Configuration parameter. This opens a dialog in which to define choices for the user to select from.
+
+Make two entries into this dialog. The first is a value of 1 with a display name of ‘Sq Metres.’
+
+The second is a value of 0.000001 with a display name of ‘Sq Km.’ Click OK to close that dialog.
+
+Back in the Add/Edit User Parameter dialog set Sq Km as the Default Value.
