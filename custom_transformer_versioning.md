@@ -68,3 +68,13 @@ You may want to run the workspace to examine the output and see what data we are
 **2)** Add Length Calculator
 
 The contents of the transformer will be fairly straightforward and we’ll start out with just two transformers. So, simply add a LengthCalculator and a StatisticsCalculator transformer to the workspace.
+
+**3)** Create Custom Transformer
+
+Select the two newly placed transformers and turn them into a Custom Transformer called AverageLengthCalculator. Make sure the attribute references are handled automatically, although at the moment there aren’t any references to handle.
+
+**4)** Edit Custom Transformer
+
+Now we have a new custom transformer, let’s tidy it up and make it functional.
+
+Firstly rename the input port object to Lines (thus identifying what geometry is expected), then add an output port object (if you don’t have one already) and rename it to Output. It should be connected to the StatisticsCalculator:Complete port:
