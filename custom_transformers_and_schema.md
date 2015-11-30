@@ -72,3 +72,31 @@ However, they cannot do that since ParkName was not used by the custom transform
 That attribute is literally not available inside the custom transformer definition.
 
 The solution is to click the icon to open the Input port parameters, and expose ParkName there:
+
+
+Now ParkName becomes available for use inside the custom transformer:
+
+Additionally, back on the main canvas, the custom transformer has a newly exposed parameter ready to accept an attribute to use as the label content:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Basically, published parameters are the aerodynamic solution for handling
+schema inside a custom transformer. This automated behavior makes it
+easier for a new user, as they can use custom transformers without having
+to know about published parameters and how they operate.
+Think of it as an auto-pilot for custom transformers. It’s a perfect introduction for new
+users, and even experienced users will find it a nice break from flying manually.
+I like to call it George!”
+</span>
+</td>
+</tr>
+</table>
