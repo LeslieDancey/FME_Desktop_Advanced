@@ -89,3 +89,23 @@ That way the end-user can choose at runtime which format to write to.
 The Destination Dataset parameter, like all dataset parameters, is also linked to a user parameter. Note that the destination for this writer is always a folder, even when the selected format is file-based.
 
 For example, here the user is reading a parks dataset (coincidentally also using the Generic Reader) and writing the data out to KML format using the Generic Writer:
+
+**Semantic Translations and the Generic Writer**
+
+It’s important to remember that FME is a semantic translator, carrying out transformations on output data to fit the definitions and rules of the destination format.
+
+In other words, FME will automatically restructure data to fit the output format’s rules on geometry and attributes (both names and values).
+
+Therefore, the Generic Writer may produce slightly different results for different data formats.
+
+**Generic Writer Feature Types**
+
+The feature types defined for a Generic Writer are – like the Generic Reader – relatively inflexible. The layers that are defined will be the layers that are created, regardless of format.
+
+Of course, there is a way to be more flexible – and creative – with the feature types that are written, and that’s with functionality that we just covered: Fanouts!
+
+If the Generic Writer uses a feature type fanout, based on the format attribute fme_feature_ type, then the destination dataset will have the same layers as the source – even if that varies from translation to translation!
+
+Generic Writer Parameters
+
+Like the Generic Reader, a particular output format in the Generic Writer can be controlled using parameters from a dummy Writer of the same format, which has been added to the workspace.
