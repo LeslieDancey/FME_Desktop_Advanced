@@ -206,3 +206,16 @@ Species@Evaluate(@Value(LoopCounter)+1)
 What this will do is rename the old attribute (value) to an attribute called SpeciesX, where X is the number of the loop, plus one. We add one to the value so the attributes don’t start at zero!
 
 This will give us something like:
+
+- Species1: Oak
+- Species2: Cedar
+- Species3: Chestnut
+- Etc.
+
+In the Range Lookup Table,
+
+**13)** Run Workspace
+
+The custom transformer will now look something like this:
+
+You may want to edit the Output port parameters so the only attribute it outputs back to the workspace is Species@Evaluate(@Value(LoopCounter)+1).
