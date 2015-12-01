@@ -35,4 +35,5 @@
    * [Custom Transformers and Loops](custom_transformers_and_loops.md)
    * [Module Review](module_review3.md)
 * [Advanced Reading and Writing](advanced_reading_and_writing.md)
+   * Zip File Handling
 
