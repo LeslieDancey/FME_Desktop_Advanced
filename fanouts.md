@@ -92,3 +92,9 @@ For the Text to Match enter: -(.+)$
 Leave the Replacement Text field empty.
 
 Select Use Regular Expressions = Yes (this is very important)
+
+This regular expression will search out the dash character – and anything after it – and replace it with nothing (i.e. delete it). Click OK to close the dialog.
+
+**5)** Set Fanout
+
+Open the Feature Type Properties dialog for the Writer feature type. Set the Fanout by Attribute checkbox on and select ZoneName as the attribute to fan out by:
