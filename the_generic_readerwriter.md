@@ -109,3 +109,25 @@ If the Generic Writer uses a feature type fanout, based on the format attribute 
 Generic Writer Parameters
 
 Like the Generic Reader, a particular output format in the Generic Writer can be controlled using parameters from a dummy Writer of the same format, which has been added to the workspace.
+
+The difference is that this will be a “real” Writer and not a Resource Writer (of which there is no such thing). The dummy Writer does not need to have any feature types defined, or any data sent to it; in fact it should not as this would only slow the translation.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+This is text as spoken by a person from the city of Interopolis
+<br>It uses a font awesome icon (this won't show in PDF)
+<br>The text is a serif font, italic.
+<br>It is in a table with an orange border
+</span>
+</td>
+</tr>
+</table>
