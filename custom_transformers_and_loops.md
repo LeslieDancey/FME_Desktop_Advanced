@@ -170,3 +170,15 @@ Set it up to test for:
 
 - LoopCounter = SpeciesCount OR
 - LoopCounter = 10
+
+Connect the Tester:Passed port to the Output port object.
+
+Connect the Tester:Failed port to the Loop object.
+
+**NB:** If you don’t see an attribute called SpeciesCount, check the ListElementCounter to make sure that is what you called the result of that action.
+
+**10)** Connect Loop Input
+
+Now connect the Loop input port to the ExpressionEvaluator. You should now have something that looks like this:
+
+If you run this (and you certainly can do) it will run through the loop, up to a maximum of ten times per feature, and then finish the workspace.
