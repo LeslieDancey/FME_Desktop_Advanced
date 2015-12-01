@@ -141,3 +141,17 @@ Now place a Loop object (right-click on the canvas and choose Insert Transformer
 **5)** Expose Attributes
 
 We’ll need to use some attributes in here, so open the Input port parameters dialog and expose the list attributes _histogram{}.count and _histogram{}.value.
+
+**6)** Define Loop Parameters
+
+What we need to do is loop through each entry in the list, selecting a tree type, until we have either read the first ten elements or we’ve reached the end of the list.
+
+To set up a condition for ending the loop we’ll need to first count how many elements are in the list and secondly keep a count of the number of loops we’ve done, so we don’t try to fetch information past the end of the list.
+
+So, firstly add a ListElementCounter transformer to count the number of elements in the list. It will connect to the Input port (not the Loop port) because we only need to do this count once.
+
+Set the attribute to scan the _histogram{} list and the Element Count Attribute to SpeciesCount.
+
+**7)** Define Loop Parameters - 2
+
+Add an AttributeCreator transformer after the ListElementCounter. Use it to create an attribute called LoopCounter, with an initial value of zero (0).
