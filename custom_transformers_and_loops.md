@@ -219,3 +219,7 @@ In the Range Lookup Table,
 The custom transformer will now look something like this:
 
 You may want to edit the Output port parameters so the only attribute it outputs back to the workspace is Species@Evaluate(@Value(LoopCounter)+1).
+
+Return to the main tab and connect an Inspector transformer to the TreeCounter/TreeIndexer custom transformer, if there is not one already.
+
+Run the workspace. Inspect the output. Querying a feature should produce something like this (you may need to click a “show all” link to expand the list fully):
