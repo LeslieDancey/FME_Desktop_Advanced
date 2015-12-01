@@ -11,3 +11,6 @@ Because a fanout occurs as the data is being written, it does not cause multiple
 Similarly to a group-by, the groups are defined by an attribute.
 
 For example, here an author is “fanning-out” a set of data into multiple outputs depending on a feature’s elevation attribute:
+
+A major benefit of a fanout is the high degree of flexibility – and freedom from fixed-layer schemas – in return for minimal effort.
+There are two types of fanout: Feature Type Fanout and Dataset Fanout.
