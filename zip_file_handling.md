@@ -17,3 +17,25 @@ A small icon in the dataset field indicates the zipped status:
 When the workspace is run the log file reports the zip creation:
 
 And the output is, indeed, a zipped dataset:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“I’m Sister Intuitive from the order of Perpetual Translations. I’ll provide
+you with spatial guidance throughout this chapter.
+Some users may want to zip data in order to upload it to process it as a single entity.
+Here, a TCL or Python shutdown script will know the name of the file just written through
+published parameters (macros). With that information the file can be processed – for
+example, uploaded to an FTP site – with minimal difficulty.”
+</span>
+</td>
+</tr>
+</table>
