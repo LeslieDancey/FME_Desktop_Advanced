@@ -98,3 +98,16 @@ This regular expression will search out the dash character – and anything afte
 **5)** Set Fanout
 
 Open the Feature Type Properties dialog for the Writer feature type. Set the Fanout by Attribute checkbox on and select ZoneName as the attribute to fan out by:
+
+Click OK to close the dialog.
+
+**6) **Save and Run Workspace
+
+Save the workspace. Run the workspace using File > Prompt and Run.
+
+When prompted manually change the Destination Directory to:
+C:\FMEData2015\Output\Zones.zip.
+
+Open the output folder in a file browser.
+
+You should see the file Zones.zip. If you open it up there will be inside a Shape file for every zone type.
