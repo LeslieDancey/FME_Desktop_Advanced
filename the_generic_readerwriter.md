@@ -123,10 +123,13 @@ The difference is that this will be a “real” Writer and not a Resource Write
 <tr>
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
-This is text as spoken by a person from the city of Interopolis
-<br>It uses a font awesome icon (this won't show in PDF)
-<br>The text is a serif font, italic.
-<br>It is in a table with an orange border
+“Generic Readers and Writers by nature only deal with a flexible format,
+but can also be set up to be flexible with layers.
+However, each dataset being read must have the same attribute schema, and each
+dataset being written will end up with the same attribute schema. This part is not
+flexible.
+To work with flexible attribute schemas requires the use of either Automatic Attribute
+Definitions or a Dynamic Translation.”
 </span>
 </td>
 </tr>
