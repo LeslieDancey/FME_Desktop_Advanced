@@ -11,3 +11,5 @@ In that way, a single workspace can be used to process different data formats wi
 **The Generic Reader**
 
 Whereas all other Readers are tied to a particular format, the Generic Reader is capable of handling almost any format.
+
+A Generic Reader is simply added the same way that any other Reader is used; by specifying the format in the new Reader dialog:
