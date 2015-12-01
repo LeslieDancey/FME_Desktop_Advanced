@@ -43,3 +43,10 @@ In brief, the solution is to add a dummy GML Reader. In fact, a Resource Reader 
 When the Generic Reader reads a dataset of GML format, it will now look to the parameters of the dummy Reader, and use those to set how it reads GML datasets.
 
 For example, this workspace author uses a Generic Reader to read his GML data. It is a dataset of parks in the city but, sadly, the x/y axes are being read incorrectly:
+
+There is a parameter to control the x/y axes in the GML Reader, but it doesn’t appear in the Generic Reader. So, the author selects Reader > Add Reader as Resource from the menubar:
+
+When prompted the user defines the format as GML and picks a GML dataset (it won’t matter which).
+In the Navigator window they locate the newly added Reader under Workspace Resources…
+
+…and locates/set the GML Axis Order parameter:
