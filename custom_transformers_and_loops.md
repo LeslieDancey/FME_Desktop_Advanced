@@ -155,3 +155,18 @@ Set the attribute to scan the _histogram{} list and the Element Count Attribute 
 **7)** Define Loop Parameters - 2
 
 Add an AttributeCreator transformer after the ListElementCounter. Use it to create an attribute called LoopCounter, with an initial value of zero (0).
+
+**8)** Define Loop Parameters - 3
+
+Now add an ExpressionEvaluator transformer and connect it to the AttributeCreator Output port. Set it up to add one (1) to the value of LoopCounter, using the parameters provided to overwrite the existing value:
+
+This is what will increment our loop counter each time we loop through the transformers:
+
+**9)** Set Condition
+
+Add a Tester transformer connected to the ExpressionEvaluator.
+
+Set it up to test for:
+
+- LoopCounter = SpeciesCount OR
+- LoopCounter = 10
