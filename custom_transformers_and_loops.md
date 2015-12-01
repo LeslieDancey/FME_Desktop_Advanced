@@ -129,3 +129,15 @@ At the moment the transformer will be empty apart from an Input and Output port.
 That’s because the custom transformer is not connected to anything in the main canvas.
 
 So the first task is to temporarily switch to the main tab and connect the custom transformer, like so:
+
+**4)** Define Inputs, Outputs, and Loop
+
+In the custom transformer definition itself, the first task we’ll do is create the input and output ports, and define the loop we’re going to use too.
+
+So, go to the custom transformer definition. Add a new Input object. Open its properties dialog, rename it to Loop and turn off the Publish setting (it doesn’t need to appear as a data port).
+
+Now place a Loop object (right-click on the canvas and choose Insert Transformer Loop). When prompted, set it to loop back to the Loop input port.
+
+**5)** Expose Attributes
+
+We’ll need to use some attributes in here, so open the Input port parameters dialog and expose the list attributes _histogram{}.count and _histogram{}.value.
