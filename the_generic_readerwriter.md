@@ -74,3 +74,18 @@ the data to process different formats in different ways:”
 </td>
 </tr>
 </table>
+
+**The Generic Writer**
+
+Similarly to the Generic Reader, the Generic Writer is a component of FME without a specific format.
+
+A Generic Writer is simply added the same way that any other Writer is used; by specifying the format in the new Writer dialog:
+
+When a workspace with a Generic Writer is run, the format of data written is determined by a parameter that can be set in the Navigator window:
+
+This parameter is one of those that FME automatically creates a linked user parameter for.
+That way the end-user can choose at runtime which format to write to.
+
+The Destination Dataset parameter, like all dataset parameters, is also linked to a user parameter. Note that the destination for this writer is always a folder, even when the selected format is file-based.
+
+For example, here the user is reading a parks dataset (coincidentally also using the Generic Reader) and writing the data out to KML format using the Generic Writer:
