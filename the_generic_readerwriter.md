@@ -50,3 +50,27 @@ When prompted the user defines the format as GML and picks a GML dataset (it won
 In the Navigator window they locate the newly added Reader under Workspace Resources…
 
 …and locates/set the GML Axis Order parameter:
+
+Now when the workspace is run, the Generic Reader uses this GML resource to determine the parameters to read GML data with. The parameter is applied and the data read correctly:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If the Input Format parameter is turned into a user parameter, then the
+user can specify at runtime what format of data is being read. This is
+especially helpful when the extension is – like .mdb – one used by
+multiple formats.
+Additionally, the workspace can be made to test for the format being read and then filter
+the data to process different formats in different ways:”
+</span>
+</td>
+</tr>
+</table>
