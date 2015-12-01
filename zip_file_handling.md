@@ -11,3 +11,9 @@ For example, a single Shape feature type consists of several files; shp, shx, db
 **Zip File Writing**
 
 The simplest way to create a zipped output is to simply change the file extension to .zip in the output dataset field:
+
+A small icon in the dataset field indicates the zipped status:
+
+When the workspace is run the log file reports the zip creation:
+
+And the output is, indeed, a zipped dataset:
