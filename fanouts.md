@@ -76,3 +76,19 @@ By default the workspace will include a GeometryFilter and multiple output featu
 However, we know the data is polygon only (because we inspected it first, right?) so we can remove much of this.
 
 So, delete the GeometryFilter transformer and all of the Writer feature types except Zones_ polygon. You’ll end up with something that looks like this:
+
+**3)** Add StringReplacer Transformer
+
+To remove everything after the “-“ character in the ZoneName field, place a StringReplacer transformer into the workspace, between the Reader and Writer feature types.
+
+**4)** Set Parameters
+
+Open the parameters dialog for the StringReplacer.
+
+For the Attributes field, select ZoneName.
+
+For the Text to Match enter: -(.+)$
+
+Leave the Replacement Text field empty.
+
+Select Use Regular Expressions = Yes (this is very important)
