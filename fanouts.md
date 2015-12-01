@@ -55,3 +55,24 @@ This results in a series of DXF datasets, each of which has one elevation’s wo
 A Dataset Fanout is defined in the Navigator window in Workbench, under a Writer’s Advanced Parameters.
 
 Like a Feature Type Fanout, there is a parameter to select the attribute to fanout on. However, there are also parameters to let the author define a prefix and suffix for the fanned-out file names.
+
+You’ve been given a dataset of development zones and asked to separate each zone type into a separate Shape file and send it back with everything zipped together in a single file.
+
+The requestor thinks this will be a difficult task; but with FME you should be able to do it in about two minutes.
+
+**1)** Inspect Source Data
+
+The source data for this translation is a MapInfo TAB dataset:
+C:\FMEData2015\Data\Zoning\Zones.tab
+
+Inspect the source dataset in the Data Inspector. Notice that there is a field called ZoneName.
+We need the first characters of this field (up to any “–“ character) for our fanout.
+
+**2)** Start Workbench
+
+Start Workbench and generate a workspace to translate the MapInfo source data to Esri Shape.
+
+By default the workspace will include a GeometryFilter and multiple output feature types.
+However, we know the data is polygon only (because we inspected it first, right?) so we can remove much of this.
+
+So, delete the GeometryFilter transformer and all of the Writer feature types except Zones_ polygon. You’ll end up with something that looks like this:
