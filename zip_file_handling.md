@@ -39,3 +39,27 @@ example, uploaded to an FTP site – with minimal difficulty.”
 </td>
 </tr>
 </table>
+
+Another way to force a zip file output is to simply click the new “Zip Output” button in the writer dialog:
+
+Doing so automatically sets up the output to be written with the given name, but inside of a similarly named zip file:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Although the above images show how to achieve a zipped output in the
+Generate Workspace dialog, the same functionality is available
+regardless of where and how you set the output file (for example,
+through the Navigator window). You just need to give it a .zip extension.”
+</span>
+</td>
+</tr>
+</table>
