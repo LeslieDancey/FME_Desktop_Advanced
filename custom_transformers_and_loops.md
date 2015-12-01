@@ -190,3 +190,19 @@ What it won’t do is process any data; in other words we’ve set up the loopin
 Add a ListIndexer transformer. This will fetch the next set of information in the list into the workspace. The ListIndexer needs to be connected before the ExpressionEvaluator, with connections from both the AttributeCreator and Loop input object.
 
 The easiest way to connect this is to drag-connect it to the ExpressionEvaluator input port, like so:
+
+Open the ListIndexer parameters dialog. Set List Attribute to _histogram{} and the List Index should be set to the value of the LoopCounter parameter:
+
+Now, for each iteration of the loop, the next set of list attributes (value and count) will be retrieved.
+
+**12)** Add AttributeRenamer
+
+Finally, add an AttributeRenamer between the ListIndexer and the ExpressionEvaluator.
+
+Open up the parameters dialog. Set the Old Attribute parameter to the value attribute (i.e. we are renaming the value attribute). Set the New Attribute parameter to:
+
+Species@Evaluate(@Value(LoopCounter)+1)
+
+What this will do is rename the old attribute (value) to an attribute called SpeciesX, where X is the number of the loop, plus one. We add one to the value so the attributes don’t start at zero!
+
+This will give us something like:
