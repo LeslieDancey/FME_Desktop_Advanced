@@ -51,3 +51,7 @@ A Dataset Fanout delivers data to the same feature type, but in multiple dataset
 Taking the elevation example again, here the output is a different dataset for each elevation value.
 
 This results in a series of DXF datasets, each of which has one elevation’s worth of contours on one layer.
+
+A Dataset Fanout is defined in the Navigator window in Workbench, under a Writer’s Advanced Parameters.
+
+Like a Feature Type Fanout, there is a parameter to select the attribute to fanout on. However, there are also parameters to let the author define a prefix and suffix for the fanned-out file names.
