@@ -33,3 +33,9 @@ parameter.”
 </td>
 </tr>
 </table>
+
+**Feature Type Fanout**
+
+A Feature Type Fanout delivers data to multiple feature types (layers) within a single dataset.
+
+Taking the elevation example, here the output is a different feature type for each elevation value:
