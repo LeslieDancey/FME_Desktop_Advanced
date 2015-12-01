@@ -134,3 +134,25 @@ Definitions or a Dynamic Translation.”
 </td>
 </tr>
 </table>
+
+In this exercise your task is to create a workspace with which end-users can output a dataset of Community Mapping in a format of their choice. This would be an excellent workspace to use for an FME Server Data Download service.
+
+**1)** Start Workbench
+
+Start FME Workbench and begin with an empty canvas. Select Readers > Add Reader from the menubar and add the following:
+
+Reader Format: Esri Geodatabase (File Geodb API) Reader Dataset: C:\FMEData2015\Data\CommunityMapping\CommunityMap.gdb
+
+Workflow Options: Single Merged Feature Type
+
+By selecting the single merged feature type option we will have a workspace that is nice and compact, plus it will allow the user to select which tables they want to read from the source.
+
+Click OK to close the dialog and add the Reader.
+
+**2)** Add Writer
+
+Select Writers > Add Writer from the menubar and add a Generic Writer.
+
+You don’t have to select an output location, but will you have to open the parameters dialog and set an original output format; so do that and select a format like Esri Shape.
+
+In the "Add Feature Types" section of the dialog, select Automatic for feature type definitions:
