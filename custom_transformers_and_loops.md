@@ -182,3 +182,11 @@ Connect the Tester:Failed port to the Loop object.
 Now connect the Loop input port to the ExpressionEvaluator. You should now have something that looks like this:
 
 If you run this (and you certainly can do) it will run through the loop, up to a maximum of ten times per feature, and then finish the workspace.
+
+What it won’t do is process any data; in other words we’ve set up the looping structure but it’s yet to do anything inside that loop.
+
+11) Add ListIndexer
+
+Add a ListIndexer transformer. This will fetch the next set of information in the list into the workspace. The ListIndexer needs to be connected before the ExpressionEvaluator, with connections from both the AttributeCreator and Loop input object.
+
+The easiest way to connect this is to drag-connect it to the ExpressionEvaluator input port, like so:
