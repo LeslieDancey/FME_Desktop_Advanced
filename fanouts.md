@@ -14,3 +14,22 @@ For example, here an author is “fanning-out” a set of data into multiple out
 
 A major benefit of a fanout is the high degree of flexibility – and freedom from fixed-layer schemas – in return for minimal effort.
 There are two types of fanout: Feature Type Fanout and Dataset Fanout.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If this technique sounds familiar, that may be because it carries out a
+similar function – albeit in reverse – to the “Merge Feature Type”
+parameter.”
+</span>
+</td>
+</tr>
+</table>
