@@ -37,5 +37,5 @@
 * [Advanced Reading and Writing](advanced_reading_and_writing.md)
    * [Zip File Handling](zip_file_handling.md)
    * [Fanouts](fanouts.md)
-   * The Generic Reader/Writer
+   * [The Generic Reader/Writer](the_generic_readerwriter.md)
 
