@@ -223,3 +223,27 @@ You may want to edit the Output port parameters so the only attribute it outputs
 Return to the main tab and connect an Inspector transformer to the TreeCounter/TreeIndexer custom transformer, if there is not one already.
 
 Run the workspace. Inspect the output. Querying a feature should produce something like this (you may need to click a “show all” link to expand the list fully):
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">First Officer Transformer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Up to a point you could have done this by exploding the list with a
+ListExploder transformer and keeping the first ten features.
+However, that wouldn’t have helped with renaming the attributes. You would have had to
+rename them manually.
+Plus, now we can change the number of items required by changing the “10” in the Tester
+to something else. For example, if I only want the first 8 trees then I would set it to 8.
+You could also set it up as a user parameter for the user to decide. Either way, this
+"setting" is easier to change when the transformer uses a loop like this."
+</span>
+</td>
+</tr>
+</table>
