@@ -43,3 +43,11 @@ Taking the elevation example, here the output is a different feature type for ea
 This results in a DXF dataset containing multiple layers of data.
 
 A feature type parameter is defined using an option in the Feature Type Properties dialog:
+
+**Dataset Fanout**
+
+A Dataset Fanout delivers data to the same feature type, but in multiple datasets.
+
+Taking the elevation example again, here the output is a different dataset for each elevation value.
+
+This results in a series of DXF datasets, each of which has one elevation’s worth of contours on one layer.
