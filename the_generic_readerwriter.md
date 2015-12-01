@@ -27,3 +27,19 @@ Generic Reader Feature Types
 However, the Generic Reader is not immune from the Unexpected Input Remover. Remember, this is the functionality that filters incoming data against the list of feature types (layers) that are defined in the workspace. If the incoming data is stored on a layer that is not defined in the workspace, then it will be removed.
 
 For this reason, you’ll want to ensure that all potential layers are defined as feature types in the workspace; or that you have a Merge Feature Type set in the Feature Type Properties dialog:
+
+With that setup, any layer of data can be passed into the workspace:
+
+**Generic Reader Parameters**
+
+All Readers in a workspace have a number of parameters that can be used to control how that Reader operates. Each format has its own set of specialized parameters.
+
+However, the Generic Reader has none of these.
+
+So, for example, a user wishes to apply a particular parameter to a GML dataset read with the Generic Reader, how is it done?
+
+In brief, the solution is to add a dummy GML Reader. In fact, a Resource Reader is the best solution, because it applies parameters without reading any data (more info on Resource Readers appears later in this chapter).
+
+When the Generic Reader reads a dataset of GML format, it will now look to the parameters of the dummy Reader, and use those to set how it reads GML datasets.
+
+For example, this workspace author uses a Generic Reader to read his GML data. It is a dataset of parks in the city but, sadly, the x/y axes are being read incorrectly:
