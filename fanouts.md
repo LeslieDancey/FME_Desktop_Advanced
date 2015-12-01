@@ -111,3 +111,23 @@ C:\FMEData2015\Output\Zones.zip.
 Open the output folder in a file browser.
 
 You should see the file Zones.zip. If you open it up there will be inside a Shape file for every zone type.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“A feature type fanout results in multiple Shape files because each
+Shape file is a layer (feature type).
+Why not repeat the exercise to get DWG files, in which case you’d need to use a Dataset
+Fanout.”
+</span>
+</td>
+</tr>
+</table>
