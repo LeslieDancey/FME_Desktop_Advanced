@@ -113,3 +113,12 @@ When prompted, select some source tables and set the output format.
 The workspace will run to completion. Check the output to ensure it is all correct.
 
 **4)** Re-Run Workspace
+
+Now run the workspace again.
+This time click the browse button for the source Geodatabase and browse to C:\FMEData2015\Data\Addresses\Addresses.gdb
+
+Choose the feature types to read and this time you will be presented with a list of feature types from the newly selected Geodatabase.
+
+Click OK to run the workspace again. Inspect the output. Notice that the output feature types are all as listed in the original data. Also notice that the attributes are as in the original too!
+
+From this we can see that a dynamic workspace is capable of handling any source schema and writing it out to a new dataset just as it was in the source data.
