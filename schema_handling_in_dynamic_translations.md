@@ -125,3 +125,22 @@ For example, I might add an attribute if an AreaCalculator transformer was in th
 Deleting an existing attribute is done through the dynamic Schema Definition dialog. At the foot of that dialog is a field for removing attributes:
 
 The edit […] button opens a dialog in which to select attributes that are in the source schema but that you don’t want in the output. You can choose to select these existing attributes – or type in an entirely different value, if you know an attribute exists but is not exposed.
+
+One of the datasets in the FMEData2015 folder is CommunityMap.gdb. This dataset is a series of base datasets used by the planning department for various community mapping tasks.
+However, the planning department now wants to create a new community map dataset, with new data, but using the existing schema where possible. They also – for reasons that are unclear – want a format change to GML!
+So, let’s create a new workspace to handle that scenario.
+
+**1)** Inspect Data
+
+At the moment two datasets have been identified as being required in the new community
+mapping Geodatabase. They are:
+Format: GML (Geography Markup Language)
+Dataset: C:\FMEData2015\Data\Emergency\FireHalls.gml
+Format: MapInfo TAB (MITAB)
+Dataset: C:\FMEData2015\Data\Parks\Parks.tab
+So, inspect these two datasets in the FME Data Inspector, to become familiar with them. There
+was already parks data in the community mapping, but this time it is polygons, not points. The
+FireHalls data is entirely new for community mapping.
+2) Start Workbench
+Start FME Workbench and begin by generating a workspace as follows:
+Reader Format GML (Geography Markup Language)
