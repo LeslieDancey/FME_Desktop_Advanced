@@ -31,3 +31,26 @@ Most transformer parameters have one of two pieces of inbuilt functionality that
 The text editor allows values to be constructed from strings. It includes access to all FME feature attributes and user parameters, plus special characters, FME Functions, and various string manipulation related functions.
 
 The arithmetic editor allows values to be calculated from arithmetic calculations. Again, it includes access to all FME feature attributes, user parameters, and FME Functions; but additionally it gives access to a series of mathematical functions and operators.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Although we’re talking about attributes here, the same functionality
+applies to any transformer parameter.
+For example, the label parameter for the LabelPointReplacer can be
+constructed using a text editor instead of a series of transformers.
+We’re only discussing it here in terms of “attributes” because traditionally you would
+construct an attribute and supply it to the parameter. Now everything is built into that
+parameter.”
+</span>
+</td>
+</tr>
+</table>
