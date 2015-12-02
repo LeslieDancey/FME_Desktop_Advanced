@@ -171,3 +171,10 @@ One of the requirements was to use the existing schema where possible. With the 
 However, the parks dataset does exist in the current CommunityMaps dataset, so we’ll need to use that schema.
 
 So, select Readers > Add Reader as Resource.
+
+When prompted, enter the following info:
+
+Reader Format Esri Geodatabase (File Geodb API)
+Reader Dataset C:\FMEData2015\Data\CommunityMapping\CommunityMap.gdb
+
+Click OK and the Reader is added as a Resource:
