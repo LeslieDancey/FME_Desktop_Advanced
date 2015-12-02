@@ -110,3 +110,15 @@ When prompted, click OK to confirm that all references relating to this dataset 
 **4)** Add Excel File as Reader Resource
 
 Now select Readers > Add Reader as Resource. In the dialog that opens choose:
+
+Reader Format Schema (From Table)
+Reader Dataset C:\FMEData2015\Resources\CommunityMapSchema.xlsx
+
+Click the parameters button (if you don’t you will be prompted to anyway). This dialog is where we can define how the table maps to the required schema.
+
+Check the Reader parameters at the top. They should show the dataset is an Excel format file.
+Select Sheet1 as the table to use:
+
+The first row should get used as the field names. If this is not the case, then click the parameters button above and set the values properly:
+
+Next select the appropriate fields to match to the required parameters (for example Feature Type = FeatureType).
