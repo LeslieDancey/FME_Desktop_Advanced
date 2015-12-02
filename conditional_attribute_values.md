@@ -144,3 +144,11 @@ Complex Filtering filters the data in a single step, so no further mapping is re
 Conditional Values will set the values directly depending on a set of inbuilt conditions. All the work can be done in a single transformer, so it is compact, but the setup and maintenance are considerably more complex.
 
 On the following pages we’ll detail how to set up each method. Pick which one you want to try and follow the instructions. Alternatively, do each in turn – then you’ll be able to compare the different methods and decide which you think is the best.
+
+**The Simple Filtering Method**
+
+This is a two-step process involving an AttributeFilter and several AttributeRangeMappers.
+
+**4)** Place AttributeFilter
+
+Place an AttributeFilter connected to the AttributeRenamer.
