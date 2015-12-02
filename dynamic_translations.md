@@ -28,3 +28,7 @@ trinity of objects: feature types, attributes, and geometry type.”
 
 On the Reader side of things, a dynamic workspace is very similar to using Merge Parameters; feature types are given free entry to a workspace, regardless of whether they are yet defined in there.
 Data is also read regardless of attributes and/or geometry type.
+
+The Writer side of a dynamic workspace mimics the Reader part; feature types are written to the destination dataset, regardless of whether they have been defined in the workspace.
+
+Additionally, all attributes and geometries are also written, regardless of whether they too have been predefined in a Writer feature type.
