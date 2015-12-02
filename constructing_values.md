@@ -15,3 +15,15 @@ There are, basically, two methods to constructing attribute values: Transformer 
 Transformer construction is a basic method of constructing attribute values. The author sets simple values in a transformer, but uses two or more transformers in a series in order to build a more complex value.
 
 For example, here the workspace author needs to create a label in their spatial data.
+
+First they create an attribute value by calculating a number, concatenate it onto a string attribute, trim the result, and then use that as the content for a LabelPointReplacer transformer.
+
+This is an acceptable way of working that is self-documenting and easy to understand; but it is also a fairly crude method and results in the use of more transformers than is perhaps necessary.
+
+**Integrated Construction**
+
+Integrated construction is a more elegant method of constructing attribute values. Instead of using a string of transformers, the author uses functionality built into a single transformer’s parameter dialog window.
+
+In short, the attribute value is constructed at its point of use; it’s a more efficient method and reduces the number of transformers cluttering up the workspace canvas.
+
+Most transformer parameters have one of two pieces of inbuilt functionality that allow this to take place: a Text Editor or an Arithmetic Editor.
