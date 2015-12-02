@@ -34,3 +34,7 @@ To check for incoming nulls the Tester transformer has a specific operator to te
 Because the Tester interface is incorporated into many facets of FME (such as the TestFilter transformer) you can test for nulls wherever you find that interface.
 
 Other transformers, such as the Matcher, also allow testing for nulls. In the case of the Matcher there is even a parameter that can be used to decide whether null, empty, and missing values should be treated equally, or as their own unique representation:
+
+**Setting a Null Value**
+
+The usual way to set an attribute value is with the AttributeCreator, and this has an option in its drop-down menu to set a value to null:
