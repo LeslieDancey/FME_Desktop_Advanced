@@ -123,3 +123,25 @@ If you want to filter the data then the Tester and TestFilter transformers seem 
 Perhaps a combination method would work best, where you filter the data partially and then map it? If so, which data do you filter by and using which transformers?
 
 - Which will produce the most aesthetic workspace?
+
+Best Practice should always play a part in any workspace. If there are several solutions, then which produces the most aesthetic (good-looking) workspace? Are fewer transformers always better? Consider also the need to maintain the workspace. For the purposes of this exercise we'll assume that all methods have an equally efficient performance.
+
+Try placing a few likely transformers into the workspace and see which might be suitable.
+Which will do the job, without needing too many transformers? Would conditional attribute values work?
+
+3) Select Methodology
+On consideration, I see three likely ways to carry out this project. I call them:
+l Simple Filtering
+l Complex Filtering
+l Conditional Values
+Simple Filtering filters the data and then maps it to the required values; as such it is a two-step
+process. It will require more transformers but will be simpler to understand and set up.
+Complex Filtering filters the data in a single step, so no further mapping is required. It’s a onestep
+process, but – because the data is being filtered – still needs more transformers than
+perhaps necessary. It is moderately complex.
+Conditional Values will set the values directly depending on a set of inbuilt conditions. All the
+work can be done in a single transformer, so it is compact, but the setup and maintenance are
+considerably more complex.
+On the following pages we’ll detail how to set up each method. Pick which one you want to try
+and follow the instructions. Alternatively, do each in turn – then you’ll be able to compare the
+different methods and decide which you think is the best.
