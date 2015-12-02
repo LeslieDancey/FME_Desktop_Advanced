@@ -73,3 +73,28 @@ Notice that there is only a single feature type, regardless of whether the data 
 Also notice that the sole Reader Feature Type is named ‘<All>’ (which provides a clue to what is happening here) and that the sole Writer Feature Type is named ‘DYNAMIC’.
 
 When the workspace is run, all of the source data is read through a single feature type. On the Writer side, although there is only one output type, the data will be dynamically divided back into its component layers, keeping its original attributes and geometry type.
+
+In the previous exercise, a workspace was generated to translate a Geodatabase dataset into a number of formats using the Generic Writer.
+
+However, now you feel it would be useful if that workspace could handle any source Geodatabase, not just the community maps dataset, without having to add new Readers or feature types every time.
+
+So, let’s create a new workspace to handle that scenario.
+
+**1)** Start Workbench
+
+Start FME Workbench and begin by generating a workspace as follows:
+
+Reader Format Esri Geodatabase (File Geodb API)
+Reader Dataset C:\FMEData2015\Data\CommunityMapping\CommunityMap.gdb
+
+Writer Format Generic
+Writer Dataset C:\FMEData2015\Output\Training
+Parameters
+Output Format Esri Shape
+Workflow Options Dynamic Schema
+
+**2)** Inspect Workspace
+
+Inspect the newly created workspace.
+
+There is one Reader feature type and one Writer feature type. The Reader feature type shows a list of attributes, but the Writer feature type doesn’t. It is, however, labelled Dynamic.
