@@ -27,3 +27,34 @@ Conditional attribute values are when the author sets an attribute value, but co
 The option for conditional attributes is found in the drop-down dialog on most transformer parameters. In the AttributeCreator, it appears like so:
 
 The Conditional Definition dialog looks like this:
+
+Like the AttributeValueMapper, a series of conditions map to different values. However, in contrast to the AttributeValueMapper, this dialog allows much more complex conditions than a simple 1:1 mapping. That’s because full test capabilities are built into this dialog.
+
+The test capabilities are accessed by double-clicking in the Test Condition field. That opens up a dialog almost identical to that used by the Tester and TestFilter. A number of complex conditions can be defined in order for this test to be passed.
+
+The output value for a passing feature can be set here at the foot of the dialog, or back in the Conditional Definition dialog:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-bolt fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">NEW</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+The Output Value
+field does not
+necessarily need
+to be a value. It
+can be any action
+on the usual dropdown
+menu,
+including Null or
+Stop Translation.
+</span>
+</td>
+</tr>
+</table>
