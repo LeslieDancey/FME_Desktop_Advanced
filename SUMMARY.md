@@ -51,5 +51,5 @@
 * [Course Wrap Up](course_wrap_up.md)
    * [Product Information and Resources](product_information_and_resources.md)
    * [Community Information and Resources](community_information_and_resources.md)
-   * Course Feedback
+   * [Course Feedback](course_feedback.md)
 
