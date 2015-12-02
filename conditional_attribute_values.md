@@ -100,3 +100,26 @@ To find out what data we are dealing with, add Inspector transformers throughout
 
 You’ll probably want to inspect the source features types (or the Reprojector, since the CDED data is a different coordinate system). You’ll also want to inspect the AttributeRenamer output.
 Don’t forget you can set a Group-By in an Inspector's parameters, which may be of use in visualizing which addresses are in which zone.
+
+You’ll see how the addresses are assigned a zone denoting their distance from the shoreline, and also possess an elevation.
+
+**2)** Assess Methodology
+
+Before we get onto a full set of instructions for the exercise, try to consider how you might go about this task.
+
+You’ll need to consider:
+
+- Can the data be mapped directly, or does it need filtering first?
+
+The zone is fairly easy to handle, because it is a fixed value (100, 200, and 300).
+However, elevation is trickier because they are not fixed values; elevation could be any single value from 0 to 60. So mapping elevation values would need 60 x 5 = 300 combinations!
+
+- Which transformers would you use?
+
+If you want to filter the data then the Tester and TestFilter transformers seem to be the most obvious candidates, with maybe the AttributeRangeFilter. To map data, either the AttributeValueMapper or AttributeRangeMapper appear to be the best. But as a whole, we’re looking to set attribute values, so why not just use the AttributeCreator?
+
+- Should you combine methods?
+
+Perhaps a combination method would work best, where you filter the data partially and then map it? If so, which data do you filter by and using which transformers?
+
+- Which will produce the most aesthetic workspace?
