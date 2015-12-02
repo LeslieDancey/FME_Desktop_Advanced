@@ -141,3 +141,21 @@ The numbers start out looking correct, but quickly become wrong. Not even in Van
 The problem is this: unlike other occasions in FME, here we can’t simply overwrite the attribute we are working with. That’s because it skews the next calculation. i.e. the calculation for March needs to operate on February’s original number, not the value we’ve just overwritten it with!
 
 **7)** Adjust Workspace
+
+OK. Return to the workspace. Edit the Writer schema by renaming the destination attribute Precipitation to MonthlyPrecipitation.
+
+Now return to the AttributeCreator and change the attribute it is creating to MonthlyPrecipitation:
+
+**8)** Re-Run Workspace.
+
+Save the workspace.
+
+Before you re-run the workspace, check the Writer Parameter called "Overwrite Existing File" in the Navigator window.
+
+Set it to Yes – if it isn’t already – so the output overwrites the destination dataset and doesn’t just append this data onto the same spreadsheet.
+
+Also make sure the file you are writing to is not already open in Excel (or any other editor).
+
+Re-run the workspace.
+
+Inspect the output. This time the numbers should be correct:
