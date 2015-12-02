@@ -278,3 +278,4 @@ There will be separate Reader feature types for addresses and postcode boundarie
 In the workspace, disconnect the CommunityMap feature type from the Generic Writer, and instead connect the PostalAddress feature type. Notice that the schema will automatically update to match the Address data.
 
 Run the workspace (setting a different output format such as GML)and inspect the output to prove that the Generic Writer is writing the format correctly, and that the automatic attributes setting is creating the correct attribute schema:
+
