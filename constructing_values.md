@@ -114,3 +114,10 @@ The Arithmetic Editor dialog is a tool for building arithmetic expressions.
 Like the text editor, the arithmetic editor has the ability to calculate values using constant values, feature attributes, parameters, and other functions.
 
 However, the arithmetic editor works entirely with numbers to calculate a numeric value. The implications of this are:
+
+- All attribute values used must be numeric, or converted to numeric inside the expression by using a function.
+- The only FME functions and string functions available are those that return a numeric
+value; for example @Area(), @Count(), and @StringLength()
+- The value returned to the workspace will be a numeric type, not a string.
+
+For example, here a workspace author is calculating the property tax for a set of features using the attributes TaxBand and AssessedValue, in conjunction with the @Area() function.
