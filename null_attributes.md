@@ -38,3 +38,17 @@ Other transformers, such as the Matcher, also allow testing for nulls. In the ca
 **Setting a Null Value**
 
 The usual way to set an attribute value is with the AttributeCreator, and this has an option in its drop-down menu to set a value to null:
+
+When you set an attribute to null, and send it to a Writer, then what happens depends upon the data format.
+
+If the format supports nulls – and the Writer has been updated to support them too – then the destination dataset will contain null attribute values.
+
+If the format doesn’t support nulls, then FME will automatically convert the data to the closest representation that is supported.
+
+**Bulk Null Updates**
+
+The way to handle bulk updates of attributes is with the NullAttributeMapper transformer.
+
+The NullAttributeMapper transformer allows the author to check values for any or all attributes on a feature, and convert them in bulk to or from null.
+
+For example, here the author is checking for all attributes that are either missing or empty, and converting them to nulls:
