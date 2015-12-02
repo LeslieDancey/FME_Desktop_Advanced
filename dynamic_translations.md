@@ -98,3 +98,18 @@ Workflow Options Dynamic Schema
 Inspect the newly created workspace.
 
 There is one Reader feature type and one Writer feature type. The Reader feature type shows a list of attributes, but the Writer feature type doesn’t. It is, however, labelled Dynamic.
+
+Again, there will be a user parameter for the Feature Types to Read and the output format.
+
+If you wish, create a more-limited version of the output format parameter, by following steps 3-5 in the previous exercise; although this isn’t totally necessary for what we’re doing here.
+
+But don’t delete the Source Dataset user parameter; we’ll need that shortly.
+
+**3)** Run Workspace
+
+Run the workspace using Prompt and Run.
+
+When prompted, select some source tables and set the output format.
+The workspace will run to completion. Check the output to ensure it is all correct.
+
+**4)** Re-Run Workspace
