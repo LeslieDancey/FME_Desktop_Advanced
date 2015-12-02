@@ -19,3 +19,4 @@ The following are key points to be learned from this session:
 - The ability to construct attributes with either the Text or Arithmetic editors
 - The ability to apply conditional attribute values, and the knowledge to know when this is a good choice of approach
 - The ability to use Multiple Feature Attributes.
+- The ability to use test for null values, and change values to or from null.
