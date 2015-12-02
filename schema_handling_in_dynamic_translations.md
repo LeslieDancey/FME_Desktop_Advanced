@@ -178,3 +178,21 @@ Reader Format Esri Geodatabase (File Geodb API)
 Reader Dataset C:\FMEData2015\Data\CommunityMapping\CommunityMap.gdb
 
 Click OK and the Reader is added as a Resource:
+
+**5)** Adjust Dynamic Parameters
+
+Now we need to make sure that resource is being used.
+
+Open the properties dialog for the Writer feature type. Under Dynamic Properties click the edit […] button for Schema Sources.
+
+Put a checkmark against CommunityMap and ensure Parks is NOT checked. Click OK.
+
+Now click the edit […] button next to Schema Definition.
+
+Since we are writing both points and polygons, for some formats we might have to change the Geometry setting. But GML can cope with both geometry types and so this section is greyedout.
+
+Click OK to close this dialog and OK again to close the Feature Type Properties dialog.
+
+**6)** Save and Run Workspace
+
+Save the workspace and then run it.
