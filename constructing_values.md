@@ -243,3 +243,13 @@ Notice how attributes are denoted by an @Value() function, whereas parameters ar
 Click OK to close the dialog, and then OK again to close the main AttributeCreator dialog.
 
 **5)** Clean Workspace
+
+Now clean up the workspace by connecting the newly created AttributeCreator to the output feature type, and deleting the other four transformers that already existed.
+
+Add a little annotation to denote that this transformer now creates the URL:
+
+Save and run the workspace to confirm that it does still work correctly.
+
+Compare the original workspace to the new one. Is one “better” than the other? If so, why?
+
+What are the advantages and disadvantages of each workspace?
