@@ -18,3 +18,9 @@ There’s one final Q+A to go – and this time you’ll be telling us the answe
 </td>
 </tr>
 </table>
+
+Safe Software Inc. greatly values feedback from training course attendees. This is your chance to tell us what you really think about how well we’re meeting your training goals.
+
+The current course structure has been determined by attendee comments and we appreciate your feedback more than ever.
+
+You’ll be sent a link to a feedback form after your course.
