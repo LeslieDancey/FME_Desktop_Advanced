@@ -8,19 +8,14 @@ The following are key points to be learned from this session:
 
 **Theory**
 
-l A Fanout is a way to divide data into a number of layers or a number of datasets,
-according to the value of a user-defined attribute.
-l The Generic Reader and Writer allow a workspace to be dynamic in terms of format; it
-can read any format of data and write any format of data.
-l Schema is composed of Feature Types, Attributes, and Geometry. A Dynamic translation
-is a universal workspace that can handle any combination of schema.
-l The Schema in a dynamic workspace does not need to come from the source datasets; it
-can come from another dataset entirely, come from a lookup table, or can be constructed
-as list attributes inside the workspace.
+- A Fanout is a way to divide data into a number of layers or a number of datasets, according to the value of a user-defined attribute.
+- The Generic Reader and Writer allow a workspace to be dynamic in terms of format; it can read any format of data and write any format of data.
+- Schema is composed of Feature Types, Attributes, and Geometry. A Dynamic translation is a universal workspace that can handle any combination of schema.
+- The Schema in a dynamic workspace does not need to come from the source datasets; it can come from another dataset entirely, come from a lookup table, or can be constructed as list attributes inside the workspace.
 
 **FME Skills**
 
-l The ability to write output datasets to a zip file
-l The ability to use a Feature Type Fanout and a Dataset Fanout
-l The ability to use the Generic Reader and Writer
-l The ability to create a simple Dynamic workspace
+- The ability to write output datasets to a zip file
+- The ability to use a Feature Type Fanout and a Dataset Fanout
+- The ability to use the Generic Reader and Writer
+- The ability to create a simple Dynamic workspace
