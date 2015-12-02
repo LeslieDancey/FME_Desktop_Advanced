@@ -112,3 +112,14 @@ schema. This is very simple to do.
 </tr>
 </table>
 
+**Adding a New Attribute**
+
+Adding a new attribute to all output on a dynamic feature type is just a case of editing the feature type definition to add that attribute.
+
+In other words, any attribute you add to the feature type definition will get added to all features output through there – regardless of source or resource schemas.
+
+For example, I might add an attribute if an AreaCalculator transformer was in the workspace and I wished to store the result.
+
+**Deleting an Attribute**
+
+Deleting an existing attribute is done through the dynamic Schema Definition dialog. At the foot of that dialog is a field for removing attributes:
