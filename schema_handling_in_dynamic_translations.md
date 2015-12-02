@@ -104,11 +104,11 @@ Finally, it specifies that the geometry of the output features must be area (pol
 <tr>
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
-“Don’t be confused by the Schema [Attribute] Definition setting. When
-you set it to ‘Named By Attribute’ it means that attribute defines the
-feature type names to use for the attribute schema.
-It DOESN’T mean that the attribute schema is somehow defined inside that attribute.”
+Adding or Deleting Attributes
+Even in a dynamic translation, sometimes you need to add or delete attributes from the output
+schema. This is very simple to do.
 </span>
 </td>
 </tr>
 </table>
+
