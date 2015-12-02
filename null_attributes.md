@@ -54,3 +54,23 @@ The NullAttributeMapper transformer allows the author to check values for any or
 For example, here the author is checking for all attributes that are either missing or empty, and converting them to nulls:
 
 Here the author is checking a specific attribute for existing null values. If the value is set to null then it gets replaced with a zero. Presumably this must be a numeric field. If it was a text field perhaps instead the author would set it to an empty string:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“It’s good to be aware of nulls and test workspaces when updating from
+FME versions prior to FME2014. Some formats and transformers may now
+be producing null values where before they would have been either empty
+or missing.”
+</span>
+</td>
+</tr>
+</table>
