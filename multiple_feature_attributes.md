@@ -25,3 +25,13 @@ This sort of scenario is catered for by Multiple Feature Attributes in FME.
 **Multiple Feature Functionality**
 
 Multiple feature functionality is activated by checking the box labelled Prior/Subsequent Feature Attribute Retrieval in an AttributeCreator transformer:
+
+This opens up a section of dialog in which the author can specify how many features preceding the current feature, or how many features that succeed it, should be made available.
+
+There is also an option to specify what should happen if the attributes are missing from a prior/subsequent feature. There is the ability to use a fallback value (which might just be an empty string), to use the value of the closest feature that does contain the attribute, or to use an attribute value instead.
+
+Using Multiple Feature Attributes
+
+The simplest way to make use of the attributes retrieved from prior/subsequent features is through the text or arithmetic editors.
+
+In the editors, the list of feature attributes will have an expandable section for prior and subsequent features:
