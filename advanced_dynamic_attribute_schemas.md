@@ -10,3 +10,4 @@ However, there are two other scenarios for providing the output schema: it can c
 
 In this scenario, the output schema is stored as some form of table in a text file or spreadsheet; for example:
 
+Here the author has listed a series of feature types, attributes, and geometry types that define the output schema. In FME they would use this schema by adding a Resource Reader. The format of the Resource Reader would be Schema (From Table):
