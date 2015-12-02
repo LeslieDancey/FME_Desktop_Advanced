@@ -127,3 +127,17 @@ Using the menu on the left double-click:
 All of which should leave you with an expression looking like this:
 
 Now you can see why it was so important to set the “Attribute is Missing” field, because it’s uncertain what result would occur from the above when feature[-1].Precipitation is missing!
+
+
+Click OK to close the Arithmetic Editor dialog, and then click OK again to close the main
+AttributeCreator dialog.
+
+**6)** Save and Run Workspace
+
+Save the workspace and then run it. Inspect the output.
+
+The numbers start out looking correct, but quickly become wrong. Not even in Vancouver (I mean, Interopolis) does it rain 623mm in a single month!
+
+The problem is this: unlike other occasions in FME, here we can’t simply overwrite the attribute we are working with. That’s because it skews the next calculation. i.e. the calculation for March needs to operate on February’s original number, not the value we’ve just overwritten it with!
+
+**7)** Adjust Workspace
