@@ -49,3 +49,26 @@ For example, here the author has opened that parameter and is changing the outpu
 This is useful when you want to enforce a particular output schema, but it means that you have to ensure that the data being processed will match the feature types available in that schema.
 
 If you write data to a dynamic Writer, and the feature types of that data do not match what is provided by the schema then it will be dropped:
+
+Consider this behavior a sort of “Unexpected Output Remover”.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“In this scenario the “Dynamic” part of the translation is the destination
+schema being fetched at run time.
+For example, if the corporate schema (above) were to change, the workspace feature
+types would not need updating. They would be automatically ‘updated’ when the
+workspace is run.”
+</span>
+</td>
+</tr>
+</table>
