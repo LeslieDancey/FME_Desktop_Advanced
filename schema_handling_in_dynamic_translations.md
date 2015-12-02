@@ -35,3 +35,17 @@ schema in the workspace!”
 </td>
 </tr>
 </table>
+
+**Schema Sources**
+
+The schema sources parameter allows the user to choose where the destination schema is going to be obtained from.
+
+By default, this parameter is set to whatever source dataset is being read. That way the output schema is always a duplicate of the input.
+
+However, it can be set to use any Reader dataset – in any format – as the source for the outgoing schema. In the case where a Reader is only required to provide a schema, and not data, then it would be added as a Resource Reader.
+
+For example, here the author has opened that parameter and is changing the output schema from the default (input dataset) to a standard corporate schema that is defined in PostGIS and has been added as a Resource Reader:
+
+This is useful when you want to enforce a particular output schema, but it means that you have to ensure that the data being processed will match the feature types available in that schema.
+
+If you write data to a dynamic Writer, and the feature types of that data do not match what is provided by the schema then it will be dropped:
