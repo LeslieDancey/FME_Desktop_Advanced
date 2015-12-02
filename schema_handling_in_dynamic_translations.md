@@ -80,3 +80,16 @@ The Schema Definition parameter opens a dialog with a number of options:
 These options are where a user can become very creative with their dynamic workspaces.
 
 Remember, a schema is composed of three basic parts: Feature Types, Attributes, and Geometry Types. These settings give the author control over each part of that schema.
+
+By default, each part is obtained from the incoming schema, whether that’s a real Reader or a Resource Reader. But these settings let the author pick alternative sources.
+
+For example, the author could decide that the feature type name will be fixed (i.e. all output must match this set value), that the attribute definitions should come from feature types defined by an attribute value, and that geometry is set to a fixed type.
+
+Here each incoming feature is assumed to possess an attribute called OutputLayer.
+
+That attribute defines what feature type (layer) the data will be written to.
+
+It also defines the Reader (or resource) feature type that the attribute schema will be taken from.
+
+Finally, it specifies that the geometry of the output features must be area (polygon) features. Non-area features will be dropped.
+
