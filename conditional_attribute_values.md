@@ -152,3 +152,17 @@ This is a two-step process involving an AttributeFilter and several AttributeRan
 **4)** Place AttributeFilter
 
 Place an AttributeFilter connected to the AttributeRenamer.
+
+Open the parameters dialog.
+
+Select Zone as the attribute to filter by.
+
+In the Attribute Values field enter the values 100, 200, and 300.
+
+You could use the Import function, but for so few values it’s hardly worth it.
+
+Click OK to close the dialog and you’ll see a new output port added for each value you specified.
+
+**5)** Add AttributeRangeMapper
+
+Add an AttributeRangeMapper transformer and connect it to the 100 output port of the AttributeFilter.
