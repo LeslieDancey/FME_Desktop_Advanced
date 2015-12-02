@@ -196,3 +196,9 @@ Click OK to close this dialog and OK again to close the Feature Type Properties 
 **6)** Save and Run Workspace
 
 Save the workspace and then run it.
+
+Inspect the output. There should be two layers: one for fire halls, the other for parks. The parks dataset should have a schema of ParkName, ParkAddress, and ParkURL (even if there is no data to fill some fields yet). However, notice that it also has OBJECTID, which came from the Geodatabase and we don’t really need.
+
+**7)** Delete Attribute
+
+Re-open the properties dialog for the Writer feature type. Under Dynamic Properties click the edit […] button next to Schema Definition.
