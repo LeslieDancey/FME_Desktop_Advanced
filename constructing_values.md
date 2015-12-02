@@ -27,3 +27,7 @@ Integrated construction is a more elegant method of constructing attribute value
 In short, the attribute value is constructed at its point of use; it’s a more efficient method and reduces the number of transformers cluttering up the workspace canvas.
 
 Most transformer parameters have one of two pieces of inbuilt functionality that allow this to take place: a Text Editor or an Arithmetic Editor.
+
+The text editor allows values to be constructed from strings. It includes access to all FME feature attributes and user parameters, plus special characters, FME Functions, and various string manipulation related functions.
+
+The arithmetic editor allows values to be calculated from arithmetic calculations. Again, it includes access to all FME feature attributes, user parameters, and FME Functions; but additionally it gives access to a series of mathematical functions and operators.
