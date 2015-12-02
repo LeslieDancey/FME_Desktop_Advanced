@@ -216,3 +216,9 @@ But don’t close the Feature Type Properties dialog yet.
 A last-minute request is to add an attribute – LastUpdatedBy – to all tables in the output.
 
 So, click on the User Attributes tab and add this new attribute. Make it a 30 character string.
+
+**9) **Re-Run Workspace
+
+Save the workspace and run it again.
+
+Inspect the output. Notice that OBJECTID will not appear as an attribute. LastUpdatedBy does appear, albeit that it doesn’t have a value yet.
