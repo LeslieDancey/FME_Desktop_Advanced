@@ -95,3 +95,18 @@ C:\FMEData2015\Resources\CommunityMapSchema.xlsx.
 If you don’t have Excel then open it in the FME Data Inspector and switch to Table View.
 
 The table looks like this, with Firehalls, Parks, and Zones feature types defined.
+
+**2)** Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise4e-Begin.fmw
+
+This is the workspace you created in Exercise 4d.
+
+**3)** Delete CommunityMap Resource Reader
+
+We no longer need the CommunityMap Resource Reader, so locate it in the Navigator window, right-click on it, and choose Delete.
+When prompted, click OK to confirm that all references relating to this dataset will also beremoved.
+
+**4)** Add Excel File as Reader Resource
+
+Now select Readers > Add Reader as Resource. In the dialog that opens choose:
