@@ -52,3 +52,5 @@ The way to handle bulk updates of attributes is with the NullAttributeMapper tra
 The NullAttributeMapper transformer allows the author to check values for any or all attributes on a feature, and convert them in bulk to or from null.
 
 For example, here the author is checking for all attributes that are either missing or empty, and converting them to nulls:
+
+Here the author is checking a specific attribute for existing null values. If the value is set to null then it gets replaced with a zero. Presumably this must be a numeric field. If it was a text field perhaps instead the author would set it to an empty string:
