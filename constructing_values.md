@@ -103,13 +103,14 @@ or they could cut out that transformer and go directly with: @Area() sq. metresâ
 </tr>
 </table>
 
-The editor also has a set of string functions and mathematical functions. The string functions
-carry out operations like formatting, extracting, trimming, and padding. The mathematical
-functions are the usual advanced arithmetic functions such as int, cos, and log.
+The editor also has a set of string functions and mathematical functions. The string functions carry out operations like formatting, extracting, trimming, and padding. The mathematical functions are the usual advanced arithmetic functions such as int, cos, and log.
+
 The string functions are mostly based around Tcl, while the arithmetic functions around C.
-Arithmetic Editor
+
+**Arithmetic Editor**
+
 The Arithmetic Editor dialog is a tool for building arithmetic expressions.
-Like the text editor, the arithmetic editor has the ability to calculate values using constant
-values, feature attributes, parameters, and other functions.
-However, the arithmetic editor works entirely with numbers to calculate a numeric value. The
-implications of this are:
+
+Like the text editor, the arithmetic editor has the ability to calculate values using constant values, feature attributes, parameters, and other functions.
+
+However, the arithmetic editor works entirely with numbers to calculate a numeric value. The implications of this are:
