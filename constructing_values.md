@@ -54,3 +54,16 @@ parameter.”
 </td>
 </tr>
 </table>
+
+**Text Editor**
+
+The Text Editor is a tool for string-based construction of attributes. In it, the workspace author can construct values out of fields such as the following:
+
+l String Constants
+l FME Feature Attributes
+l User or System Parameters
+l Special Characters
+The text editor window is a free-form dialog into which the author can construct almost any
+form of string. Here, for example, the author is constructing a string that describes a cell phone
+tower. Such a string could be applied as a label, written as an attribute value, or used in many
+other ways.
