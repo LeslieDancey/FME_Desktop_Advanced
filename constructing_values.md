@@ -122,3 +122,33 @@ value; for example @Area(), @Count(), and @StringLength()
 
 For example, here a workspace author is calculating the property tax for a set of features using the attributes TaxBand and AssessedValue, in conjunction with the @Area() function.
 
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“At this point two questions are probably uppermost in your mind.
+Firstly, why do some transformer parameters have options for both the
+text and arithmetic editor (like the AttributeCreator) whereas others have
+just the text editor or just the arithmetic editor?
+That’s easy. The editor is matched to the type of value expected by that parameter. For
+example, the LabelPointReplacer transformer has Label and Label Height parameters.
+The Label parameter can access the text editor, because it expects a string. The Label
+Height parameter can access the arithmetic editor because it expects a number.
+The AttributeCreator transformer allows access to both because it doesn’t rely on a
+particular type. It is happy with either numeric or string values.
+Secondly, you’re probably wondering why there are math functions inside the text editor
+and how you can use them.
+That’s simple. The FME function @Evaluate() carries out a mathematical calculation. So
+if you need to calculate a numeric value as part of a string, then use that function; like
+so:”
+</span>
+</td>
+</tr>
+</table>
