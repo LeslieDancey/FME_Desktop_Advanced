@@ -156,3 +156,9 @@ Select Writers > Add Writer from the menubar and add a Generic Writer.
 You don’t have to select an output location, but will you have to open the parameters dialog and set an original output format; so do that and select a format like Esri Shape.
 
 In the "Add Feature Types" section of the dialog, select Automatic for feature type definitions:
+
+In the Feature Type Properties dialog set the Allowed Geometries field to fme_any. This will allow any data to be written to this feature type. The "output" part of the Writer refers to the output location, which may or may not be set in your workspace.
+
+Check the User Attributes tab and you will see that the attribute definition is set to Automatic.
+
+Click OK to close the dialog and add the new feature type. Connect it to the source feature type. When you make the connection the attribute schema will automatically be updated to match the connected Reader feature type:
