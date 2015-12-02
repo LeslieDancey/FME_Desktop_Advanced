@@ -320,3 +320,9 @@ Double-click the first Test Condition field and a Tester-like dialog will open.
 This can be the test for FloodRisk=1 (the highest). According to the table of calculations, this can occur only when Zone=100 and Elevation <= 10.
 
 So, set up the Tester to test for Zone = 100 AND Elevation <= 10. The important part here is to set up the test as an AND (i.e. both clauses) must be true.
+
+Enter 1 into the Output Value parameter at the foot of the dialog:
+
+Now click OK to close this part of the dialog.
+
+The main Conditional Definition dialog now looks like this:
