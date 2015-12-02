@@ -326,3 +326,41 @@ Enter 1 into the Output Value parameter at the foot of the dialog:
 Now click OK to close this part of the dialog.
 
 The main Conditional Definition dialog now looks like this:
+
+OK, now double-click the next Test Condition to set up the condition for FloodRisk=2
+
+According to the table, there are two conditions for FloodRisk=2. They are when:
+
+Zone = 200 AND Elevation <= 10
+
+Zone = 100 AND Elevation <= 25
+
+So, enter four clauses; one each for Zone=100, Zone=200, Elevation<=10, Elevation<=25.
+
+Now change the test type to Composite. In the Composite Expression field, enter: 
+
+(1 AND 3) OR (2 AND 4)
+
+Of course this will depend on the order you entered the clauses in.
+
+Enter 2 into the Output Value parameter and click OK to close this dialog. The main Conditional Definition dialog now looks like this:
+
+Now repeat this step for each of the other flood risk values. There will be three clauses for zone 3, two clauses for zone 4, and back to one clause for zone 5.
+
+It may seem complicated, but it should be easy to get into a routine. Additionally, make use of the Duplicate buttons in these dialogs to speed up the process.
+
+The final dialog will look like this.
+
+It is very important to keep these in the correct order; otherwise a feature may pass the tests in the wrong order and be given a lesser risk than expected.
+The main AttributeCreator dialog now looks like this:
+
+**13)** Add Inspector
+
+Place a single Inspector transformer connected to the AttributeCreator.
+Open the Inspector parameters dialog and under Group-By select the newly created attribute called FloodRisk.
+
+**14)** Save and Run Workspace
+
+Save and run the workspace. You should see each address colored to match its flood risk. You can also turn off each zone in turn to see which addresses are most/least at risk.
+
+You’ll also see unmapped features appear, which doesn’t happen with the other methods.
