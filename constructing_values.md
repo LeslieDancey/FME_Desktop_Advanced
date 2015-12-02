@@ -152,3 +152,12 @@ so:”
 </td>
 </tr>
 </table>
+
+**Advantages and Disadvantages**
+
+There are some obvious advantages and disadvantages to using integrated construction of
+attributes, compared to a sequence of transformers.
+
+A sequence of transformers is self-documenting.
+
+A casual user could look at the workspace and understand what is happening.
