@@ -44,4 +44,5 @@
    * [Module Review](module_review4.md)
 * [Advanced Attribute Handling](advanced_attribute_handling.md)
    * [Constructing Values](constructing_values.md)
+   * Conditional Attribute Values
 
