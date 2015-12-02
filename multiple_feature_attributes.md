@@ -41,3 +41,24 @@ When a feature is expanded then its list of attributes becomes available for use
 Double-clicking an attribute adds it to the expression window:
 
 So, you can see that prior and subsequent attribute values can be accessed simply by using feature[x].<attribute name> where x is a positive or negative number that refers to a subsequent or prior feature.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“This is a first class piece of functionality, cool to the highest degree; just
+one that you might not use very often.
+Also, be aware that because extra resources are used for storage of the
+surrounding features, performance will take a (very minor) hit when using these
+capabilities.
+</span>
+</td>
+</tr>
+</table>
