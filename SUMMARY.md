@@ -40,4 +40,5 @@
    * [The Generic Reader/Writer](the_generic_readerwriter.md)
    * [Dynamic Translations](dynamic_translations.md)
    * [Schema Handling in Dynamic Translations](schema_handling_in_dynamic_translations.md)
+   * Advanced Dynamic Attribute Schemas
 
