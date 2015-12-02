@@ -83,3 +83,20 @@ values technique."
 </td>
 </tr>
 </table>
+
+A colleague is working on a workspace to calculate the flood risk due to tsunami for all addresses in the city. The risk is adjudged to be a combination of closeness to the shoreline and elevation above sea level, and is calculated using this table:
+
+
+
+Your colleague has created the workspace up until the point at which the calculations need to start, and has asked for your assistance in finishing the project.
+
+**1) **Start Workbench
+
+Open the workspace 
+
+C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise5b-Begin.fmw.
+
+To find out what data we are dealing with, add Inspector transformers throughout the workspace and then run it - or else use Run > Run with Full Inspection from the menubar.
+
+You’ll probably want to inspect the source features types (or the Reprojector, since the CDED data is a different coordinate system). You’ll also want to inspect the AttributeRenamer output.
+Don’t forget you can set a Group-By in an Inspector's parameters, which may be of use in visualizing which addresses are in which zone.
