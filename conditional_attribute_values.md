@@ -229,4 +229,31 @@ AttributeValueMappers.”
 </tr>
 </table>
 
+**The Complex Filtering Method**
 
+This also is a filtering process, but the filtering is all done in a single step - for both zones and elevation - with a TestFilter.
+
+**9)** Place TestFilter
+
+Place a TestFilter connected to the AttributeRenamer.
+
+What we want to get here is a separate output port for each flood risk value. So we’ll need to incorporate all of the tests into this one transformer.
+
+Open the parameters dialog. See that there are fields for Test Condition and Output Port.
+
+Double-click the first Test Condition field and a Tester-like dialog will open.
+
+This can be the test for FloodRisk=1 (the highest). According to the table of calculations, this can occur only when Zone=100 and Elevation <= 10.
+
+So, set up the Tester to test for Zone = 100 AND Elevation <= 10. The important part here is to set up the test as an AND (i.e. both clauses) must be true.
+
+Enter 1 into the Output Port parameter at the foot of the dialog:
+
+
+Now click OK to close this part of the dialog.
+
+The main TestFilter dialog now looks like this:
+
+OK, now double-click the next Test Condition to set up the condition for FloodRisk=2
+
+According to the table, there are two conditions for FloodRisk=2. They are when:
