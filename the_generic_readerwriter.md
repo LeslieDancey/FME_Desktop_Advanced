@@ -174,3 +174,23 @@ Another parameter is Feature Types to Read. This is very useful because when the
 Similarly keep the Destination Dataset parameter.
 
 The Output Format parameter is interesting. Double-click on it as if you were going to set a value. Notice that the "More Formats..." option in the drop-down list opens up the full FME formats list.
+
+It wouldn’t be fair to the end-user to expose so many formats, when they don’t really need to see or select most of them. It would be better to restrict this list. So, delete this user parameter, and we’ll create a new one.
+
+**4)** Add User Parameter
+
+Now add a new User Parameter, by right-clicking on User Parameters and selecting Add Parameter. In the dialog that opens…
+
+Set type to Choice with Alias.
+
+Set OutputFormat as the name.
+
+Set Output Format as the prompt.
+
+Turn off the Optional checkbox.
+
+For configuration click the browse […] button to open a new dialog. In that dialog, select Import
+
+- Writer Formats. Select a handful of the most common formats like Shape, AutoCAD DWG, GML, and MapInfo TAB; then click OK.
+
+Then click OK twice more until all the dialogs are closed.
