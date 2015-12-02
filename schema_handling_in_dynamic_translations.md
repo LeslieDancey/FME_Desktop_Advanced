@@ -13,3 +13,4 @@ For a Writer, there is a special Dynamic option (it’s not just a feature type 
 So, it is possible to create a dynamic translation by turning one or both of these settings on manually; there’s no necessity to do so at the time the workspace is created.
 
 The two extra parameters on the Writer are to control the source of the schema being used on the output dataset.
+
