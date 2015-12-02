@@ -48,3 +48,23 @@ This scenario is a way to construct an attribute schema using lists in FME. The 
 
 When a feature with such attributes is sent to a dynamic Writer, then this schema is used in preference to any other.
 
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“The dynamic properties dialog still requires a Reader to be selected,
+even if you’re not using its schema for the output. My advice is to add a
+Null format Reader and use that anyway. Then you can be sure that
+nothing else is being accidentally used!”
+</span>
+</td>
+</tr>
+</table>
+
