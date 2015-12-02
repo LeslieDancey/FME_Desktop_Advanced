@@ -147,3 +147,23 @@ Once added, connect its Reader feature type to the dynamic Writer feature type.
 Save the workspace and then run it.
 
 Inspect the output. Notice that all three feature types have been written, and that their attribute schema matches what was defined in the Excel spreadsheet; including the LastUpdatedBy field for each one.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Advanced Exercise</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+This is text to describe an advanced exercise
+<br>It uses a font awesome icon (this won't show in PDF)
+<br>The text is a serif font, italic.
+<br>It is in a table with an orange border
+</span>
+</td>
+</tr>
+</table>
