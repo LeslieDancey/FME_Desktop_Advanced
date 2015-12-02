@@ -122,3 +122,24 @@ Select Sheet1 as the table to use:
 The first row should get used as the field names. If this is not the case, then click the parameters button above and set the values properly:
 
 Next select the appropriate fields to match to the required parameters (for example Feature Type = FeatureType).
+
+Click OK to close the dialog and again to add the Reader.
+
+Now open the feature type properties dialog for the Writer feature type.
+
+Under the User Attributes tab remove the LastUpdatedBy attribute, as we’ve added this to the spreadsheet definition for each type and no longer need it in here.
+
+In the General tab click the Schema Sources edit button. Uncheck FireHalls and check CommunityMapSchema [SCHEMA_FROM_TABLE].
+
+Click OK and OK again to close these dialogs.
+
+**6)** Add Reader
+
+If you noticed, the schema spreadsheet included an entry for the Zones dataset, so add a Reader (not a Resource – we really want the data this time) as follows:
+
+Reader Format MapInfo TAB (MITAB)
+Reader Dataset C:\FMEData2015\Data\Zoning\Zones.tab
+
+Once added, connect its Reader feature type to the dynamic Writer feature type.
+
+**7)** Save and Run Workspace
