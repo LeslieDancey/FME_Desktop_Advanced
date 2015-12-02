@@ -257,3 +257,25 @@ The main TestFilter dialog now looks like this:
 OK, now double-click the next Test Condition to set up the condition for FloodRisk=2
 
 According to the table, there are two conditions for FloodRisk=2. They are when:
+
+Zone = 200 AND Elevation <= 10
+
+Zone = 100 AND Elevation <= 25
+
+So, enter four clauses; one each for Zone=100, Zone=200, Elevation<=10, Elevation<=25.
+
+Now change the test type to Composite. In the Composite Expression field, enter:
+
+(1 AND 3) OR (2 AND 4)
+
+Of course the composite expression field will depend on the order you entered the clauses in. If you entered them in a different order then you will need to adjust this field.
+
+Enter 2 into the Output Port parameter and click OK to close this dialog. The main TestFilter dialog now looks like this:
+
+Now repeat this step for each of the other flood risk values. There will be three clauses for zone 3, two clauses for zone 4, and back to one clause for zone 5.
+
+It may seem complicated, but it should be easy to get into a routine. Additionally, make use of the Duplicate buttons in these dialogs to speed up the process.
+
+The final dialog will look like this.
+
+The final test will be similar to the very first, with only two conditions, so it will be an AND rather than a Composite test.
