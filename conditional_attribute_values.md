@@ -64,3 +64,22 @@ When the conditions are set then the original dialog – in this case an Attribu
 **When to use Conditional Attribute Values?**
 
 Conditional attribute values are great for when you need to map (or set) an attribute in relation to the value of an existing attribute, when the conditions are more complex than can be handled in a simple AttributeValueMapper or RangeValueMapper transformer.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+"If you’re using the ?: operator in an arithmetic editor, then well done you!
+But that’s now a scenario where you could instead use the conditional
+values technique."
+</span>
+</td>
+</tr>
+</table>
