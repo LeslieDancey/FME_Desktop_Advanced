@@ -62,3 +62,68 @@ capabilities.
 </td>
 </tr>
 </table>
+
+Here we have a dataset of precipitation for the city of Interopolis. Unfortunately, the numbers are all cumulative and the planning department wants them as absolute figures per month.
+Rather than reaching into your desk drawer for a calculator, you decide to use FME to do the calculations!
+
+**1)** Inspect Data
+
+Open the source dataset (C:\FMEData2015\Data\ElevationModel\Precipitation.xlsx)
+
+Notice that it is an Excel spreadsheet that records precipitation, but cumulative rather than as numbers for each individual month.
+
+We can subtract the previous month’s figure to get the precipitation for any given month, but in FME that requires us to use Multiple Feature Attributes.
+
+**2)** Open Workbench
+
+Open FME Workbench and generate a workspace from Microsoft Excel to Microsoft Excel, using the above file as the source dataset.
+
+When creating the workspace, check the parameters for the Reader to ensure FME is recognizing the headers at the top of each column.
+
+**3)** Place AttributeCreator
+
+In the newly created workspace, place an AttributeCreator transformer between the Reader and Writer feature types.
+
+**4)** Set AttributeCreator Parameters – Part 1
+
+Open the AttributeCreator parameters dialog. In the Attribute Name field select the existing attribute called Precipitation. This will overwrite it with a new value.
+
+Then check the box marked Prior/Subsequent Feature Attribute Retrieval. In the fields provided enter 1 for the Number of Prior Features to be kept.
+
+Next set the ‘If Attribute is Missing’ field to Use Fallback Value and enter 0 into the Fallback Value field.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“The “Attribute is Missing” parameter is more important than perhaps most
+people recognize.
+Think about it: the first feature to be processed can’t have a prior feature,
+and the last feature to be processed won’t ever have a subsequent one.
+Therefore you always have to be careful in what you have set here. In this exercise
+we’re calculating a numeric value; therefore it makes sense to use 0 (zero) as the
+default replacement.”
+</span>
+</td>
+</tr>
+</table>
+
+**5)** Set AttributeCreator Parameters – Part 2
+
+Now let’s deal with the Value field. Double-click in the field and open the Arithmetic Editor.
+
+Using the menu on the left double-click:
+- The FME Feature Attribute Precipitation
+- The Math Operator – (minus)
+- The FME Feature Attribute Precipitation for feature[-1]
+
+All of which should leave you with an expression looking like this:
+
+Now you can see why it was so important to set the “Attribute is Missing” field, because it’s uncertain what result would occur from the above when feature[-1].Precipitation is missing!
