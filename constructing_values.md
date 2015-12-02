@@ -161,3 +161,8 @@ A sequence of transformers is self-documenting.
 
 A casual user could look at the workspace and understand what is happening.
 
+Integrating this into a single parameter in a single transformer leads to a more closed workspace. A casual user would have to investigate the workspace closely to understand how it works.
+
+On the other hand, integrated functions produce much more clean and elegant solutions. They take up less space on the canvas and are generally less cluttered.
+
+So the decision on which method to use depends as much on your confidence in using FME, and how much the workspace might need to be shared with others, as anything else.
