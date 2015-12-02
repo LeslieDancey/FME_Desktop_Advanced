@@ -177,3 +177,17 @@ Save the spreadsheet.
 If you run the workspace now it will run to completion, but there will be no values in the renamed fields. That’s because FME has no way to tell how to map the source data to the new schema.
 
 We could simply add an AttributeRenamer transformer to handle this change, but the better way is to use the SchemaMapper. That way it can be made a little more dynamic.
+
+In sheet 2 of the spreadsheet, enter:
+
+OldAttrName NewAttrName
+Name HallName
+Address HallAddress
+PhoneNumber HallPhone
+
+Then save the spreadsheet.
+Add a SchemaMapper transformer to the workspace, with both output ports connected to the output feature type.
+
+Open the parameters dialog. For the format select the edited Excel file:
+
+Click the parameters button. Under Sheets to Read, turn off Sheet1 and make sure Sheet2 is selected. Click OK to close the dialog.
