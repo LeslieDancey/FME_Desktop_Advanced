@@ -162,3 +162,15 @@ In the Feature Type Properties dialog set the Allowed Geometries field to fme_an
 Check the User Attributes tab and you will see that the attribute definition is set to Automatic.
 
 Click OK to close the dialog and add the new feature type. Connect it to the source feature type. When you make the connection the attribute schema will automatically be updated to match the connected Reader feature type:
+
+**3)** Check User Parameters
+
+Look in the Navigator window at the user parameters that were created automatically with the Reader and Writer.
+
+The parameter for source dataset we don’t need (it will always be this dataset) so delete it.
+
+Another parameter is Feature Types to Read. This is very useful because when the user runs the workspace they will be prompted which tables to read from the source Geodatabase, so keep this one.
+
+Similarly keep the Destination Dataset parameter.
+
+The Output Format parameter is interesting. Double-click on it as if you were going to set a value. Notice that the "More Formats..." option in the drop-down list opens up the full FME formats list.
