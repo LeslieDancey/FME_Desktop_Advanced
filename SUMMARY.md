@@ -38,4 +38,5 @@
    * [Zip File Handling](zip_file_handling.md)
    * [Fanouts](fanouts.md)
    * [The Generic Reader/Writer](the_generic_readerwriter.md)
+   * Dynamic Translations
 
