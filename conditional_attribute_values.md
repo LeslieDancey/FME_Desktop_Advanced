@@ -279,3 +279,11 @@ It may seem complicated, but it should be easy to get into a routine. Additional
 The final dialog will look like this.
 
 The final test will be similar to the very first, with only two conditions, so it will be an AND rather than a Composite test.
+
+It is very important to keep these in the correct order; otherwise a feature may pass the tests in the wrong order and be given a lesser risk than expected.
+
+The TestFilter transformer will now look like this:
+
+**10)** Add AttributeCreator
+
+Add an AttributeCreator connected to each TestFilter output port. Use the AttributeCreator to create the correct FloodRisk attribute (and value) for each output port (i.e. Port 1: FloodRisk = 1).
