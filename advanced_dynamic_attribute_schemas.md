@@ -11,3 +11,13 @@ However, there are two other scenarios for providing the output schema: it can c
 In this scenario, the output schema is stored as some form of table in a text file or spreadsheet; for example:
 
 Here the author has listed a series of feature types, attributes, and geometry types that define the output schema. In FME they would use this schema by adding a Resource Reader. The format of the Resource Reader would be Schema (From Table):
+
+In the parameters dialog for this Reader, there are parameters that specify which fields in the table represent which parts of the schema:
+
+Geometry type is optional, but used in this example.
+
+Attribute sequence is another optional parameter. It defines a field in the table that records the order that attributes should appear in.
+
+Then, of course, this Reader must be used as the source for the output schema:
+
+The incoming attributes must then be mapped to the outgoing schema. The best way here is the SchemaMapper transformer, since it too can use a lookup table to create its mappings.
