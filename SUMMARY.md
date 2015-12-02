@@ -49,5 +49,5 @@
    * [Null Attributes](null_attributes.md)
    * [Module Review](module_review5.md)
 * [Course Wrap Up](course_wrap_up.md)
-   * Product Information and Resources
+   * [Product Information and Resources](product_information_and_resources.md)
 
