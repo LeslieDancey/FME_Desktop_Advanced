@@ -77,3 +77,39 @@ FME Feature Functions are the underlying functions used by FME transformers. By 
 All FME functions are of the form @functionname() where the part inside parentheses is a function parameter.
 
 For example the function @Value(Roads) returns the value of the attribute called Roads.
+
+Not all functions have parameters, or those parameters are not always compulsory; for
+example the function @Area() does not need to take a parameter.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“FME functions can be used in the text editor to calculate values on the fly,
+instead of using a transformer.
+For example, an author wants to create an attribute whose contents
+include the area of the feature in the form “<area> sq. metres”
+They could calculate the area with an AreaCalculator and use @Value(_area) sq. metres
+or they could cut out that transformer and go directly with: @Area() sq. metres”
+</span>
+</td>
+</tr>
+</table>
+
+The editor also has a set of string functions and mathematical functions. The string functions
+carry out operations like formatting, extracting, trimming, and padding. The mathematical
+functions are the usual advanced arithmetic functions such as int, cos, and log.
+The string functions are mostly based around Tcl, while the arithmetic functions around C.
+Arithmetic Editor
+The Arithmetic Editor dialog is a tool for building arithmetic expressions.
+Like the text editor, the arithmetic editor has the ability to calculate values using constant
+values, feature attributes, parameters, and other functions.
+However, the arithmetic editor works entirely with numbers to calculate a numeric value. The
+implications of this are:
