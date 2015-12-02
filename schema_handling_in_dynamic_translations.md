@@ -132,15 +132,16 @@ So, let’s create a new workspace to handle that scenario.
 
 **1)** Inspect Data
 
-At the moment two datasets have been identified as being required in the new community
-mapping Geodatabase. They are:
+At the moment two datasets have been identified as being required in the new community mapping Geodatabase. They are:
+
 Format: GML (Geography Markup Language)
 Dataset: C:\FMEData2015\Data\Emergency\FireHalls.gml
+
 Format: MapInfo TAB (MITAB)
 Dataset: C:\FMEData2015\Data\Parks\Parks.tab
-So, inspect these two datasets in the FME Data Inspector, to become familiar with them. There
-was already parks data in the community mapping, but this time it is polygons, not points. The
-FireHalls data is entirely new for community mapping.
-2) Start Workbench
-Start FME Workbench and begin by generating a workspace as follows:
-Reader Format GML (Geography Markup Language)
+
+So, inspect these two datasets in the FME Data Inspector, to become familiar with them. There was already parks data in the community mapping, but this time it is polygons, not points. The FireHalls data is entirely new for community mapping.
+
+**2)** Start Workbench
+
+Start FME Workbench and begin by generating a workspace as follows: Reader Format GML (Geography Markup Language)
