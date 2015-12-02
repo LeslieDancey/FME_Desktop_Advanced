@@ -41,3 +41,10 @@ FME translation. That’s heavenly!”
 </td>
 </tr>
 </table>
+
+**Constructed Attribute Schemas**
+
+This scenario is a way to construct an attribute schema using lists in FME. The schema is defined by using attributes in the list, for example:
+
+When a feature with such attributes is sent to a dynamic Writer, then this schema is used in preference to any other.
+
