@@ -53,4 +53,5 @@
    * [Community Information and Resources](community_information_and_resources.md)
    * [Course Feedback](course_feedback.md)
    * [Certificates](certificates.md)
+   * Thank You
 
