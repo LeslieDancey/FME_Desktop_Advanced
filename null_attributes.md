@@ -22,3 +22,15 @@ FME’s internal engine has its own state to represent null. However, when prese
 For example, this feature in the Logger has <null> for a number of attributes:
 
 Similarly, the FME Data Inspector will depict nulls as <null>:
+
+It can also differentiate between states by displaying <missing> or <empty> as well.
+
+**Recognizing Null Values**
+
+When FME reads data, if the source attributes contain nulls – and the Reader format has been updated to support them – then FME will emit that attribute with a null value.
+
+To check for incoming nulls the Tester transformer has a specific operator to test for null, empty, and missing values:
+
+Because the Tester interface is incorporated into many facets of FME (such as the TestFilter transformer) you can test for nulls wherever you find that interface.
+
+Other transformers, such as the Matcher, also allow testing for nulls. In the case of the Matcher there is even a parameter that can be used to decide whether null, empty, and missing values should be treated equally, or as their own unique representation:
