@@ -35,3 +35,9 @@ Using Multiple Feature Attributes
 The simplest way to make use of the attributes retrieved from prior/subsequent features is through the text or arithmetic editors.
 
 In the editors, the list of feature attributes will have an expandable section for prior and subsequent features:
+
+When a feature is expanded then its list of attributes becomes available for use:
+
+Double-clicking an attribute adds it to the expression window:
+
+So, you can see that prior and subsequent attribute values can be accessed simply by using feature[x].<attribute name> where x is a positive or negative number that refers to a subsequent or prior feature.
