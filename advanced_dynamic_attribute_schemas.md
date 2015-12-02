@@ -21,3 +21,23 @@ Attribute sequence is another optional parameter. It defines a field in the tabl
 Then, of course, this Reader must be used as the source for the output schema:
 
 The incoming attributes must then be mapped to the outgoing schema. The best way here is the SchemaMapper transformer, since it too can use a lookup table to create its mappings.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“The great advantage of this method is that you don’t need to edit the
+workspace, or edit a dataset, to make schema changes.
+Once you change the output schema in the table, then that is automatically applied in the
+FME translation. That’s heavenly!”
+</span>
+</td>
+</tr>
+</table>
