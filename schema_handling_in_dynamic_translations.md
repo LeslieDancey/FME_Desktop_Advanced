@@ -145,3 +145,29 @@ So, inspect these two datasets in the FME Data Inspector, to become familiar wit
 **2)** Start Workbench
 
 Start FME Workbench and begin by generating a workspace as follows: Reader Format GML (Geography Markup Language)
+
+Reader Dataset C:\FMEData2015\Data\Emergency\FireHalls.gml
+
+Writer Format GML (Geography Markup Language)
+Writer Dataset C:\FMEData2015\Output\NewCommunityMap.gml
+Workflow Options Dynamic Schema
+
+**3)** Add Reader
+
+So far; so good. Now let’s add a Reader for the new parks data.
+
+Select Readers > Add Reader from the menubar. Add a Reader as follows:
+
+Format MapInfo TAB (MITAB)
+Dataset C:\FMEData2015\Data\Parks\Parks.tab
+Workflow Single Merged Feature Type
+
+Connect the new Reader feature type up to the existing Writer feature type.
+
+**4) **Add Resource Reader
+
+One of the requirements was to use the existing schema where possible. With the firehalls it wasn’t possible, since that never existed in the CommunityMaps before.
+
+However, the parks dataset does exist in the current CommunityMaps dataset, so we’ll need to use that schema.
+
+So, select Readers > Add Reader as Resource.
