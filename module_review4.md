@@ -19,3 +19,5 @@ The following are key points to be learned from this session:
 - The ability to use a Feature Type Fanout and a Dataset Fanout
 - The ability to use the Generic Reader and Writer
 - The ability to create a simple Dynamic workspace
+- The ability to add a Resource Reader
+- The ability to use a Resource Reader or Lookup Table as the schema source in a dynamic translation.
