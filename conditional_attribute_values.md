@@ -287,3 +287,36 @@ The TestFilter transformer will now look like this:
 **10)** Add AttributeCreator
 
 Add an AttributeCreator connected to each TestFilter output port. Use the AttributeCreator to create the correct FloodRisk attribute (and value) for each output port (i.e. Port 1: FloodRisk = 1).
+
+In fact, it’s probably easier to place one AttributeCreator and duplicate it for each port, editing the FloodRisk value each time.
+
+**11)** Add Inspector
+
+Place a single Inspector transformer and connect each AttributeRangeMapper output to it.
+Open the Inspector parameters dialog and under Group-By select the newly created attribute called FloodRisk.
+
+**7)** Save and Run Workspace
+
+Save and run the workspace. You should see each address colored to match its flood risk. You can also turn off each zone in turn to see which addresses are most/least at risk.
+
+**The Conditional Values Method**
+
+This is a one-step process involving an AttributeCreator transformer.
+
+**12)** Place AttributeCreator
+
+Place an AttributeCreator transformer and connect it to the AttributeRenamer.
+
+Open the parameters dialog.
+
+Under AttributeName enter FloodRisk.
+
+Under Value click the drop-down arrow and choose Conditional Value.
+
+See that there are fields for Test Condition and Output Value.
+
+Double-click the first Test Condition field and a Tester-like dialog will open.
+
+This can be the test for FloodRisk=1 (the highest). According to the table of calculations, this can occur only when Zone=100 and Elevation <= 10.
+
+So, set up the Tester to test for Zone = 100 AND Elevation <= 10. The important part here is to set up the test as an AND (i.e. both clauses) must be true.
