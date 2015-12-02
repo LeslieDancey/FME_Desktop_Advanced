@@ -123,3 +123,5 @@ For example, I might add an attribute if an AreaCalculator transformer was in th
 **Deleting an Attribute**
 
 Deleting an existing attribute is done through the dynamic Schema Definition dialog. At the foot of that dialog is a field for removing attributes:
+
+The edit […] button opens a dialog in which to select attributes that are in the source schema but that you don’t want in the output. You can choose to select these existing attributes – or type in an entirely different value, if you know an attribute exists but is not exposed.
