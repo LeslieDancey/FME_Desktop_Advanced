@@ -202,3 +202,17 @@ Inspect the output. There should be two layers: one for fire halls, the other fo
 **7)** Delete Attribute
 
 Re-open the properties dialog for the Writer feature type. Under Dynamic Properties click the edit […] button next to Schema Definition.
+
+Click the […] button at the foot of the dialog next to Attributes to Remove.
+
+In the dialog that opens, type OBJECTID into the first field. You won’t be able to select it from the drop-down list because it comes from a resource reader, not a real reader.
+
+Click OK to close that dialog, then once more to close the Schema Definition dialog.
+
+But don’t close the Feature Type Properties dialog yet.
+
+**8)** Add Attribute
+
+A last-minute request is to add an attribute – LastUpdatedBy – to all tables in the output.
+
+So, click on the User Attributes tab and add this new attribute. Make it a 30 character string.
