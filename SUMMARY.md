@@ -50,5 +50,5 @@
    * [Module Review](module_review5.md)
 * [Course Wrap Up](course_wrap_up.md)
    * [Product Information and Resources](product_information_and_resources.md)
-   * Community Information and Resources
+   * [Community Information and Resources](community_information_and_resources.md)
 
