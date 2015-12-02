@@ -217,3 +217,11 @@ If it’s easier, this can simply be copied from the existing StringConcatenator
 Now we need a function to replace the SubstringExtractor transformer. In the left-hand set of menus, click on String Functions to expand the list of available functions.
 
 Locate the substring function and double-click it to insert it into the expression.
+
+The expression will now look like this, with the <STRING> part pre-selected:
+
+The string we want to process is the value of the attribute fme_text_string. So, in the left-hand set of menus, click on FME Feature Attributes to expand the list of available attributes.
+
+Locate the attribute fme_text_string and double-click it to insert it into the expression.
+
+The latter part of the expression now looks like this, with the attribute filled in:
