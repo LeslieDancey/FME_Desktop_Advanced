@@ -209,3 +209,70 @@ The other, final, task we can do here is to output the features to their origina
 Open the properties dialog for the Reader feature type and click the Format Attributes tab.
 
 Put a checkmark next to fme_feature_type and click OK to close the dialog:
+
+**7)** Set Feature Type Fanout
+
+Now open the properties dialog for the Writer feature type. Check the box for Fanout by Attribute and select fme_feature_type as the attribute to fanout by.
+
+**8)** Save and Run Workspace
+
+Save the workspace and then run it using Prompt and Run. When prompted, select some source tables to read (include at least the GarbageSchedule plus one other) and set an output folder. Set Esri Shape as the format to write.
+
+Examine the output folder. The selected tables have been written back to Shape format.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Did you notice that FME handled the different geometry types and
+output the files with the geometry as part of the name? It’s a Shape
+format thing. FME can never – and will never – write more than one
+geometry type to the same Shape file.”
+</span>
+</td>
+</tr>
+</table>
+
+The one drawback is that each output Shape file has all of the attributes of the source data. To avoid that you would need to add each table in the source separately (as we can see in the Advanced Task below).
+
+The one drawback is that each output Shape file has all of the attributes of the source data. To avoid that you would need to add each table in the source separately (as we can see in the Advanced Task below).
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Advanced Exercise</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+
+</span>
+</td>
+</tr>
+</table>
+
+If the Writer feature type was set to a manual definition of the attribute schema, then we would be unable to use any other source data as the Generic Writer would be constrained by the fixed nature of this schema. However, since we made the attribute definitions automatic, it's now possible to run this workspace and use a different dataset... provided we add a new Reader too.
+
+**9)** Add Reader
+
+Select Readers > Add Reader from the menubar and add the following:
+
+Reader Format: Esri Geodatabase (File Geodb API)
+Reader Dataset: C:\FMEData2015\Data\Addresses\Addresses.gdb
+Workflow Options: Individual Feature Types
+
+There will be separate Reader feature types for addresses and postcode boundaries.
+
+**10)** Connect Schema
+
+In the workspace, disconnect the CommunityMap feature type from the Generic Writer, and instead connect the PostalAddress feature type. Notice that the schema will automatically update to match the Address data.
