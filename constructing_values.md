@@ -225,3 +225,21 @@ The string we want to process is the value of the attribute fme_text_string. So,
 Locate the attribute fme_text_string and double-click it to insert it into the expression.
 
 The latter part of the expression now looks like this, with the attribute filled in:
+
+The values of the two <INT> fields are the same as used in the SubstringExtractor transformer. In this case the values are 4 (the fifth character in) and -1 (the end of the string).
+
+So, manually select each <INT> in turn and replace them with 4 and -1. The expression now looks like this:
+
+On the end of the expression, manually type &username=
+
+And, finally, in the left-hand menus click on Published Parameters to expand the list of available parameters.
+
+Double-click on Username to insert that user parameter into the expression:
+
+The last part of the expression now looks like this:
+
+Notice how attributes are denoted by an @Value() function, whereas parameters are denoted as $(<parametername>)
+
+Click OK to close the dialog, and then OK again to close the main AttributeCreator dialog.
+
+**5)** Clean Workspace
