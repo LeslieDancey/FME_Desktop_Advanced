@@ -191,3 +191,11 @@ Add a SchemaMapper transformer to the workspace, with both output ports connecte
 Open the parameters dialog. For the format select the edited Excel file:
 
 Click the parameters button. Under Sheets to Read, turn off Sheet1 and make sure Sheet2 is selected. Click OK to close the dialog.
+
+Click the Next button. In the next dialog, select Add > Attribute Map.
+
+When prompted, select OldAttrName as the source field and NewAttrName as the Destination field. Check the box to Remove the original attributes (i.e. this is a renaming, not copying):
+
+Click OK to close this dialog, then click Finish. Now save and run the workspace again.
+
+This time the output will have its attributes properly mapped. So now the planning department can translate their data, decide on the output schema, and map source to destination attributes dynamically; all by editing this one Excel spreadsheet.
