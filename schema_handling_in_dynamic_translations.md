@@ -72,3 +72,11 @@ workspace is run.”
 </td>
 </tr>
 </table>
+
+**Schema Definition**
+
+The Schema Definition parameter opens a dialog with a number of options:
+
+These options are where a user can become very creative with their dynamic workspaces.
+
+Remember, a schema is composed of three basic parts: Feature Types, Attributes, and Geometry Types. These settings give the author control over each part of that schema.
