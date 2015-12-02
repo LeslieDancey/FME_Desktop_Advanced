@@ -166,3 +166,67 @@ Click OK to close the dialog and you’ll see a new output port added for each v
 **5)** Add AttributeRangeMapper
 
 Add an AttributeRangeMapper transformer and connect it to the 100 output port of the AttributeFilter.
+
+Open the parameters dialog. As you’ll see this is a lookup table that involves ranges. We should be able to map the elevation range to a final flood risk using the information in the original table.
+
+So, select Elevation as the Source Attribute.
+Enter FloodRisk as the Output Attribute
+
+In the Range Lookup Table, enter the From-To values as follows:
+
+If an elevation falls exactly on one value (for example 25) it will be counted in the lower band (i.e. 10-25).
+
+In the Output Value fields, enter the values from the table for where Zone=100. These should be 1, 2, 3.
+Enter 999 as the Default, so that any features whose elevation does not match, for whatever reason, is flagged appropriately.
+Click OK to close the dialog.
+
+**6)** Duplicate AttributeRangeMapper
+
+Now we need to do the same thing for each of the other AttributeFilter output ports. Rather than set them up manually – as above – the easiest method is to copy the AttributeRangeMapper transformer that we just set up.
+
+So, click on the existing AttributeRangeMapper and press Ctrl+D to duplicate it. Repeat and connect each duplicate to a different AttributeFilter output port.
+
+The workspace will now look like this:
+
+There are what we can call the 100m zone AttributeRangeMapper, the 200m zone AttributeRangeMapper, and the 300m zone AttributeRangeMapper.
+
+However, what still needs to be done is that the Output Values need to be changed in each of these in accordance with the original table of calculations.
+
+So, open the parameters dialog for each AttributeRangeMapper transformer in turn and change the output value fields.
+
+The values will be:
+l 100m Zone: 1, 2, 3
+l 200m Zone: 2, 3, 4
+l 300m Zone: 3, 4, 5
+
+**7)** Add Inspector
+
+Place a single Inspector transformer and connect each AttributeRangeMapper output to it.
+
+Open the Inspector parameters dialog and under Group-By select the newly created attribute called FloodRisk.
+
+**8)** Save and Run Workspace
+
+Save and run the workspace. You should see each address colored to match its flood risk. You can also turn off each zone in turn to see which addresses are most/least at risk.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Professor Lynn Guistic says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If you’re sharp today, you’ll have noticed you could do this process in the
+reverse order. Instead of handling zone then elevation, you could handle
+elevation then zone using a combination of AttributeRangeFilter and
+AttributeValueMappers.”
+</span>
+</td>
+</tr>
+</table>
+
+
