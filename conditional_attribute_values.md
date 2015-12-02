@@ -58,3 +58,9 @@ Stop Translation.
 </td>
 </tr>
 </table>
+
+When the conditions are set then the original dialog – in this case an AttributeCreator – looks like this, with the number of conditions defining the number of possible values:
+
+**When to use Conditional Attribute Values?**
+
+Conditional attribute values are great for when you need to map (or set) an attribute in relation to the value of an existing attribute, when the conditions are more complex than can be handled in a simple AttributeValueMapper or RangeValueMapper transformer.
