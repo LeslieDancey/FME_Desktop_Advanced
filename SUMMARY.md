@@ -39,4 +39,5 @@
    * [Fanouts](fanouts.md)
    * [The Generic Reader/Writer](the_generic_readerwriter.md)
    * [Dynamic Translations](dynamic_translations.md)
+   * Schema Handling in Dynamic Translations
 
