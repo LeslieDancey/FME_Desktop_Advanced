@@ -164,3 +164,16 @@ Inspect the output. Notice that all three feature types have been written, and t
 </td>
 </tr>
 </table>
+
+If you have the ability to edit the Excel spreadsheet then let’s do a couple more advanced steps (alternatively you can convert the spreadsheet to a CSV dataset and work in there).
+
+The planning team have decided they should rename some attributes, so open the spreadsheet and rename the following for the FireHalls feature type:
+- Name to HallName
+- Address to HallAddress
+- PhoneNumber to HallPhone
+
+Save the spreadsheet.
+
+If you run the workspace now it will run to completion, but there will be no values in the renamed fields. That’s because FME has no way to tell how to map the source data to the new schema.
+
+We could simply add an AttributeRenamer transformer to handle this change, but the better way is to use the SchemaMapper. That way it can be made a little more dynamic.
