@@ -121,3 +121,4 @@ value; for example @Area(), @Count(), and @StringLength()
 - The value returned to the workspace will be a numeric type, not a string.
 
 For example, here a workspace author is calculating the property tax for a set of features using the attributes TaxBand and AssessedValue, in conjunction with the @Area() function.
+
