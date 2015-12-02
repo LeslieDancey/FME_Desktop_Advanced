@@ -166,3 +166,24 @@ Integrating this into a single parameter in a single transformer leads to a more
 On the other hand, integrated functions produce much more clean and elegant solutions. They take up less space on the canvas and are generally less cluttered.
 
 So the decision on which method to use depends as much on your confidence in using FME, and how much the workspace might need to be shared with others, as anything else.
+
+The Engineering department at the City of Interopolis has invested in FME Server and is now creating a KML dashboard to provide access to the information FME Server provides.
+
+In this workspace they translate a DWG dataset of traffic signals to KML. The KML output will contain a URL that points to a workspace on FME Server. When the URL hyperlink is clicked it will cause a workspace to run and FME Server to return information about the traffic signal.
+
+Today, however, your task is not to work on the Server workspace; rather it is to help create the hyperlink that points to that workspace.
+
+**1)** Inspect Source Data
+
+Inspect the source data for the workspace. You can find it at:
+
+Format Autodesk AutoCAD DWG/DXF
+Dataset C:\FMEData2015\Data\Engineering\TrafficSignals.dwg
+
+When reading this data it’s preferable to set the parameter Group Entities By to ‘Attribute Schema.’
+
+Notice how each traffic signal is represented by a point feature with a text object that specifies the ID number for the signal:
+
+**2) **Start Workbench
+
+Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise5a-Begin.fmw.
