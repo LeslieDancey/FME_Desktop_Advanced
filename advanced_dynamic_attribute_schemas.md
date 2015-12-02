@@ -159,10 +159,7 @@ Inspect the output. Notice that all three feature types have been written, and t
 <tr>
 <td style="border: 1px solid darkorange">
 <span style="font-family:serif; font-style:italic; font-size:larger">
-This is text to describe an advanced exercise
-<br>It uses a font awesome icon (this won't show in PDF)
-<br>The text is a serif font, italic.
-<br>It is in a table with an orange border
+
 </span>
 </td>
 </tr>
