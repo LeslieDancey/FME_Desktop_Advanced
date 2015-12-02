@@ -143,3 +143,7 @@ Reader Dataset C:\FMEData2015\Data\Zoning\Zones.tab
 Once added, connect its Reader feature type to the dynamic Writer feature type.
 
 **7)** Save and Run Workspace
+
+Save the workspace and then run it.
+
+Inspect the output. Notice that all three feature types have been written, and that their attribute schema matches what was defined in the Excel spreadsheet; including the LastUpdatedBy field for each one.
