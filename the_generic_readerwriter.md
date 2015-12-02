@@ -194,3 +194,18 @@ For configuration click the browse […] button to open a new dialog. In that di
 - Writer Formats. Select a handful of the most common formats like Shape, AutoCAD DWG, GML, and MapInfo TAB; then click OK.
 
 Then click OK twice more until all the dialogs are closed.
+
+**5)** Link Parameter
+
+Now, in the Navigator window, expand the parameters for the Generic Writer. Locate the Output Format parameter. Right-click it and choose Link to User Parameter.
+
+Select the newly created OutputFormat parameter and click OK.
+Now when the workspace is run, the choice of output format will be between these few:
+
+**6)** Expose Format Attribute
+
+The other, final, task we can do here is to output the features to their original table. To do this we need to know where they came from, and that is obtained from a format attribute called fme_feature_type.
+
+Open the properties dialog for the Reader feature type and click the Format Attributes tab.
+
+Put a checkmark next to fme_feature_type and click OK to close the dialog:
