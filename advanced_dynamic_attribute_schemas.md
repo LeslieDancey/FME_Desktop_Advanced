@@ -68,3 +68,30 @@ nothing else is being accidentally used!”
 </tr>
 </table>
 
+It makes sense for this transformer to do this because it creates data in a way that we are less likely to know the schema of in advance. If you have a dynamic writer and send this data to it then the output will be in this schema.
+
+**FME Data Types**
+
+Both of the two preceding tools allow the user to define attribute type in an output schema.
+There are a set of valid datatypes in FME, which are as follows:
+
+- Character Fields:fme_varchar(width), fme_char(width), fme_char
+- Integer Fields:fme_uint8, fme_int16, fme_uint16, fme_int32, fme_uint32, fme_int64,
+fme_uint64
+- Numeric Fields:fme_decimal(width,decimal), fme_real32, fme_real64
+- Date-Time Fields:fme_datetime, fme_time, fme_date
+- Other Fields:fme_buffer, fme_boolean
+
+In Exercise 4d, we created a new community map dataset for the planning department using a dynamic schema. At the time only two tables were defined, but now another one is required and the planning department wants you to update the workspace.
+
+Rather than do that, you figure that you can simply create an Excel spreadsheet containing the schema definition, so the planning team can edit it themselves and do the same for all future updates.
+
+**1)** Inspect Spreadsheet
+
+Open and examine the spreadsheet at:
+
+C:\FMEData2015\Resources\CommunityMapSchema.xlsx.
+
+If you don’t have Excel then open it in the FME Data Inspector and switch to Table View.
+
+The table looks like this, with Firehalls, Parks, and Zones feature types defined.
