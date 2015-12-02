@@ -187,3 +187,33 @@ Notice how each traffic signal is represented by a point feature with a text obj
 **2) **Start Workbench
 
 Open the workspace C:\FMEData2015\Workspaces\DesktopAdvanced\Exercise5a-Begin.fmw.
+
+The first part of the workspace concerns getting the ID number from the text label and onto the point feature. It’s not our main point of concern, so we can pretty much ignore this part:
+
+The part of the workspace that does concern us is the last four transformers:
+
+Inspect each transformer in turn, examining what it does and what parameters are set.
+
+You should quickly see that this section is constructing a hyperlink that points to FME Server. From what we’ve learned about integrated attribute construction, we know that it should be possible to improve upon this design.
+
+**3)** Place AttributeCreator
+
+Place an AttributeCreator transformer with a parallel connection out of the NeighborFinder matched port.
+
+It’s important to ensure it is connected in to the current flow of data, else no attributes will be available.
+
+Open the parameters dialog. For attribute name enter SignalURL (to match the output schema).
+
+Under Value, click the drop-down menu arrow and choose the option Open Text Editor:
+
+**4)** Create Attribute Value
+
+In the expression dialog enter the text:
+
+http://interopolis.org/fmedatastreaming/Engineering/signalinfo.fmw?signalid=
+
+If it’s easier, this can simply be copied from the existing StringConcatenator transformer; although it doesn’t really matter if you get it wrong because it’s just an exercise(!)
+
+Now we need a function to replace the SubstringExtractor transformer. In the left-hand set of menus, click on String Functions to expand the list of available functions.
+
+Locate the substring function and double-click it to insert it into the expression.
